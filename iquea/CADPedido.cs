@@ -6,7 +6,24 @@ using System.Threading.Tasks;
 
 namespace iquea
 {
-    class CADPedido
+    public class CADPedido
     {
+        public string constring;
+        public bool leerPedido(ENPedido pedido)
+        {
+
+        }
+        public bool crearPedido(ENPedido pedido)
+        {
+
+        }
+        public bool actualizarPedido(ENPedido pedido)
+        {
+
+        }
+        public bool borrarPedido(ENPedido pedido)
+        {
+
+        }
     }
 }
