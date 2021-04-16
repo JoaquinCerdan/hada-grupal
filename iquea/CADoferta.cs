@@ -1,8 +1,8 @@
 ﻿using System;
 
-public class Class1
+public class CADoferta
 {
-	public Class1()
+	public CADoferta()
 	{
 	}
 }
