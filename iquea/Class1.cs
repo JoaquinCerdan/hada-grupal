@@ -8,6 +8,5 @@ namespace iquea
 {
     public class Class1
     {
-        //hola
     }
 }
