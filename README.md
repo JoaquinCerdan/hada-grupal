@@ -1,5 +1,7 @@
 Nombre del proyecto: IQÜEA 
 
+Esquema de la base de datos se llama BBDD_Iquea.pdf y se encuentra en hada-grupal/.
+
 Componentes del grupo:
 
 Álvaro Lario Sánchez 23813883M
