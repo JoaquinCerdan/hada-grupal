@@ -2,7 +2,6 @@
 
 public class ENoferta
 {
-
 	private double descuento;
 	private DateTime fechaValidez;
 
@@ -18,4 +17,33 @@ public class ENoferta
         set { this.fechaValidez = value; }
     }
 
+    public ENoferta()
+    {
+
+    }
+
+    public ENoferta(double descuento, DateTime fechaValidez)
+    {
+
+    }
+
+    public bool createOferta()
+    {
+
+    }
+
+    public bool readOferta()
+    {
+
+    }
+
+    public bool deleteOferta()
+    {
+
+    }
+
+    public bool updateOferta()
+    {
+
+    }
 }
