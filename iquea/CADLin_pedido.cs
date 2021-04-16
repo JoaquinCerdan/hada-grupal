@@ -6,7 +6,24 @@ using System.Threading.Tasks;
 
 namespace iquea
 {
-    class CADLin_pedido
+    public class CADLin_pedido
     {
+        public string constring;
+        public bool leerLineaPedido(ENLin_pedido linped)
+        {
+
+        }
+        public bool crearLineaPedido(ENLin_pedido linped)
+        {
+
+        }
+        public bool actualizarLineaPedido(ENLin_pedido linped)
+        {
+
+        }
+        public bool borrarLineaPedido(ENLin_pedido linped)
+        {
+
+        }
     }
 }
