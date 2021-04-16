@@ -41,11 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="CADLin_pedido.cs" />
     <Compile Include="CADPedido.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="ENLin_pedido.cs" />
     <Compile Include="ENPedido.cs" />
+=======
+    <Compile Include="CADAdministrador.cs" />
+    <Compile Include="CADUsuario.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="ENAdministrador.cs" />
+    <Compile Include="ENUsuario.cs" />
+>>>>>>> 48797984B
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
