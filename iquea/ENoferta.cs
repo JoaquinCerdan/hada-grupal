@@ -30,6 +30,8 @@ public class ENoferta
         {
             this.descuento = descuento;
         }
+        //la fecha de validez tiene que ser mayor que la actual
+        this.fechaValidez = fechaValidez;
         
     }
 
