@@ -8,7 +8,7 @@ public class ENLin_carrito
     public int idP { get { return this.id; } set { this.id = value; } }
     public int numArticulosP { get { return this.numArticulosP; } set { this.numArticulosP = value; } }
 
-    public bool createLin_carrito(){
+    public bool createLin_carrito()
     {
 
     }
