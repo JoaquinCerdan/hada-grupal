@@ -5,13 +5,13 @@ public class ENoferta
 	private double descuento;
 	private DateTime fechaValidez;
 
-    public string descuentoP
+    public double descuentoP
     {
         get { return this.descuento; }
         set { this.descuento = value; }
     }
 
-    public string fechaValidezP
+    public DateTime fechaValidezP
     {
         get { return this.fechaValidez; }
         set { this.fechaValidez = value; }
