@@ -26,22 +26,22 @@ public class ENArticulo
 
 	}
 
-	public bool createArticulo(ENArticulo art)
+	public bool createArticulo()
 	{
 
 	}
 
-	public bool updateArticulo(ENArticulo art)
+	public bool updateArticulo()
 	{
 
 	}
 
-	public bool readArticulo(ENArticulo art)
+	public bool readArticulo()
 	{
 
 	}
 
-	public bool deleteArticulo(ENArticulo art)
+	public bool deleteArticulo()
 	{
 
 	}
