@@ -37,21 +37,41 @@ public class ENoferta
 
     public bool createOferta()
     {
+        bool respuesta;
 
+        CADoferta oferta = new CADoferta();
+        respuesta = oferta.createOferta();
+
+        return respuesta;
     }
 
     public bool readOferta()
     {
+        bool respuesta;
 
+        CADoferta oferta = new CADoferta();
+        respuesta = oferta.readOferta();
+
+        return respuesta;
     }
 
     public bool deleteOferta()
     {
+        bool respuesta;
 
+        CADoferta oferta = new CADoferta();
+        respuesta = oferta.deleteOferta();
+
+        return respuesta;
     }
 
     public bool updateOferta()
     {
+        bool respuesta;
 
+        CADoferta oferta = new CADoferta();
+        respuesta = oferta.updateOferta();
+
+        return respuesta;
     }
 }
