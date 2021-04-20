@@ -1,6 +1,0 @@
-C:\Users\Alvaro\source\repos\hada-grupal\iquea\bin\Debug\iquea.dll
-C:\Users\Alvaro\source\repos\hada-grupal\iquea\bin\Debug\iquea.pdb
-C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea.csprojAssemblyReference.cache
-C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea.csproj.CoreCompileInputs.cache
-C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea.dll
-C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea.pdb
