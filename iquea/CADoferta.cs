@@ -16,7 +16,7 @@ public class CADoferta
         try
         {
             a.Open();
-            String orden = "Insert Into iquea.oferta (id, descuento, fechaValidez) VALUES ('"+en.idP+"' , '" + en.descuentoP + "' , '" + en.fechaValidezP + ")";
+            String orden = "Insert Into iquea.oferta (cod, descuento, fechaValidez) VALUES ('"+en.codP+"' , '" + en.descuentoP + "' , '" + en.fechaValidezP + ")";
             SqlCommand comando = new SqlCommand(orden, a);
             comando.ExecuteNonQuery();
 
@@ -44,12 +44,12 @@ public class CADoferta
         try
         {
             a.Open();
-            SqlCommand comando = new SqlCommand("Select * from iquea.oferta where id = '" + en.idP + "'" , a);
+            SqlCommand comando = new SqlCommand("Select * from iquea.oferta where cod = '" + en.codP + "'" , a);
             SqlDataReader dr = comando.ExecuteReader();
 
             dr.Read();
-            en.descuento = dr["descuento"].ToString();
-            en.fechaValidez = Convert.ToDateTime(dr["fechaValidez"]);
+            en.descuentoP = dr["descuento"].ToString();
+            en.fechaValidezP = Convert.ToDateTime(dr["fechaValidez"]);
 
             dr.Close();
             a.Close();
@@ -76,7 +76,7 @@ public class CADoferta
         try
         {
             a.Open();
-            SqlCommand comando = new SqlCommand("DELETE FROM iquea.oferta WHERE id = '" + en.idP + "'", a);
+            SqlCommand comando = new SqlCommand("DELETE FROM iquea.oferta WHERE cod = '" + en.codP + "'", a);
             comando.ExecuteNonQuery();
 
             respuesta = true;
@@ -102,7 +102,7 @@ public class CADoferta
         try
         {
             a.Open();
-            SqlCommand comando = new SqlCommand("UPDATE iquea.oferta SET descuento = '" + en.descuentoP + "' , fechaValidez = '" + en.fechaValidezP + "' WHERE id = '" + en.idP + "'", a);
+            SqlCommand comando = new SqlCommand("UPDATE iquea.oferta SET descuento = '" + en.descuentoP + "' , fechaValidez = '" + en.fechaValidezP + "' WHERE cod = '" + en.codP + "'", a);
             comando.ExecuteNonQuery();
 
             respuesta = true;
