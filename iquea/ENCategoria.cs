@@ -20,22 +20,22 @@ public class ENCategoria
 
 	}
 
-	public bool createCategoria(ENCategoria cat)
+	public bool createCategoria()
 	{
 
 	}
 
-	public bool updateCategoria(ENCategoria cat)
+	public bool updateCategoria()
 	{
 
 	}
 
-	public bool readCategoria(ENCategoria cat)
+	public bool readCategoria()
 	{
 
 	}
 
-	public bool deleteCategoria(ENCategoria cat)
+	public bool deleteCategoria()
 	{
 
 	}
