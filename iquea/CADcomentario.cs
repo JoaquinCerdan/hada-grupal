@@ -6,6 +6,7 @@ public class CADcomentario
 
 	public CADcomentario()
 	{
+        constring = "";
 	}
 
     public bool createComentario(ENcomentario oferta)

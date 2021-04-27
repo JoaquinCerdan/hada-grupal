@@ -4,6 +4,7 @@ public class ENoferta
 {
 	private double descuento;
 	private DateTime fechaValidez;
+    private int id;
 
     public double descuentoP
     {
@@ -15,6 +16,12 @@ public class ENoferta
     {
         get { return this.fechaValidez; }
         set { this.fechaValidez = value; }
+    }
+
+    public double idP
+    {
+        get { return this.id; }
+        set { this.id = value; }
     }
 
     public ENoferta()

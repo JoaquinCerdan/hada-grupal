@@ -4,6 +4,7 @@ public class ENcomentario
 {
     private string comentario;
     private int valoracion;
+    private int id;
 
     public string comentarioP
     {
@@ -15,6 +16,12 @@ public class ENcomentario
     {
         get { return this.valoracion; }
         set { this.valoracion = value; }
+    }
+
+    public int idP
+    {
+        get { return this.id; }
+        set { this.id = value; }
     }
 
     public ENcomentario()
