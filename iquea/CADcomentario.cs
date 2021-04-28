@@ -9,14 +9,14 @@ public class CADcomentario
         constring = "";
 	}
 
-    public bool createComentario(ENcomentario oferta)
+    public bool createComentario(ENcomentario comentario)
     {
         bool respuesta = false;
         SqlConnection a = new SqlConnection(constring);
         try
         {
             a.Open();
-            String orden = "Insert Into iquea.comentario (id, comentario, valoracion) VALUES ('" + en.idP + "' , '" + en.comentarioP + "' , '" + en.valoracionP + ")";
+            String orden = "Insert Into iquea.comentario (id, comentario, valoracion) VALUES ('" + comentario.idP + "' , '" + comentario.comentarioP + "' , '" + comentario.valoracionP + ")";
             SqlCommand comando = new SqlCommand(orden, a);
             comando.ExecuteNonQuery();
 
@@ -36,7 +36,7 @@ public class CADcomentario
         return respuesta;
     }
 
-    public bool readComentario(ENcomentario oferta)
+    public bool readComentario(ENcomentario comentario)
     {
         bool respuesta = false;
         SqlConnection a = new SqlConnection(constring);
@@ -44,12 +44,12 @@ public class CADcomentario
         try
         {
             a.Open();
-            SqlCommand comando = new SqlCommand("Select * from iquea.comentario where id = '" + en.idP + "'", a);
+            SqlCommand comando = new SqlCommand("Select * from iquea.comentario where id = '" + comentario.idP + "'", a);
             SqlDataReader dr = comando.ExecuteReader();
 
             dr.Read();
-            en.comentarioP = dr["comentario"].ToString();
-            en.valoracionP = Convert.ToInt32(dr["valoracion"]);
+            comentario.comentarioP = dr["comentario"].ToString();
+            comentario.valoracionP = Convert.ToInt32(dr["valoracion"]);
 
             dr.Close();
             a.Close();
@@ -69,14 +69,14 @@ public class CADcomentario
         return respuesta;
     }
 
-    public bool deleteComentario(ENcomentario oferta)
+    public bool deleteComentario(ENcomentario comentario)
     {
         bool respuesta = false;
         SqlConnection a = new SqlConnection(constring);
         try
         {
             a.Open();
-            SqlCommand comando = new SqlCommand("DELETE FROM iquea.comentario WHERE id = '" + en.idP + "'", a);
+            SqlCommand comando = new SqlCommand("DELETE FROM iquea.comentario WHERE id = '" + comentario.idP + "'", a);
             comando.ExecuteNonQuery();
 
             respuesta = true;
@@ -95,14 +95,14 @@ public class CADcomentario
         return respuesta;
     }
 
-    public bool updateComentario(ENcomentario oferta)
+    public bool updateComentario(ENcomentario comentario)
     {
         bool respuesta = false;
         SqlConnection a = new SqlConnection(constring);
         try
         {
             a.Open();
-            SqlCommand comando = new SqlCommand("UPDATE iquea.comentario SET comentario = '" + en.comentarioP + "' , valoracion = '" + en.valoracionP + "' WHERE id = '" + en.idP + "'", a);
+            SqlCommand comando = new SqlCommand("UPDATE iquea.comentario SET comentario = '" + comentario.comentarioP + "' , valoracion = '" + comentario.valoracionP + "' WHERE id = '" + comentario.idP + "'", a);
             comando.ExecuteNonQuery();
 
             respuesta = true;

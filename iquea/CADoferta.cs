@@ -16,7 +16,7 @@ public class CADoferta
         try
         {
             a.Open();
-            String orden = "Insert Into iquea.oferta (cod, descuento, fechaValidez) VALUES ('"+en.codP+"' , '" + en.descuentoP + "' , '" + en.fechaValidezP + ")";
+            String orden = "Insert Into iquea.oferta (cod, descuento, fechaValidez) VALUES ('"+oferta.codP+"' , '" + oferta.descuentoP + "' , '" + oferta.fechaValidezP + ")";
             SqlCommand comando = new SqlCommand(orden, a);
             comando.ExecuteNonQuery();
 
@@ -44,12 +44,12 @@ public class CADoferta
         try
         {
             a.Open();
-            SqlCommand comando = new SqlCommand("Select * from iquea.oferta where cod = '" + en.codP + "'" , a);
+            SqlCommand comando = new SqlCommand("Select * from iquea.oferta where cod = '" + oferta.codP + "'" , a);
             SqlDataReader dr = comando.ExecuteReader();
 
             dr.Read();
-            en.descuentoP = dr["descuento"].ToString();
-            en.fechaValidezP = Convert.ToDateTime(dr["fechaValidez"]);
+            oferta.descuentoP = dr["descuento"].ToString();
+            oferta.fechaValidezP = Convert.ToDateTime(dr["fechaValidez"]);
 
             dr.Close();
             a.Close();
@@ -76,7 +76,7 @@ public class CADoferta
         try
         {
             a.Open();
-            SqlCommand comando = new SqlCommand("DELETE FROM iquea.oferta WHERE cod = '" + en.codP + "'", a);
+            SqlCommand comando = new SqlCommand("DELETE FROM iquea.oferta WHERE cod = '" + oferta.codP + "'", a);
             comando.ExecuteNonQuery();
 
             respuesta = true;
@@ -102,7 +102,7 @@ public class CADoferta
         try
         {
             a.Open();
-            SqlCommand comando = new SqlCommand("UPDATE iquea.oferta SET descuento = '" + en.descuentoP + "' , fechaValidez = '" + en.fechaValidezP + "' WHERE cod = '" + en.codP + "'", a);
+            SqlCommand comando = new SqlCommand("UPDATE iquea.oferta SET descuento = '" + oferta.descuentoP + "' , fechaValidez = '" + oferta.fechaValidezP + "' WHERE cod = '" + oferta.codP + "'", a);
             comando.ExecuteNonQuery();
 
             respuesta = true;
