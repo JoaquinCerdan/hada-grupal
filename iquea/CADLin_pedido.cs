@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,11 +22,11 @@ namespace iquea
             {
                 conexion = new SqlConnection(constring);
                 conexion.Open();
-                String comando = "Select * FROM iquea.Lin_pedido WHERE id = '" + linped.getID() + "'";
+                String comando = "Select * FROM iquea.Lin_pedido WHERE id = '" + linped.getId() + "'";
                 SqlCommand ejecucion = new SqlCommand(comando, conexion);
                 SqlDataReader leer = ejecucion.ExecuteReader();
                 leer.Read();
-                linped.numArticulos = Convert.ToInt32(leer["numArticulos"]);
+                linped.setNumArticulos(Convert.ToInt32(leer["numArticulos"]));
                 leer.Close();
                 conexion.Close();
                 creado = true;
@@ -49,7 +50,7 @@ namespace iquea
             {
                 conexion = new SqlConnection(constring);
                 conexion.Open();
-                String comando = "Insert INTO iquea.Lin_pedido (id, numArticulos) VALUES (" + linped.getID() + " , " + linped.getNumArticulos() + ")";
+                String comando = "Insert INTO iquea.Lin_pedido (id, numArticulos) VALUES (" + linped.getId() + " , " + linped.getNumArticulos() + ")";
                 SqlCommand ejecucion = new SqlCommand(comando, conexion);
                 ejecucion.ExecuteNonQuery();
                 creado = true;
@@ -73,7 +74,7 @@ namespace iquea
             {
                 conexion = new SqlConnection(constring);
                 conexion.Open();
-                String comando = "UPDATE iquea.Lin_pedido SET numArticulos = '" + linped.getNumArticulos() + "' WHERE id = '" + linped.getID() + "'";
+                String comando = "UPDATE iquea.Lin_pedido SET numArticulos = '" + linped.getNumArticulos() + "' WHERE id = '" + linped.getId() + "'";
                 SqlCommand ejecucion = new SqlCommand(comando, conexion);
                 ejecucion.ExecuteNonQuery();
                 creado = true;
@@ -97,7 +98,7 @@ namespace iquea
             {
                 conexion = new SqlConnection(constring);
                 conexion.Open();
-                String comando = "DELETE FROM iquea.Lin_pedido WHERE id = '" + linped.getID() + "'";
+                String comando = "DELETE FROM iquea.Lin_pedido WHERE id = '" + linped.getId() + "'";
                 SqlCommand ejecucion = new SqlCommand(comando, conexion);
                 ejecucion.ExecuteNonQuery();
                 creado = true;

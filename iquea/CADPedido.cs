@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,8 +26,8 @@ namespace iquea
                 SqlCommand ejecucion = new SqlCommand(comando, conexion);
                 SqlDataReader leer = ejecucion.ExecuteReader();
                 leer.Read();
-                pedido.importe = Convert.ToInt32(leer["importe"]);
-                pedido.recibo = leer["importe"].ToString();
+                pedido.setImporte(Convert.ToInt32(leer["importe"]));
+                pedido.setRecibo(leer["importe"].ToString());
                 leer.Close();
                 conexion.Close();
                 creado = true;
