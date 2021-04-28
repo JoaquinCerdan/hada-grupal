@@ -17,6 +17,10 @@ namespace iquea
         public int getNumArticulos(){
             return numArticulos;
         }
+        public void setNumArticulos(int numArticulos)
+        {
+            this.numArticulos = numArticulos;
+        }
         public ENLin_pedido(){
             this.numArticulos = 0;
         }

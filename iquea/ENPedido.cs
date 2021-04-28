@@ -20,6 +20,14 @@ namespace iquea
         public string getRecibo(){
             return recibo;
         }
+        public void setImporte(int importe)
+        {
+            this.importe = importe;
+        }
+        public void setRecibo(string recibo)
+        {
+            this.recibo = recibo;
+        }
         public ENPedido(){
             this.importe = 0;
             this.recibo = "";
