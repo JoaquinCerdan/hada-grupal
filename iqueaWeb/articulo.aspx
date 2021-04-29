@@ -27,7 +27,7 @@
         <asp:Button ID="carrito" runat="server" Text="añadir a carrito" style="border-style: groove; border-width: 1px" OnClick="ButtonLeer_Click" />&nbsp;&nbsp;
     </p>
 
-    <p></p>
+    <p>    </p>
     <p>
         &nbsp;&nbsp;comentarios:
     </p>
