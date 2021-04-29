@@ -67,11 +67,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Categoria.aspx" />
+    <Content Include="ext.aspx" />
+    <Content Include="Exterior.aspx" />
+    <Content Include="Interior.aspx" />
     <Content Include="mystyle.css" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Categoria.aspx.cs">
+      <DependentUpon>Categoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Categoria.aspx.designer.cs">
+      <DependentUpon>Categoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ext.aspx.cs">
+      <DependentUpon>ext.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ext.aspx.designer.cs">
+      <DependentUpon>ext.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exterior.aspx.cs">
+      <DependentUpon>Exterior.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exterior.aspx.designer.cs">
+      <DependentUpon>Exterior.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interior.aspx.cs">
+      <DependentUpon>Interior.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interior.aspx.designer.cs">
+      <DependentUpon>Interior.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
@@ -79,13 +110,6 @@
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
