@@ -13,7 +13,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <img src="https://1000marcas.net/wp-content/uploads/2019/12/IKEA-Logo-600x338.png" style="height: 59px; width: 103px" class ="logo">
+            <img src="../logo_iquea.jpg" style="height: 59px; width: 103px" class ="logo">
             <div class ="toolbar">
                  
                 <input type="image" src="https://image.flaticon.com/icons/png/128/694/694985.png" style="height: 25px; width: 30px" />
