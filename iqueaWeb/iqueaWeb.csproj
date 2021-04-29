@@ -67,10 +67,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Lista_deseos.aspx" />
     <Content Include="mystyle.css" />
+    <Content Include="Pedido.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lista_deseos.aspx.cs">
+      <DependentUpon>Lista_deseos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lista_deseos.aspx.designer.cs">
+      <DependentUpon>Lista_deseos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pedido.aspx.cs">
+      <DependentUpon>Pedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pedido.aspx.designer.cs">
+      <DependentUpon>Pedido.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>

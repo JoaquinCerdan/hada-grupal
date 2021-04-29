@@ -1,0 +1,4 @@
+C:\Users\ximo4\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csprojAssemblyReference.cache
+C:\Users\ximo4\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csproj.CoreCompileInputs.cache
+C:\Users\ximo4\source\repos\hada-grupal\iquea\obj\Debug\iquea.dll
+C:\Users\ximo4\source\repos\hada-grupal\iquea\obj\Debug\iquea.pdb
