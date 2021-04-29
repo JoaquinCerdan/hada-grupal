@@ -2,3 +2,8 @@ C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csprojAss
 C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csproj.CoreCompileInputs.cache
 C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea.dll
 C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea.pdb
+<<<<<<< HEAD
+=======
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\bin\Debug\iquea.dll
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\bin\Debug\iquea.pdb
+>>>>>>> 23813883M

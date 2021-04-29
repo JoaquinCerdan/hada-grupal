@@ -3,7 +3,10 @@
 }
 
 .footer {
+<<<<<<< HEAD
     position: fixed;
+=======
+>>>>>>> 23813883M
     left: 0;
     bottom: 0;
     width: 100%;
@@ -18,8 +21,15 @@
 
 .toolbar {
     text-align: center;
+<<<<<<< HEAD
     top: -50px;
     position: relative;
+=======
+    top: -60px;
+    position: relative;
+    left: 1px;
+    height: 0px;
+>>>>>>> 23813883M
 }
 
 .logo {
@@ -35,4 +45,8 @@
     background-color: #0051BA;
     color: white;
     text-align: center;
+<<<<<<< HEAD
+=======
+    height: 1px;
+>>>>>>> 23813883M
 }

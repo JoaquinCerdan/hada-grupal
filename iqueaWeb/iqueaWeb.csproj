@@ -67,10 +67,126 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <Content Include="BorrarAnuncio.aspx" />
+    <Content Include="CrearAnuncio.aspx" />
+    <Content Include="Administrador.aspx" />
+    <Content Include="BorrarComentario.aspx" />
+    <Content Include="CrearOferta.aspx" />
+    <Content Include="BorrarOferta.aspx" />
+    <Content Include="BorrarUsuario.aspx" />
+    <Content Include="Carrito.aspx" />
+    <Content Include="ModificarOferta.aspx" />
+    <Content Include="ModificarAnuncio.aspx" />
+    <Content Include="Usuario.aspx" />
+    <Content Include="Site1.aspx" />
+>>>>>>> 23813883M
     <Content Include="mystyle.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <Compile Include="Admin.master.cs">
+      <DependentUpon>Admin.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.master.designer.cs">
+      <DependentUpon>Admin.master</DependentUpon>
+    </Compile>
+    <Compile Include="BorrarAnuncio.aspx.cs">
+      <DependentUpon>BorrarAnuncio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BorrarAnuncio.aspx.designer.cs">
+      <DependentUpon>BorrarAnuncio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carrito.master.cs">
+      <DependentUpon>Carrito.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carrito.master.designer.cs">
+      <DependentUpon>Carrito.master</DependentUpon>
+    </Compile>
+    <Compile Include="CrearAnuncio.aspx.cs">
+      <DependentUpon>CrearAnuncio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrearAnuncio.aspx.designer.cs">
+      <DependentUpon>CrearAnuncio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador.aspx.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador.aspx.designer.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BorrarComentario.aspx.cs">
+      <DependentUpon>BorrarComentario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BorrarComentario.aspx.designer.cs">
+      <DependentUpon>BorrarComentario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CrearOferta.aspx.cs">
+      <DependentUpon>CrearOferta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrearOferta.aspx.designer.cs">
+      <DependentUpon>CrearOferta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BorrarOferta.aspx.cs">
+      <DependentUpon>BorrarOferta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BorrarOferta.aspx.designer.cs">
+      <DependentUpon>BorrarOferta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BorrarUsuario.aspx.cs">
+      <DependentUpon>BorrarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BorrarUsuario.aspx.designer.cs">
+      <DependentUpon>BorrarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carrito.aspx.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carrito.aspx.designer.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarOferta.aspx.cs">
+      <DependentUpon>ModificarOferta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarOferta.aspx.designer.cs">
+      <DependentUpon>ModificarOferta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarAnuncio.aspx.cs">
+      <DependentUpon>ModificarAnuncio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarAnuncio.aspx.designer.cs">
+      <DependentUpon>ModificarAnuncio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.aspx.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuario.aspx.designer.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.aspx.cs">
+      <DependentUpon>Site1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.aspx.designer.cs">
+      <DependentUpon>Site1.aspx</DependentUpon>
+    </Compile>
+>>>>>>> 23813883M
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
@@ -81,6 +197,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <Content Include="Admin.master" />
+    <Content Include="Carrito.master" />
+>>>>>>> 23813883M
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
     <None Include="Web.Debug.config">
@@ -90,6 +211,15 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+<<<<<<< HEAD
+=======
+  <ItemGroup>
+    <ProjectReference Include="..\iquea\iquea_library.csproj">
+      <Project>{e085b5c2-dce0-4547-889d-154a24e711b3}</Project>
+      <Name>iquea_library</Name>
+    </ProjectReference>
+  </ItemGroup>
+>>>>>>> 23813883M
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
