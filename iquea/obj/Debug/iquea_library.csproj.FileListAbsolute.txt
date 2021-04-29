@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 C:\Users\ximo4\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csprojAssemblyReference.cache
 C:\Users\ximo4\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csproj.CoreCompileInputs.cache
 C:\Users\ximo4\source\repos\hada-grupal\iquea\obj\Debug\iquea.dll
 C:\Users\ximo4\source\repos\hada-grupal\iquea\obj\Debug\iquea.pdb
+=======
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csprojAssemblyReference.cache
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csproj.CoreCompileInputs.cache
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea.dll
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea.pdb
+<<<<<<< HEAD
+=======
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\bin\Debug\iquea.dll
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\bin\Debug\iquea.pdb
+>>>>>>> 23813883M
+>>>>>>> 6e4ad0401c4225b2bcafedfae07559d52e0ebbdf
