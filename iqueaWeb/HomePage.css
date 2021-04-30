@@ -1,17 +1,16 @@
-﻿.final{
+﻿.final {
     width: 500px;
-    float:left;
+    float: left;
 }
+
 .final2 {
     width: 500px;
     float: left;
 }
 
 .oferta {
-    width: 500px;
-    float: left;
 }
 
-.arreglo{
+.arreglo {
     float: none;
 }
