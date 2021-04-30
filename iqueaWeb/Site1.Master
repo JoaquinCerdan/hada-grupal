@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="iqueaWeb.Site1" %>
+﻿﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="iqueaWeb.Site1" %>
 
 <!DOCTYPE html>
 
@@ -13,18 +13,15 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <img src="https://1000marcas.net/wp-content/uploads/2019/12/IKEA-Logo-600x338.png" style="height: 59px; width: 103px" class ="logo">
-            <div class ="toolbar">
+            <asp:ImageButton ID="ImageButton1" runat="server" Height="75px" ImageUrl="https://1000marcas.net/wp-content/uploads/2019/12/IKEA-Logo-600x338.png" PostBackUrl="~/Site1.aspx" Width="113px" />
+&nbsp;<div class ="toolbar">
                  
-                <input type="image" src="https://image.flaticon.com/icons/png/128/694/694985.png" style="height: 25px; width: 30px" />
-                <asp:TextBox ID="TextBox1" runat="server" style="margin-top: 0px" Width="584px"></asp:TextBox>
-                <input type="image" src="https://image.flaticon.com/icons/png/512/107/107831.png" style="height: 29px; width: 31px" />
-                <input type="image" src="https://c0.klipartz.com/pngpicture/613/636/gratis-png-iconos-de-la-computadora-perfil-de-usuario-avatar-masculino-avatar.png" style="height: 29px; width: 31px" />
-                <input type="image" src="https://cdn.pixabay.com/photo/2017/06/26/20/33/icon-2445095_960_720.png" style="height: 36px; width: 36px" />
-            </div>
-            <div class ="menu">
-                <asp:Button ID="Button1" runat="server" Text="Categoria" BackColor="#FFDA1A
-" />
+        <input type="image" src="https://image.flaticon.com/icons/png/128/694/694985.png" style="height: 25px; width: 30px" />
+        <asp:TextBox ID="TextBox1" runat="server" style="margin-top: 0px" Width="584px" Height="16px"></asp:TextBox>
+                <asp:ImageButton ID="ImageButton3" runat="server" Height="27px" ImageUrl="https://image.flaticon.com/icons/png/512/107/107831.png" PostBackUrl="~/Carrito.aspx" Width="33px" />
+&nbsp;<asp:ImageButton ID="ImageButton2" runat="server" Height="25px" ImageUrl="https://c0.klipartz.com/pngpicture/613/636/gratis-png-iconos-de-la-computadora-perfil-de-usuario-avatar-masculino-avatar.png" PostBackUrl="~/Usuario.aspx" Width="32px" />
+        &nbsp;<input type="image" src="https://cdn.pixabay.com/photo/2017/06/26/20/33/icon-2445095_960_720.png" style="height: 36px; width: 36px" />
+                     
             </div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>

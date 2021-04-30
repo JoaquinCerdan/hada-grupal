@@ -18,7 +18,4 @@
         <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
         <StaticSelectedStyle BackColor="#507CD1" />
     </asp:Menu>
-    <br />
-    <br />
-    <br />
 </asp:Content>
