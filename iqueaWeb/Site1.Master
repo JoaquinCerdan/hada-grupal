@@ -23,8 +23,7 @@
                 <input type="image" src="https://cdn.pixabay.com/photo/2017/06/26/20/33/icon-2445095_960_720.png" style="height: 36px; width: 36px" />
             </div>
             <div class ="menu">
-                <asp:Button ID="Button1" runat="server" Text="Categoria" BackColor="#FFDA1A
-" />
+                <asp:Button ID="Button1" runat="server" Text="Categoria" BackColor="#FFDA1A" />
             </div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
