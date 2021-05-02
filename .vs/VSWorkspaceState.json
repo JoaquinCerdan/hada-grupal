@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\iquea",
+    "\\iqueaWeb"
   ],
+<<<<<<< HEAD
+=======
+  "SelectedNode": "\\iqueaWeb\\Site1.Master",
+>>>>>>> 74394309G
   "PreviewInSolutionExplorer": false
 }
