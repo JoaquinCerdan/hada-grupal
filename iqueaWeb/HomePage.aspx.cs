@@ -13,5 +13,25 @@ namespace iqueaWeb
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Menu1_MenuItemClick(object sender, MenuEventArgs e)
+        {
+
+        }
+
+        protected void Menu1_MenuItemClick1(object sender, MenuEventArgs e)
+        {
+
+        }
     }
 }
