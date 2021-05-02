@@ -29,22 +29,22 @@ public class ENcomentario
 
     public bool createComentario()
     {
-
+        return false;
     }
 
     public bool readComentario()
     {
-
+        return false;
     }
 
     public bool deleteComentario()
     {
-
+        return false;
     }
 
     public bool updateComentario()
     {
-
+        return false;
     }
 
 }

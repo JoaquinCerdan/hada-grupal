@@ -21,18 +21,18 @@ public class ENLista_deseos
 
     public bool createLista_deseos()
     {
-
+        return false;
     }
     public bool readLista_deseos()
     {
-
+        return false;
     }
     public bool updateLista_deseos()
     {
-
+        return false;
     }
     public bool deleteLista_deseos()
     {
-
+        return false;
     }
 }

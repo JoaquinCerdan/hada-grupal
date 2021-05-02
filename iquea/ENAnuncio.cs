@@ -37,22 +37,22 @@ public class ENAnuncio
 
 	public bool createAnuncio()
     {
-
-    }
+		return false;
+	}
 
 	public bool readAnuncio()
     {
-
-    }
+		return false;
+	}
 
 	public bool updateAnuncio()
     {
-
-    }
+		return false;
+	}
 	public bool deleteAnuncio()
     {
-
-    }
+		return false;
+	}
 
 
 
