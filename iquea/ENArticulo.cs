@@ -26,24 +26,24 @@ public class ENArticulo
 
 	}
 
-	public bool createArticulo(EnArticulo art)
+	public bool createArticulo()
 	{
-
+		return false;
 	}
 
-	public bool updateArticulo(EnArticulo art)
+	public bool updateArticulo()
 	{
-
+		return false;
 	}
 
-	public bool readArticulo(EnArticulo art)
+	public bool readArticulo()
 	{
-
+		return false;
 	}
 
-	public bool deleteArticulo(EnArticulo art)
+	public bool deleteArticulo()
 	{
-
+		return false;
 	}
 
 }

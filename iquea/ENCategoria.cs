@@ -20,24 +20,24 @@ public class ENCategoria
 
 	}
 
-	public bool createCategoria(EnCategoria cat)
+	public bool createCategoria()
 	{
-
+		return false;
 	}
 
-	public bool updateCategoria(EnCategoria cat)
+	public bool updateCategoria()
 	{
-
+		return false;
 	}
 
-	public bool readCategoria(EnCategoria cat)
+	public bool readCategoria()
 	{
-
+		return false;
 	}
 
-	public bool deleteCategoria(EnCategoria cat)
+	public bool deleteCategoria()
 	{
-
+		return false;
 	}
 
 }

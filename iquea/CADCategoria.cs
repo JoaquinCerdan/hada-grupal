@@ -12,24 +12,24 @@ public class CADCategoria
 
     }
 
-	public bool createCategoria(EnCategoria cat)
+	public bool createCategoria(ENCategoria cat)
 	{
-
+		return false;
 	}
 
-	public bool updateCategoria(EnCategoria cat)
+	public bool updateCategoria(ENCategoria cat)
 	{
-
+		return false;
 	}
 
-	public bool readCategoria(EnCategoria cat)
+	public bool readCategoria(ENCategoria cat)
 	{
-
+		return false;
 	}
 
-	public bool deleteCategoria(EnCategoria cat)
+	public bool deleteCategoria(ENCategoria cat)
 	{
-
+		return false;
 	}
 
 }

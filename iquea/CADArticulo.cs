@@ -8,29 +8,29 @@ public class CADArticulo
 
 	public string constring;
 
-	public bool CADArticulo()
+	public CADArticulo()
 	{
 
 	}
 
-	public bool createArticulo(EnArticulo art)
+	public bool createArticulo(ENArticulo art)
 	{
-
+		return false;
 	}
 
-	public bool updateArticulo(EnArticulo art)
+	public bool updateArticulo(ENArticulo art)
 	{
-
+		return false;
 	}
 
-	public bool readArticulo(EnArticulo art)
+	public bool readArticulo(ENArticulo art)
 	{
-
+		return false;
 	}
 
-	public bool deleteArticulo(EnArticulo art)
+	public bool deleteArticulo(ENArticulo art)
 	{
-
+		return false;
 	}
 
 }
