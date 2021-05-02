@@ -1,2 +1,16 @@
-﻿body {
+﻿.final {
+    width: 500px;
+    float: left;
+}
+
+.final2 {
+    width: 500px;
+    float: left;
+}
+
+.oferta {
+}
+
+.arreglo {
+    float: none;
 }
