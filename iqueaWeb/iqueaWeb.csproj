@@ -136,13 +136,6 @@
     <Compile Include="Carrito.aspx.designer.cs">
       <DependentUpon>Carrito.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Carrito.master.cs">
-      <DependentUpon>Carrito.master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Carrito.master.designer.cs">
-      <DependentUpon>Carrito.master</DependentUpon>
-    </Compile>
     <Compile Include="CrearAnuncio.aspx.cs">
       <DependentUpon>CrearAnuncio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -238,7 +231,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin.master" />
-    <Content Include="Carrito.master" />
     <Content Include="Site1.Master" />
   </ItemGroup>
   <ItemGroup>
