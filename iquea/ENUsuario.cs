@@ -68,21 +68,21 @@ namespace iquea
 
         public bool createUsuario()
         {
-
+            return false;
         }
 
         public bool readUsuario()
         {
-
+            return false;
         }
 
         public bool updateUsuario()
         {
-
+            return false;
         }
         public bool deleteUsuario()
         {
-
+            return false;
         }
     }
 }

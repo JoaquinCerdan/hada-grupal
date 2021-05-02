@@ -29,21 +29,21 @@ public class ENoferta
 
     public bool createOferta()
     {
-
+        return false;
     }
 
     public bool readOferta()
     {
-
+        return false;
     }
 
     public bool deleteOferta()
     {
-
+        return false;
     }
 
     public bool updateOferta()
     {
-
+        return false;
     }
 }
