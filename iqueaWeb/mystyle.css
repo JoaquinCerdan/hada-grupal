@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿body {
     background-color: lightblue;
 }
@@ -36,3 +37,43 @@
     color: white;
     text-align: center;
 }
+=======
+﻿body {
+    background-color: lightblue;
+}
+
+.footer {
+    position=relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0051BA;
+    color: white;
+    text-align: center;
+}
+
+.enlace {
+    color: white;
+}
+
+.toolbar {
+    text-align: center;
+    top: -50px;
+    position: relative;
+}
+
+.logo {
+    position: relative;
+    top: 5px;
+    position: relative;
+}
+
+.menu {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0051BA;
+    color: white;
+    text-align: center;
+}
+>>>>>>> 9be9fbdacb0a588ced5c8eacd5cf15ca7492f529
