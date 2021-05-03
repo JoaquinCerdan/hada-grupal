@@ -12,7 +12,7 @@
             <asp:MenuItem Text="Categorias" Value="Categorias">
                 <asp:MenuItem Text="Exterior" Value="Exterior" NavigateUrl="~/Exterior.aspx"></asp:MenuItem>
                 <asp:MenuItem Text="Interior" Value="Nuevo elemento" NavigateUrl="~/Interior.aspx"></asp:MenuItem>
-                <asp:MenuItem Text="etc..." Value="Nuevo elemento" NavigateUrl="~/ext.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="etc..." Value="Nuevo elemento" NavigateUrl="~/etc.aspx"></asp:MenuItem>
             </asp:MenuItem>
         </Items>
         <StaticHoverStyle BackColor="#284E98" ForeColor="White" />

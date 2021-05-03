@@ -11,7 +11,7 @@
     &nbsp; 
     <asp:Button ID="Button3" runat="server" Text="Vaciar" />
     &nbsp; 
-    <asp:Button ID="Button4" runat="server" Text="Comprar" />
+    <asp:Button ID="Button4" runat="server" Text="Comprar " PostBackUrl="Pedido.aspx" />
 &nbsp;<p>
             </p>
 </asp:Content>
