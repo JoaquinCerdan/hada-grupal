@@ -35,7 +35,7 @@ public class ENcomentario
     public ENcomentario()
     {
         this.comentario = "";
-        this.valoracion = null;
+        this.valoracion = 0;
     }
 
     public ENcomentario(string comentario,int valoracion)

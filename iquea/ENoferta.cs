@@ -27,7 +27,7 @@ public class ENoferta
         set { this.fechaValidez = value; }
     }
 
-    public double codP
+    public string codP
     {
         get { return this.cod; }
         set { this.cod = value; }
@@ -35,8 +35,8 @@ public class ENoferta
 
     public ENoferta()
     {
-        this.descuento = null;
-        this.fechaValidez = null;
+        this.descuento = 0;
+        this.fechaValidez = new DateTime();
     }
 
     public ENoferta(double descuento, DateTime fechaValidez)
@@ -56,7 +56,7 @@ public class ENoferta
         bool respuesta;
 
         CADoferta oferta = new CADoferta();
-        respuesta = oferta.createOferta();
+        respuesta = oferta.createOferta(this);
 
         return respuesta;
     }
@@ -66,7 +66,7 @@ public class ENoferta
         bool respuesta;
 
         CADoferta oferta = new CADoferta();
-        respuesta = oferta.readOferta();
+        respuesta = oferta.readOferta(this);
 
         return respuesta;
     }
@@ -76,7 +76,7 @@ public class ENoferta
         bool respuesta;
 
         CADoferta oferta = new CADoferta();
-        respuesta = oferta.deleteOferta();
+        respuesta = oferta.deleteOferta(this);
 
         return respuesta;
     }
@@ -86,7 +86,7 @@ public class ENoferta
         bool respuesta;
 
         CADoferta oferta = new CADoferta();
-        respuesta = oferta.updateOferta();
+        respuesta = oferta.updateOferta(this);
 
         return respuesta;
     }
