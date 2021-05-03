@@ -75,6 +75,12 @@
     <Content Include="CrearOferta.aspx" />
     <Content Include="ext.aspx" />
     <Content Include="Exterior.aspx" />
+    <Content Include="CrearArticulo.aspx" />
+    <Content Include="BorrarArticulo.aspx" />
+    <Content Include="CrearCategoria.aspx" />
+    <Content Include="ModificarArticulo.aspx" />
+    <Content Include="ModificarCategoria.aspx" />
+    <Content Include="BorrarCategoria.aspx" />
     <Content Include="HomePage.aspx" />
     <Content Include="HomePage.css" />
     <Content Include="Interior.aspx" />
@@ -100,6 +106,13 @@
     </Compile>
     <Compile Include="Administrador.aspx.designer.cs">
       <DependentUpon>Administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articulo.aspx.cs">
+      <DependentUpon>articulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articulo.aspx.designer.cs">
+      <DependentUpon>articulo.aspx</DependentUpon>
     </Compile>
     <Compile Include="BorrarAnuncio.aspx.cs">
       <DependentUpon>BorrarAnuncio.aspx</DependentUpon>
@@ -163,6 +176,48 @@
     </Compile>
     <Compile Include="Exterior.aspx.designer.cs">
       <DependentUpon>Exterior.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CrearArticulo.aspx.cs">
+      <DependentUpon>CrearArticulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrearArticulo.aspx.designer.cs">
+      <DependentUpon>CrearArticulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BorrarArticulo.aspx.cs">
+      <DependentUpon>BorrarArticulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BorrarArticulo.aspx.designer.cs">
+      <DependentUpon>BorrarArticulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CrearCategoria.aspx.cs">
+      <DependentUpon>CrearCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrearCategoria.aspx.designer.cs">
+      <DependentUpon>CrearCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarArticulo.aspx.cs">
+      <DependentUpon>ModificarArticulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarArticulo.aspx.designer.cs">
+      <DependentUpon>ModificarArticulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarCategoria.aspx.cs">
+      <DependentUpon>ModificarCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarCategoria.aspx.designer.cs">
+      <DependentUpon>ModificarCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BorrarCategoria.aspx.cs">
+      <DependentUpon>BorrarCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BorrarCategoria.aspx.designer.cs">
+      <DependentUpon>BorrarCategoria.aspx</DependentUpon>
     </Compile>
     <Compile Include="HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>

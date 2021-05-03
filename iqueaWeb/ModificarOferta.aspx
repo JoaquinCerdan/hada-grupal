@@ -2,14 +2,17 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <p>
         &nbsp;Código de la Oferta:
-        <input id="Text1" type="text" />&nbsp;</p>
+        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        &nbsp;</p>
     <p>
         &nbsp;Descuento:
-        <input id="Text2" type="text" /></p>
+        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+    </p>
     <p>
         &nbsp;Fecha de Validez: &nbsp;<input id="date" type="date" value="0000-00-00"></p>
     <p>
-        &nbsp;<input id="Button1" type="button" value="Modificar" style="font-weight: 700" />&nbsp;</p>
+        &nbsp;<asp:Button ID="Button1" runat="server" Text="Modificar" />
+        &nbsp;</p>
     <p>
         &nbsp;</p>
 </asp:Content>
