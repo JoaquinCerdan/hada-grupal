@@ -78,6 +78,7 @@
     <Content Include="CrearArticulo.aspx" />
     <Content Include="BorrarArticulo.aspx" />
     <Content Include="CrearCategoria.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="ModificarArticulo.aspx" />
     <Content Include="ModificarCategoria.aspx" />
     <Content Include="BorrarCategoria.aspx" />
@@ -197,6 +198,13 @@
     </Compile>
     <Compile Include="CrearCategoria.aspx.designer.cs">
       <DependentUpon>CrearCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="ModificarArticulo.aspx.cs">
       <DependentUpon>ModificarArticulo.aspx</DependentUpon>
