@@ -43,7 +43,6 @@
   <ItemGroup>
     <Compile Include="CADAdministrador.cs" />
     <Compile Include="CADUsuario.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="ENAdministrador.cs" />
     <Compile Include="ENUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -18,7 +18,12 @@ namespace iquea
 
         public ENAdministrador()
         {
+            id = 0;
+        }
 
+        public ENAdministrador(int id)
+        {
+            this.id = id;
         }
 
         public bool createAdministrador()
