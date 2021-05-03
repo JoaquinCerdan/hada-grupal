@@ -16,22 +16,22 @@ namespace iquea
 
         public bool createAdministrador(ENAdministrador ad)
         {
-
+            return false;
         }
 
         public bool readAdministrador(ENAdministrador ad)
         {
-
+            return false;
         }
 
         public bool deleteAdministrador(ENAdministrador ad)
         {
-
+            return false;
         }
 
         public bool updateAdministrador(ENAdministrador ad)
         {
-
+            return false;
         }
     }
 }

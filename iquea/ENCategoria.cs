@@ -22,22 +22,22 @@ public class ENCategoria
 
 	public bool createCategoria()
 	{
-
+		return false;
 	}
 
 	public bool updateCategoria()
 	{
-
+		return false;
 	}
 
 	public bool readCategoria()
 	{
-
+		return false;
 	}
 
 	public bool deleteCategoria()
 	{
-
+		return false;
 	}
 
 }
