@@ -5,19 +5,19 @@
     <br />
     &nbsp;&nbsp;<asp:Image ID="Image1" runat="server" src="../logo_iquea.jpg" />
     <p>
-        &nbsp;&nbsp;<asp:Label ID="enunciado_nombre" runat="server" Text="Nombre del artículo:"></asp:Label>
+        <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_nombre" runat="server" Text="Nombre del artículo:"></asp:Label></strong>
         <asp:TextBox ID="nombre" runat="server"></asp:TextBox>
     </p>
     <p>
-        &nbsp;&nbsp;<asp:Label ID="enunciado_descripcion" runat="server" Text="Descripción del artículo:"></asp:Label>
+        <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_descripcion" runat="server" Text="Descripción del artículo:"></asp:Label></strong>
         <asp:TextBox ID="descripcion" runat="server"></asp:TextBox>
     </p>
     <p>
-        &nbsp;&nbsp;<asp:Label ID="enunciado_precio" runat="server" Text="Precio del articulo:"></asp:Label>
+        <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_precio" runat="server" Text="Precio del articulo:"></asp:Label></strong>
         <asp:TextBox ID="precio" runat="server"></asp:TextBox>
     </p>
     <p>
-        &nbsp;&nbsp;<asp:Label ID="enunciado_stock" runat="server" Text="Stock del artículo:"></asp:Label>
+        <strong>nbsp;&nbsp;<asp:Label ID="enunciado_stock" runat="server" Text="Stock del artículo:"></asp:Label></strong>
         <asp:CheckBox ID="stock" runat="server" />
     </p>
 
@@ -29,18 +29,18 @@
 
     <br />
     <p>
-        &nbsp;&nbsp;<asp:Label ID="enunciado_comentarios" runat="server" Text="COMENTARIOS:"></asp:Label>
+        <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_comentarios" runat="server" Text="COMENTARIOS:"></asp:Label></strong>
     </p>
     <p>
-        &nbsp;&nbsp;<asp:Label ID="enunciado_usuario" runat="server" Text="Usuario:"></asp:Label>
+        <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_usuario" runat="server" Text="Usuario:"></asp:Label></strong>
         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
     </p>
     <p>
-        &nbsp;&nbsp;<asp:Label ID="enunciado_comentario" runat="server" Text="Comentario:"></asp:Label>
+        <strong>nbsp;&nbsp;<asp:Label ID="enunciado_comentario" runat="server" Text="Comentario:"></asp:Label></strong>
         <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
     </p>
     <p>
-        &nbsp;&nbsp;<asp:Label ID="enunciado_valoracion" runat="server" Text="Valoración:"></asp:Label>
+        <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_valoracion" runat="server" Text="Valoración:"></asp:Label></strong>
         <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
     </p>
     <p>
