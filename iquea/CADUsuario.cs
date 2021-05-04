@@ -16,22 +16,22 @@ namespace iquea
 
         public bool createUsuario(ENUsuario ad)
         {
-
+            return false;
         }
 
         public bool readUsuario(ENUsuario ad)
         {
-
+            return false;
         }
 
         public bool deleteUsuario(ENUsuario ad)
         {
-
+            return false;
         }
 
         public bool updateUsuario(ENUsuario ad)
         {
-
+            return false;
         }
     }
 }

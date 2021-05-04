@@ -10,20 +10,20 @@ public class ENLin_carrito
 
     public bool createLin_carrito()
     {
-
+        return false;
     }
     public bool readLin_carrito()
     {
-
+        return false;
     }
     public bool updateLin_carrito()
     {
-
+        return false;
     }
 
     public bool deleteLin_carrito()
     {
-
+        return false;
     }
     public ENLin_carrito()
     {

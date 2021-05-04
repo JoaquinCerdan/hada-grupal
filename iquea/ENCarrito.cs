@@ -10,20 +10,20 @@ public class ENCarrito
 
     public bool createCarrito()
     {
-
+        return false;
     }
     public bool readCarrito()
     {
-
+        return false;
     }
     public bool updateCarrito()
     {
-
+        return false;
     }
 
     public bool deleteCarrito()
     {
-
+        return false;
     }
     public ENCarrito()
 	{

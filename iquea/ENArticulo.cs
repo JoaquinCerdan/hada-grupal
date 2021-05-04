@@ -28,22 +28,22 @@ public class ENArticulo
 
 	public bool createArticulo()
 	{
-
+		return false;
 	}
 
 	public bool updateArticulo()
 	{
-
+		return false;
 	}
 
 	public bool readArticulo()
 	{
-
+		return false;
 	}
 
 	public bool deleteArticulo()
 	{
-
+		return false;
 	}
 
 }
