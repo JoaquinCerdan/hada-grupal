@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,109 +12,26 @@ namespace iquea
 
         public CADAdministrador()
         {
-            constring = "";
         }
 
-        public bool createAdministrador(ENAdministrador administrador)
+        public bool createAdministrador(ENAdministrador ad)
         {
-            SqlConnection conexion = null;
-            bool creado = false;
-            try
-            {
-                conexion = new SqlConnection(constring);
-                conexion.Open();
-                String comando = "Insert INTO iquea.Administrador (id) VALUES (" + administrador.intId + ")";
-                SqlCommand ejecucion = new SqlCommand(comando, conexion);
-                ejecucion.ExecuteNonQuery();
-                creado = true;
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("User operation has failed.Error: {0}", e.Message);
-                creado = false;
-            }
-            finally
-            {
-                conexion.Close();
-            }
-            return creado;
+            return false;
         }
 
-        public bool readAdministrador(ENAdministrador administrador)
+        public bool readAdministrador(ENAdministrador ad)
         {
-            SqlConnection conexion = null;
-            bool creado = false;
-            try
-            {
-                conexion = new SqlConnection(constring);
-                conexion.Open();
-                String comando = "Select * FROM iquea.Administrador WHERE id = '" + administrador.intId + "'";
-                SqlCommand ejecucion = new SqlCommand(comando, conexion);
-                SqlDataReader leer = ejecucion.ExecuteReader();
-                leer.Read();
-                leer.Close();
-                conexion.Close();
-                creado = true;
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("User operation has failed.Error: {0}", e.Message);
-                creado = false;
-            }
-            finally
-            {
-                conexion.Close();
-            }
-            return creado;
+            return false;
         }
 
-        public bool deleteAdministrador(ENAdministrador administrador)
+        public bool deleteAdministrador(ENAdministrador ad)
         {
-            SqlConnection conexion = null;
-            bool creado = false;
-            try
-            {
-                conexion = new SqlConnection(constring);
-                conexion.Open();
-                String comando = "DELETE FROM iquea.Administrador WHERE id = '" + administrador.intId + "'";
-                SqlCommand ejecucion = new SqlCommand(comando, conexion);
-                ejecucion.ExecuteNonQuery();
-                creado = true;
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("User operation has failed.Error: {0}", e.Message);
-                creado = false;
-            }
-            finally
-            {
-                conexion.Close();
-            }
-            return creado;
+            return false;
         }
 
-        public bool updateAdministrador(ENAdministrador administrador)
+        public bool updateAdministrador(ENAdministrador ad)
         {
-            SqlConnection conexion = null;
-            bool creado = false;
-            try
-            {
-                conexion = new SqlConnection(constring);
-                conexion.Open();
-                SqlCommand comando = new SqlCommand("UPDATE iquea.Usuario SET id = '" + administrador.intId + "' WHERE id = '" + administrador.intId + "'", conexion);
-                comando.ExecuteNonQuery();
-                creado = true;
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("User operation has failed.Error: {0}", e.Message);
-                creado = false;
-            }
-            finally
-            {
-                conexion.Close();
-            }
-            return creado;
+            return false;
         }
     }
 }

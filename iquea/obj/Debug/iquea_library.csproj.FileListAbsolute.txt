@@ -1,0 +1,12 @@
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\bin\Debug\iquea.dll
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\bin\Debug\iquea.pdb
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csproj.CoreCompileInputs.cache
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea.dll
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea.pdb
+C:\Users\Alvaro\Source\Repos\hada-grupal\iquea\obj\Debug\iquea_library.csprojAssemblyReference.cache
+C:\Users\ximo4\source\repos\hada-grupal\iquea\bin\Debug\iquea.dll
+C:\Users\ximo4\source\repos\hada-grupal\iquea\bin\Debug\iquea.pdb
+C:\Users\ximo4\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csprojAssemblyReference.cache
+C:\Users\ximo4\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csproj.CoreCompileInputs.cache
+C:\Users\ximo4\source\repos\hada-grupal\iquea\obj\Debug\iquea.dll
+C:\Users\ximo4\source\repos\hada-grupal\iquea\obj\Debug\iquea.pdb
