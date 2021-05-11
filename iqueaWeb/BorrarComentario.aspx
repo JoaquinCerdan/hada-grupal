@@ -2,7 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <p>
         &nbsp;ID del Comentario:
-        <input id="Text1" type="text" />&nbsp;</p>
+        <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+        &nbsp;</p>
     <p>
-        &nbsp;<input id="Button1" type="button" value="Borrar" style="font-weight: 700" />&nbsp;</p>
+        &nbsp;<asp:Button ID="Button3" runat="server" Text="Borrar" />
+        &nbsp;</p>
 </asp:Content>

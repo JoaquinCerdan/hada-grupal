@@ -28,14 +28,14 @@
             <asp:MenuItem Text="Borrar Oferta" Value="Borrar Oferta" NavigateUrl="~/BorrarOferta.aspx"></asp:MenuItem>
         </asp:MenuItem>
         <asp:MenuItem Text="Artículos" Value="Artículos">
-            <asp:MenuItem Text="Crear Artículo" Value="Crear Artículo"></asp:MenuItem>
-            <asp:MenuItem Text="Modificar Artículo" Value="Modificar Artículo"></asp:MenuItem>
-            <asp:MenuItem Text="Borrar Artículo" Value="Borrar Artículo"></asp:MenuItem>
+            <asp:MenuItem Text="Crear Artículo" Value="Crear Artículo" NavigateUrl="~/CrearArticulo.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Modificar Artículo" Value="Modificar Artículo" NavigateUrl="~/ModificarArticulo.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Borrar Artículo" Value="Borrar Artículo" NavigateUrl="~/BorrarArticulo.aspx"></asp:MenuItem>
         </asp:MenuItem>
         <asp:MenuItem Text="Categorias" Value="Categorias">
-            <asp:MenuItem Text="Crear Categoría" Value="Crear Categoría"></asp:MenuItem>
-            <asp:MenuItem Text="Modificar Categoría" Value="Modificar Categoría"></asp:MenuItem>
-            <asp:MenuItem Text="Borrar Categoría" Value="Borrar Categoría"></asp:MenuItem>
+            <asp:MenuItem Text="Crear Categoría" Value="Crear Categoría" NavigateUrl="~/CrearCategoria.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Modificar Categoría" Value="Modificar Categoría" NavigateUrl="~/ModificarCategoria.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Borrar Categoría" Value="Borrar Categoría" NavigateUrl="~/BorrarCategoria.aspx"></asp:MenuItem>
         </asp:MenuItem>
             <asp:MenuItem Text="Usuarios" Value="Usuarios">
             <asp:MenuItem Text="Borrar Usuario" Value="Borrar Usuario" NavigateUrl="~/BorrarUsuario.aspx"></asp:MenuItem>

@@ -3,8 +3,10 @@
     <p>
         &nbsp;
         ID del anuncio:
-        <input id="Text1" type="text" /></p>
+        <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+    </p>
     <p>
         &nbsp;
-        <input id="Button2" type="button" value="Borrar" style="font-weight: 700" /></p>
+        <asp:Button ID="Button3" runat="server" Text="Borrar" />
+    </p>
 </asp:Content>

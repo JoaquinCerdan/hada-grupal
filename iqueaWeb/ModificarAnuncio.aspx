@@ -2,13 +2,17 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <p>
         &nbsp;ID del Anuncio:
-        &nbsp;<input id="Text3" type="text" /></p>
+        &nbsp;<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+    </p>
     <p>
         &nbsp;Descripción del Anuncio:
-        <input id="Text2" type="text" />&nbsp;</p>
+        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+        &nbsp;</p>
     <p>
         &nbsp;Enlace del Anuncio:
-        <input id="Text1" type="text" /></p>
+        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+    </p>
     <p>
-        &nbsp;<input id="Button2" type="button" value="Modificar" style="font-weight: 700" />&nbsp;</p>
+        &nbsp;<asp:Button ID="Button1" runat="server" Text="Modificar" />
+        &nbsp;</p>
 </asp:Content>

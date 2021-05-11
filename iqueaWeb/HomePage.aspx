@@ -12,7 +12,7 @@
             <asp:MenuItem Text="Categorias" Value="Categorias">
                 <asp:MenuItem Text="Exterior" Value="Exterior" NavigateUrl="~/Exterior.aspx"></asp:MenuItem>
                 <asp:MenuItem Text="Interior" Value="Nuevo elemento" NavigateUrl="~/Interior.aspx"></asp:MenuItem>
-                <asp:MenuItem Text="ext..." Value="Nuevo elemento" NavigateUrl="~/ext.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="etc..." Value="Nuevo elemento" NavigateUrl="~/etc.aspx"></asp:MenuItem>
             </asp:MenuItem>
         </Items>
         <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
@@ -37,16 +37,16 @@
     <div class="final">
     <h2>El producto mas vendidos</h2>
     <br />
-        <asp:ImageButton ID="ImageButton3" runat="server" Height="207px" ImageUrl="https://www.muebleselparaiso.es/102171-large_default/sofa-cama-de-3-plazas-tessa.jpg"  Width="299px" />
+        <asp:ImageButton ID="ImageButton3" runat="server" Height="207px" ImageUrl="https://www.muebleselparaiso.es/102171-large_default/sofa-cama-de-3-plazas-tessa.jpg"  Width="299px" PostBackUrl="~/Articulo.aspx" />
     </div>
     <div class="final2">
         <h2>El producto mejor valorado</h2>
     <br />
-        <asp:ImageButton ID="ImageButton5" runat="server" Height="206px" ImageUrl="https://www.muebleselparaiso.es/102171-large_default/sofa-cama-de-3-plazas-tessa.jpg"  Width="299px" />
+        <asp:ImageButton ID="ImageButton5" runat="server" Height="206px" ImageUrl="https://www.muebleselparaiso.es/102171-large_default/sofa-cama-de-3-plazas-tessa.jpg"  Width="299px" PostBackUrl="~/Articulo.aspx" />
     </div>
     <div class="oferta">
         <h2>Y la mejor oferta!</h2>
-        <asp:ImageButton ID="ImageButton6" runat="server" Height="201px" ImageUrl="https://www.muebleselparaiso.es/102171-large_default/sofa-cama-de-3-plazas-tessa.jpg"  Width="299px" />
+        <asp:ImageButton ID="ImageButton6" runat="server" Height="201px" ImageUrl="https://www.muebleselparaiso.es/102171-large_default/sofa-cama-de-3-plazas-tessa.jpg"  Width="299px" PostBackUrl="~/Articulo.aspx" />
     </div>
     <div class="arreglo">
         Antes 190€<br />

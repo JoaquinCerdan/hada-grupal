@@ -138,7 +138,6 @@
     </Compile>
     <Compile Include="Carrito.master.cs">
       <DependentUpon>Carrito.master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Carrito.master.designer.cs">
       <DependentUpon>Carrito.master</DependentUpon>
@@ -159,7 +158,6 @@
     </Compile>
     <Compile Include="ext.aspx.cs">
       <DependentUpon>ext.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ext.aspx.designer.cs">
       <DependentUpon>ext.aspx</DependentUpon>
