@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 
 using System;
+=======
+﻿using System;
+>>>>>>> main
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -36,7 +40,11 @@ public class ENcomentario
     public ENcomentario()
     {
         this.comentario = "";
+<<<<<<< HEAD
         this.valoracion = null;
+=======
+        this.valoracion = 0;
+>>>>>>> main
     }
 
     public ENcomentario(string comentario,int valoracion)
@@ -89,10 +97,18 @@ public class ENcomentario
 
         CADcomentario comentario = new CADcomentario();
         respuesta = comentario.updateComentario(this);
+<<<<<<< HEAD
+
+        return respuesta;
+    }
+=======
+>>>>>>> main
 
         return respuesta;
     }
 
+<<<<<<< HEAD
+
+=======
 }
-
-
+>>>>>>> main

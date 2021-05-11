@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+﻿
+>>>>>>> main
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -57,7 +61,11 @@ public class CADoferta
             SqlDataReader dr = comando.ExecuteReader();
 
             dr.Read();
+<<<<<<< HEAD
             oferta.descuentoP = dr["descuento"].ToString();
+=======
+            oferta.descuentoP = Convert.ToDouble(dr["descuento"]);
+>>>>>>> main
             oferta.fechaValidezP = Convert.ToDateTime(dr["fechaValidez"]);
 
             dr.Close();

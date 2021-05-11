@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+﻿
+>>>>>>> main
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -129,5 +133,9 @@ public class CADcomentario
 
         return respuesta;
     }
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> main
