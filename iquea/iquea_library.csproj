@@ -61,30 +61,10 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CADAdministrador.cs" />
-    <Compile Include="CADAnuncio.cs" />
-    <Compile Include="CADArticulo.cs" />
     <Compile Include="CADCarrito.cs" />
-    <Compile Include="CADCategoria.cs" />
-    <Compile Include="CADcomentario.cs" />
     <Compile Include="CADLin_carrito.cs" />
-    <Compile Include="CADLin_pedido.cs" />
-    <Compile Include="CADLista_deseos.cs" />
-    <Compile Include="CADoferta.cs" />
-    <Compile Include="CADPedido.cs" />
-    <Compile Include="CADUsuario.cs" />
-    <Compile Include="ENAdministrador.cs" />
-    <Compile Include="ENAnuncio.cs" />
-    <Compile Include="ENArticulo.cs" />
     <Compile Include="ENCarrito.cs" />
-    <Compile Include="ENCategoria.cs" />
-    <Compile Include="ENcomentario.cs" />
     <Compile Include="ENLin_carrito.cs" />
-    <Compile Include="ENLin_pedido.cs" />
-    <Compile Include="ENLista_deseos.cs" />
-    <Compile Include="ENoferta.cs" />
-    <Compile Include="ENPedido.cs" />
-    <Compile Include="ENUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
