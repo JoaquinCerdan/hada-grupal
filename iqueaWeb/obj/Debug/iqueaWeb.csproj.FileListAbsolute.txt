@@ -52,7 +52,6 @@ C:\Users\annnd\source\repos\hada-grupal\iqueaWeb\bin\roslyn\VBCSCompiler.exe
 C:\Users\annnd\source\repos\hada-grupal\iqueaWeb\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\annnd\source\repos\hada-grupal\iqueaWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\annnd\source\repos\hada-grupal\iqueaWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\annnd\source\repos\hada-grupal\iqueaWeb\obj\Debug\iqueaWeb.csprojAssemblyReference.cache
 C:\Users\annnd\source\repos\hada-grupal\iqueaWeb\obj\Debug\iqueaWeb.csproj.CoreCompileInputs.cache
 C:\Users\annnd\source\repos\hada-grupal\iqueaWeb\obj\Debug\iqueaWeb.csproj.CopyComplete
 C:\Users\annnd\source\repos\hada-grupal\iqueaWeb\obj\Debug\iqueaWeb.dll
