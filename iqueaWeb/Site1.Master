@@ -13,7 +13,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:ImageButton ID="ImageButton1" runat="server" Height="75px" ImageUrl="../logo_iquea.jpg" PostBackUrl="~/Site1.aspx" Width="113px" />
+            <asp:ImageButton ID="ImageButton1" runat="server" Height="75px" src="https://i.ibb.co/2S5ZYqC/logo-iquea.jpg" PostBackUrl="~/Site1.aspx" Width="113px" />
             <div class ="toolbar">
                  
                 <input type="image" src="https://image.flaticon.com/icons/png/128/694/694985.png" style="height: 25px; width: 30px" />
