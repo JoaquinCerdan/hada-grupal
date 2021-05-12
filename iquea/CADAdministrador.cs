@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -76,7 +77,7 @@ namespace iquea
             {
                 conexion = new SqlConnection(constring);
                 conexion.Open();
-                String comando = "DELETE FROM iquea.Administrador WHERE id = '" + administrador.getId() + "'";
+                String comando = "DELETE FROM iquea.Administrador WHERE id = '" + administrador.intId + "'";
                 SqlCommand ejecucion = new SqlCommand(comando, conexion);
                 ejecucion.ExecuteNonQuery();
                 creado = true;
@@ -101,9 +102,9 @@ namespace iquea
             {
                 conexion = new SqlConnection(constring);
                 conexion.Open();
-                SqlCommand comando = new SqlCommand("UPDATE iquea.Usuario SET id = '" + administrador.intID + "' WHERE id = '" + administrador.intID + "'", conexion);
-                SqlCommand ejecucion = new SqlCommand(comando, conexion);
-                ejecucion.ExecuteNonQuery();
+                SqlCommand comando = new SqlCommand("UPDATE iquea.Usuario SET id = '" + administrador.intId + "' WHERE id = '" + administrador.intId + "'", conexion);
+                //SqlCommand ejecucion = new SqlCommand(comando, conexion);
+                comando.ExecuteNonQuery();
                 creado = true;
             }
             catch (Exception e)

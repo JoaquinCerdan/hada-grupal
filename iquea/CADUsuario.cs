@@ -105,8 +105,8 @@ namespace iquea
                 conexion = new SqlConnection(constring);
                 conexion.Open();
                 SqlCommand comando = new SqlCommand("UPDATE iquea.Usuario SET email = '" + usuario.stringEmail + "' , contra = '" + usuario.stringContra + "' , datosBancarios = '" + usuario.stringDatosBancarios + "' , nombre = '" + usuario.stringNombre + "' , direccion = '" + usuario.stringDireccion + "' , numTelefono = '" + usuario.intNumTelefono + "' WHERE id = '" + usuario.stringEmail + "'", conexion);
-                SqlCommand ejecucion = new SqlCommand(comando, conexion);
-                ejecucion.ExecuteNonQuery();
+                //SqlCommand ejecucion = new SqlCommand(comando, conexion);
+                comando.ExecuteNonQuery();
                 creado = true;
             }
             catch (Exception e)
