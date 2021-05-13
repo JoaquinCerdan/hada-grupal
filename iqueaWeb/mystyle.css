@@ -59,14 +59,14 @@
     text-decoration:none;
 }
 
-.menuInicio ul li a:hover {
-    background-color:aqua;
-}
+    .menuInicio ul li a:hover {
+        background-color: #70b8c0;
+    }
 
 .submenu {
-    background-color: burlywood;
+    background-color: #798182;
     display: inline-block;
-    display:none;
+    display: none;
 }
 
 .menuInicio li:hover .submenu {
