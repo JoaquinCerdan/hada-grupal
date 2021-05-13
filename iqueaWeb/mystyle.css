@@ -36,3 +36,39 @@
     color: white;
     text-align: center;
 }
+
+
+
+.menuInicio {
+    background-color: #0051BA;
+}
+.menuInicio ul {
+    text-align:center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menuInicio ul li {
+    display: inline-block;
+}
+
+.menuInicio ul li a{
+    color:white;
+    display:block;
+    padding:20px 160px;
+    text-decoration:none;
+}
+
+.menuInicio ul li a:hover {
+    background-color:aqua;
+}
+
+.submenu {
+    background-color: burlywood;
+    display: inline-block;
+    display:none;
+}
+
+submenu li a:hover .submenu{
+
+}

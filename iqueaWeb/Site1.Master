@@ -13,7 +13,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:ImageButton ID="ImageButton1" runat="server" Height="75px" ImageUrl="https://i.ibb.co/2S5ZYqC/logo-iquea.jpg" PostBackUrl="~/HomePage.aspx" Width="113px" />
+            <asp:ImageButton ID="ImageButton1" runat="server" Height="75px" ImageUrl="https://i.ibb.co/2S5ZYqC/logo-iquea.jpg" PostBackUrl="~/Index.aspx" Width="113px" />
             <div class ="toolbar">
                  
                 <asp:ImageButton ID="ImageButton2" runat="server" src="https://image.flaticon.com/icons/png/128/694/694985.png" style="height: 25px; width: 30px" />
@@ -22,6 +22,20 @@
 &nbsp;<asp:ImageButton ID="ImageButton4" runat="server" Height="22px" ImageUrl="https://c0.klipartz.com/pngpicture/613/636/gratis-png-iconos-de-la-computadora-perfil-de-usuario-avatar-masculino-avatar.png" PostBackUrl="~/Login.aspx" Width="38px" />
 &nbsp;<asp:ImageButton ID="ImageButton5" runat="server" src="https://cdn.pixabay.com/photo/2017/06/26/20/33/icon-2445095_960_720.png" style="height: 36px; Width: 36px" PostBackUrl="~/Lista_deseos.aspx"/>
             </div>
+
+           <br />
+            <div class="menuInicio">
+                <ul>
+                    <li class="elemento1"> <a href="/Index.aspx">Home </a></li>
+                    <li class="elemento2"> <a >Categorias </a>
+                        <ul class="submenu">
+                            <li class="interior"><a href="/Interior.aspx">Interiores</a></li>
+                            <li class="exterior"><a href="/Exterior.aspx">Exteriores</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
             <footer class ="footer"> 

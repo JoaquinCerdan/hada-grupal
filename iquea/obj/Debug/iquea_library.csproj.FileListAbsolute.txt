@@ -12,3 +12,4 @@ C:\Users\annnd\Source\Repos\hada-grupal\iquea\obj\Debug\iquea_library.csproj.Cor
 C:\Users\annnd\Source\Repos\hada-grupal\iquea\obj\Debug\iquea_library.csproj.CopyComplete
 C:\Users\annnd\Source\Repos\hada-grupal\iquea\obj\Debug\iquea.dll
 C:\Users\annnd\Source\Repos\hada-grupal\iquea\obj\Debug\iquea.pdb
+C:\Users\annnd\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csprojAssemblyReference.cache

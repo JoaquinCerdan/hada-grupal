@@ -2,7 +2,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <a href="javascript:history.back()"> Volver Atrás</a> 
     <center>
         <h1>Muebles de interior</h1>
     </center>
