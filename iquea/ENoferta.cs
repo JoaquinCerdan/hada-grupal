@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
-﻿
->>>>>>> main
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,11 +27,7 @@ public class ENoferta
         set { this.fechaValidez = value; }
     }
 
-<<<<<<< HEAD
-    public double codP
-=======
     public string codP
->>>>>>> main
     {
         get { return this.cod; }
         set { this.cod = value; }
@@ -42,13 +35,9 @@ public class ENoferta
 
     public ENoferta()
     {
-<<<<<<< HEAD
-        this.descuento = null;
         this.fechaValidez = null;
-=======
         this.descuento = 0;
         this.fechaValidez = new DateTime();
->>>>>>> main
     }
 
     public ENoferta(double descuento, DateTime fechaValidez)
@@ -68,11 +57,8 @@ public class ENoferta
         bool respuesta;
 
         CADoferta oferta = new CADoferta();
-<<<<<<< HEAD
-        respuesta = oferta.createOferta();
-=======
+
         respuesta = oferta.createOferta(this);
->>>>>>> main
 
         return respuesta;
     }
@@ -82,11 +68,8 @@ public class ENoferta
         bool respuesta;
 
         CADoferta oferta = new CADoferta();
-<<<<<<< HEAD
-        respuesta = oferta.readOferta();
-=======
+
         respuesta = oferta.readOferta(this);
->>>>>>> main
 
         return respuesta;
     }
@@ -96,11 +79,8 @@ public class ENoferta
         bool respuesta;
 
         CADoferta oferta = new CADoferta();
-<<<<<<< HEAD
-        respuesta = oferta.deleteOferta();
-=======
+
         respuesta = oferta.deleteOferta(this);
->>>>>>> main
 
         return respuesta;
     }
@@ -110,8 +90,8 @@ public class ENoferta
         bool respuesta;
 
         CADoferta oferta = new CADoferta();
-<<<<<<< HEAD
-        respuesta = oferta.updateOferta();
+
+        respuesta = oferta.updateOferta(this);
 
         return respuesta;
     }

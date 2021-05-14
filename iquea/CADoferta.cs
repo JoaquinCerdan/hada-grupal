@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-﻿
->>>>>>> main
+
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +25,7 @@ public class CADoferta
         try
         {
             a.Open();
-            String orden = "Insert Into iquea.oferta (cod, descuento, fechaValidez) VALUES ('"+oferta.codP+"' , '" + oferta.descuentoP + "' , '" + oferta.fechaValidezP + ")";
+            String orden = "Insert Into dbo.oferta (cod, descuento, fechaValidez) VALUES ('"+oferta.codP+"' , '" + oferta.descuentoP + "' , '" + oferta.fechaValidezP + ")";
             SqlCommand comando = new SqlCommand(orden, a);
             comando.ExecuteNonQuery();
 
@@ -57,15 +53,12 @@ public class CADoferta
         try
         {
             a.Open();
-            SqlCommand comando = new SqlCommand("Select * from iquea.oferta where cod = '" + oferta.codP + "'" , a);
+            SqlCommand comando = new SqlCommand("Select * from dbo.oferta where cod = '" + oferta.codP + "'" , a);
             SqlDataReader dr = comando.ExecuteReader();
 
             dr.Read();
-<<<<<<< HEAD
             oferta.descuentoP = dr["descuento"].ToString();
-=======
             oferta.descuentoP = Convert.ToDouble(dr["descuento"]);
->>>>>>> main
             oferta.fechaValidezP = Convert.ToDateTime(dr["fechaValidez"]);
 
             dr.Close();
@@ -93,7 +86,7 @@ public class CADoferta
         try
         {
             a.Open();
-            SqlCommand comando = new SqlCommand("DELETE FROM iquea.oferta WHERE cod = '" + oferta.codP + "'", a);
+            SqlCommand comando = new SqlCommand("DELETE FROM dbo.oferta WHERE cod = '" + oferta.codP + "'", a);
             comando.ExecuteNonQuery();
 
             respuesta = true;
@@ -119,7 +112,7 @@ public class CADoferta
         try
         {
             a.Open();
-            SqlCommand comando = new SqlCommand("UPDATE iquea.oferta SET descuento = '" + oferta.descuentoP + "' , fechaValidez = '" + oferta.fechaValidezP + "' WHERE cod = '" + oferta.codP + "'", a);
+            SqlCommand comando = new SqlCommand("UPDATE dbo.oferta SET descuento = '" + oferta.descuentoP + "' , fechaValidez = '" + oferta.fechaValidezP + "' WHERE cod = '" + oferta.codP + "'", a);
             comando.ExecuteNonQuery();
 
             respuesta = true;

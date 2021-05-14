@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-﻿
->>>>>>> main
+
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +25,7 @@ public class CADcomentario
         try
         {
             a.Open();
-            String orden = "Insert Into iquea.comentario (id, comentario, valoracion) VALUES ('" + comentario.idP + "' , '" + comentario.comentarioP + "' , '" + comentario.valoracionP + ")";
+            String orden = "Insert Into dbo.comentario (id, comentario, valoracion) VALUES ('" + comentario.idP + "' , '" + comentario.comentarioP + "' , '" + comentario.valoracionP + ")";
             SqlCommand comando = new SqlCommand(orden, a);
             comando.ExecuteNonQuery();
 
@@ -57,7 +53,7 @@ public class CADcomentario
         try
         {
             a.Open();
-            SqlCommand comando = new SqlCommand("Select * from iquea.comentario where id = '" + comentario.idP + "'", a);
+            SqlCommand comando = new SqlCommand("Select * from dbo.comentario where id = '" + comentario.idP + "'", a);
             SqlDataReader dr = comando.ExecuteReader();
 
             dr.Read();
@@ -89,7 +85,7 @@ public class CADcomentario
         try
         {
             a.Open();
-            SqlCommand comando = new SqlCommand("DELETE FROM iquea.comentario WHERE id = '" + comentario.idP + "'", a);
+            SqlCommand comando = new SqlCommand("DELETE FROM dbo.comentario WHERE id = '" + comentario.idP + "'", a);
             comando.ExecuteNonQuery();
 
             respuesta = true;
@@ -115,7 +111,7 @@ public class CADcomentario
         try
         {
             a.Open();
-            SqlCommand comando = new SqlCommand("UPDATE iquea.comentario SET comentario = '" + comentario.comentarioP + "' , valoracion = '" + comentario.valoracionP + "' WHERE id = '" + comentario.idP + "'", a);
+            SqlCommand comando = new SqlCommand("UPDATE dbo.comentario SET comentario = '" + comentario.comentarioP + "' , valoracion = '" + comentario.valoracionP + "' WHERE id = '" + comentario.idP + "'", a);
             comando.ExecuteNonQuery();
 
             respuesta = true;
@@ -133,9 +129,8 @@ public class CADcomentario
 
         return respuesta;
     }
-<<<<<<< HEAD
+
 }
 
-=======
 }
->>>>>>> main
+
