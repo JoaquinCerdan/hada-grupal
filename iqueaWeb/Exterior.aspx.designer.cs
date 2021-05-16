@@ -42,6 +42,15 @@ namespace iqueaWeb
         protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
 
         /// <summary>
+        /// Control Ordenar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Ordenar;
+
+        /// <summary>
         /// Control Image2.
         /// </summary>
         /// <remarks>
@@ -78,30 +87,30 @@ namespace iqueaWeb
         protected global::System.Web.UI.WebControls.Image Image3;
 
         /// <summary>
-        /// Control ImageButton1.
+        /// Control ImageButton11.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
+        protected global::System.Web.UI.WebControls.ImageButton ImageButton11;
 
         /// <summary>
-        /// Control ImageButton4.
+        /// Control ImageButton12.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton4;
+        protected global::System.Web.UI.WebControls.ImageButton ImageButton12;
 
         /// <summary>
-        /// Control ImageButton3.
+        /// Control ImageButton13.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton3;
+        protected global::System.Web.UI.WebControls.ImageButton ImageButton13;
     }
 }

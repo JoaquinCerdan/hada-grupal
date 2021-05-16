@@ -39,6 +39,25 @@
 
 
 
+.final {
+    width: 500px;
+    float: left;
+}
+
+.final2 {
+    width: 500px;
+    float: left;
+}
+
+.oferta {
+}
+
+.arreglo {
+    float: none;
+}
+
+
+
 .menuInicio {
     background-color: #0051BA;
 }
@@ -59,9 +78,9 @@
     text-decoration:none;
 }
 
-    .menuInicio ul li a:hover {
-        background-color: #70b8c0;
-    }
+.menuInicio ul li a:hover {
+    background-color: #70b8c0;
+}
 
 .submenu {
     background-color: #798182;
