@@ -58,36 +58,3 @@
 
 
 
-.menuInicio {
-    background-color: #0051BA;
-}
-.menuInicio ul {
-    text-align:center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.menuInicio ul li {
-    display: inline-block;
-}
-
-.menuInicio ul li a{
-    color:white;
-    display:block;
-    padding:20px 160px;
-    text-decoration:none;
-}
-
-.menuInicio ul li a:hover {
-    background-color: #70b8c0;
-}
-
-.submenu {
-    background-color: #798182;
-    display: inline-block;
-    display: none;
-}
-
-.menuInicio li:hover .submenu {
-    display: inline-block;
-}
