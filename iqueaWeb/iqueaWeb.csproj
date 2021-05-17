@@ -77,10 +77,17 @@
     <Content Include="Index.aspx" />
     <Content Include="Interior.aspx" />
     <Content Include="Lista_deseos.aspx" />
+    <Content Include="Moderno.aspx" />
     <Content Include="ModificarAnuncio.aspx" />
     <Content Include="ModificarOferta.aspx" />
     <Content Include="mystyle.css" />
+    <Content Include="OrdenaC.aspx" />
+    <Content Include="OrdenaE.aspx" />
+    <Content Include="OrdenaI.aspx" />
+    <Content Include="OrdenaM.aspx" />
+    <Content Include="OrdenaS.aspx" />
     <Content Include="Pedido.aspx" />
+    <Content Include="Sencillo.aspx" />
     <Content Include="Site1.aspx" />
     <Content Include="Usuario.aspx" />
     <Content Include="Web.config" />
@@ -183,6 +190,12 @@
     <Compile Include="Lista_deseos.aspx.designer.cs">
       <DependentUpon>Lista_deseos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Moderno.aspx.cs">
+      <DependentUpon>Moderno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Moderno.aspx.designer.cs">
+      <DependentUpon>Moderno.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ModificarAnuncio.aspx.cs">
       <DependentUpon>ModificarAnuncio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -197,6 +210,41 @@
     <Compile Include="ModificarOferta.aspx.designer.cs">
       <DependentUpon>ModificarOferta.aspx</DependentUpon>
     </Compile>
+    <Compile Include="OrdenaC.aspx.cs">
+      <DependentUpon>OrdenaC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdenaC.aspx.designer.cs">
+      <DependentUpon>OrdenaC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenaE.aspx.cs">
+      <DependentUpon>OrdenaE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdenaE.aspx.designer.cs">
+      <DependentUpon>OrdenaE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenaI.aspx.cs">
+      <DependentUpon>OrdenaI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdenaI.aspx.designer.cs">
+      <DependentUpon>OrdenaI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenaM.aspx.cs">
+      <DependentUpon>OrdenaM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdenaM.aspx.designer.cs">
+      <DependentUpon>OrdenaM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenaS.aspx.cs">
+      <DependentUpon>OrdenaS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdenaS.aspx.designer.cs">
+      <DependentUpon>OrdenaS.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pedido.aspx.cs">
       <DependentUpon>Pedido.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -205,6 +253,13 @@
       <DependentUpon>Pedido.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sencillo.aspx.cs">
+      <DependentUpon>Sencillo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sencillo.aspx.designer.cs">
+      <DependentUpon>Sencillo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.aspx.cs">
       <DependentUpon>Site1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
