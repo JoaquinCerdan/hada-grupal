@@ -73,7 +73,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Content Include="mystyle.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
