@@ -1,0 +1,27 @@
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\bin\Debug\iquea.dll
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\bin\Debug\iquea.pdb
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csproj.CoreCompileInputs.cache
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea.dll
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea.pdb
+C:\Users\Alvaro\Source\Repos\hada-grupal\iquea\obj\Debug\iquea_library.csprojAssemblyReference.cache
+<<<<<<< HEAD
+C:\Users\AdamBrahimGarcia\Source\Repos\hada-grupal\iquea\bin\Debug\iquea.dll
+C:\Users\AdamBrahimGarcia\Source\Repos\hada-grupal\iquea\bin\Debug\iquea.pdb
+C:\Users\AdamBrahimGarcia\Source\Repos\hada-grupal\iquea\obj\Debug\iquea_library.csprojAssemblyReference.cache
+C:\Users\AdamBrahimGarcia\Source\Repos\hada-grupal\iquea\obj\Debug\iquea_library.csproj.CoreCompileInputs.cache
+C:\Users\AdamBrahimGarcia\Source\Repos\hada-grupal\iquea\obj\Debug\iquea.dll
+C:\Users\AdamBrahimGarcia\Source\Repos\hada-grupal\iquea\obj\Debug\iquea.pdb
+=======
+C:\Users\ximo4\source\repos\hada-grupal\iquea\bin\Debug\iquea.dll
+C:\Users\ximo4\source\repos\hada-grupal\iquea\bin\Debug\iquea.pdb
+C:\Users\ximo4\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csprojAssemblyReference.cache
+C:\Users\ximo4\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csproj.CoreCompileInputs.cache
+C:\Users\ximo4\source\repos\hada-grupal\iquea\obj\Debug\iquea.dll
+C:\Users\ximo4\source\repos\hada-grupal\iquea\obj\Debug\iquea.pdb
+>>>>>>> 6b1794a3f55050c8d44a9308f85de672ed9a2f3b
+C:\Users\Daniel\source\repos\hada-grupal\iquea\bin\Debug\iquea.dll
+C:\Users\Daniel\source\repos\hada-grupal\iquea\bin\Debug\iquea.pdb
+C:\Users\Daniel\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csprojAssemblyReference.cache
+C:\Users\Daniel\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\source\repos\hada-grupal\iquea\obj\Debug\iquea.dll
+C:\Users\Daniel\source\repos\hada-grupal\iquea\obj\Debug\iquea.pdb
