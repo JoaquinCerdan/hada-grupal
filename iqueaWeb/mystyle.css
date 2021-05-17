@@ -1,7 +1,6 @@
 ﻿body {
-    background-image: url(https://www.gaulan.es/485435/raya-magic-stars-120201.jpg);
+    background-color: lightblue;
 }
-
 .footer {
     position:relative;
     left: 0;
@@ -25,7 +24,6 @@
 .logo {
     position: relative;
     top: 5px;
-    position: relative;
 }
 
 .menu {
