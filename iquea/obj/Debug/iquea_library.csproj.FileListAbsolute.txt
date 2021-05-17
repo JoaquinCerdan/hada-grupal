@@ -19,3 +19,18 @@ C:\Users\ximo4\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csproj.Cor
 C:\Users\ximo4\source\repos\hada-grupal\iquea\obj\Debug\iquea.dll
 C:\Users\ximo4\source\repos\hada-grupal\iquea\obj\Debug\iquea.pdb
 >>>>>>> 6b1794a3f55050c8d44a9308f85de672ed9a2f3b
+C:\Users\annnd\source\repos\hada-grupal\iquea\bin\Debug\iquea.dll
+C:\Users\annnd\source\repos\hada-grupal\iquea\bin\Debug\iquea.pdb
+C:\Users\annnd\source\repos\hada-grupal\iquea\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\annnd\source\repos\hada-grupal\iquea\bin\Debug\System.Security.AccessControl.dll
+C:\Users\annnd\source\repos\hada-grupal\iquea\bin\Debug\System.Security.Permissions.dll
+C:\Users\annnd\source\repos\hada-grupal\iquea\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\annnd\source\repos\hada-grupal\iquea\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\annnd\source\repos\hada-grupal\iquea\bin\Debug\System.Security.AccessControl.xml
+C:\Users\annnd\source\repos\hada-grupal\iquea\bin\Debug\System.Security.Permissions.xml
+C:\Users\annnd\source\repos\hada-grupal\iquea\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\annnd\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csprojAssemblyReference.cache
+C:\Users\annnd\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csproj.CoreCompileInputs.cache
+C:\Users\annnd\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csproj.CopyComplete
+C:\Users\annnd\source\repos\hada-grupal\iquea\obj\Debug\iquea.dll
+C:\Users\annnd\source\repos\hada-grupal\iquea\obj\Debug\iquea.pdb

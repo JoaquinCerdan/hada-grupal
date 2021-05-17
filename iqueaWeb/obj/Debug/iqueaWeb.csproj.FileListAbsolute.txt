@@ -127,3 +127,7 @@ C:\Users\ximo4\source\repos\hada-grupal\iqueaWeb\obj\Debug\iqueaWeb.csproj.CopyC
 C:\Users\ximo4\source\repos\hada-grupal\iqueaWeb\obj\Debug\iqueaWeb.dll
 C:\Users\ximo4\source\repos\hada-grupal\iqueaWeb\obj\Debug\iqueaWeb.pdb
 >>>>>>> 6b1794a3f55050c8d44a9308f85de672ed9a2f3b
+C:\Users\annnd\source\repos\hada-grupal\iqueaWeb\obj\Debug\iqueaWeb.csprojAssemblyReference.cache
+C:\Users\annnd\source\repos\hada-grupal\iqueaWeb\obj\Debug\iqueaWeb.csproj.CoreCompileInputs.cache
+C:\Users\annnd\source\repos\hada-grupal\iqueaWeb\obj\Debug\iqueaWeb.dll
+C:\Users\annnd\source\repos\hada-grupal\iqueaWeb\obj\Debug\iqueaWeb.pdb
