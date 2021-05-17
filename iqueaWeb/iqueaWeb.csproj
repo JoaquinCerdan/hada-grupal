@@ -73,7 +73,6 @@
     <Content Include="Carrito.aspx" />
     <Content Include="CrearAnuncio.aspx" />
     <Content Include="CrearOferta.aspx" />
-    <Content Include="ext.aspx" />
     <Content Include="Exterior.aspx" />
     <Content Include="HomePage.aspx" />
     <Content Include="HomePage.css" />
@@ -155,12 +154,6 @@
     </Compile>
     <Compile Include="CrearOferta.aspx.designer.cs">
       <DependentUpon>CrearOferta.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ext.aspx.cs">
-      <DependentUpon>ext.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ext.aspx.designer.cs">
-      <DependentUpon>ext.aspx</DependentUpon>
     </Compile>
     <Compile Include="Exterior.aspx.cs">
       <DependentUpon>Exterior.aspx</DependentUpon>
