@@ -120,3 +120,7 @@ C:\Users\annnd\source\repos\hada-grupal\iqueaWeb\obj\Debug\iqueaWeb.csproj.CoreC
 C:\Users\annnd\source\repos\hada-grupal\iqueaWeb\obj\Debug\iqueaWeb.csproj.CopyComplete
 C:\Users\annnd\source\repos\hada-grupal\iqueaWeb\obj\Debug\iqueaWeb.dll
 C:\Users\annnd\source\repos\hada-grupal\iqueaWeb\obj\Debug\iqueaWeb.pdb
+C:\Users\ximo4\source\repos\hada-grupal\iqueaWeb\obj\Debug\iqueaWeb.csprojAssemblyReference.cache
+C:\Users\ximo4\source\repos\hada-grupal\iqueaWeb\obj\Debug\iqueaWeb.csproj.CoreCompileInputs.cache
+C:\Users\ximo4\source\repos\hada-grupal\iqueaWeb\obj\Debug\iqueaWeb.dll
+C:\Users\ximo4\source\repos\hada-grupal\iqueaWeb\obj\Debug\iqueaWeb.pdb
