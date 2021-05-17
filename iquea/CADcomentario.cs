@@ -15,7 +15,7 @@ public class CADcomentario
 
 	public CADcomentario()
 	{
-        constring = "";
+        constring = ConfigurationManager.ConnectionStrings[Database].ToString();
 	}
 
     public bool createComentario(ENcomentario comentario)

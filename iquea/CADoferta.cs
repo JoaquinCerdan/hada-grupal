@@ -15,7 +15,7 @@ public class CADoferta
 
 	public CADoferta()
 	{
-        constring = "";
+        constring = ConfigurationManager.ConnectionStrings[Database].ToString();
     }
 
     public bool createOferta(ENoferta oferta)
