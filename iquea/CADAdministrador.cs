@@ -11,11 +11,18 @@ namespace iquea
     {
         private string constring;
 
+        /*
+         * Inicialización de la cadena de conexión
+         */
         public CADAdministrador()
         {
             constring = "";
         }
 
+        /*
+         * Método que inserta en la base de datos un nuevo administrador, en caso de 
+         * no conseguirlo se lanza una excepción
+         */
         public bool createAdministrador(ENAdministrador administrador)
         {
             SqlConnection conexion = null;
@@ -41,6 +48,10 @@ namespace iquea
             return creado;
         }
 
+        /*
+         * Método que lee de la base de datos un administrador en concreto, en caso de 
+         * no conseguirlo se lanza una excepción
+         */
         public bool readAdministrador(ENAdministrador administrador)
         {
             SqlConnection conexion = null;
@@ -69,6 +80,10 @@ namespace iquea
             return creado;
         }
 
+        /*
+         * Método que borra de la base de datos un administrador en concreto, en caso de 
+         * no conseguirlo se lanza una excepción
+         */
         public bool deleteAdministrador(ENAdministrador administrador)
         {
             SqlConnection conexion = null;
@@ -94,6 +109,10 @@ namespace iquea
             return creado;
         }
 
+        /*
+         * Método que actualiza la información de la base de datos sobre un administrador en concreto, en caso de 
+         * no conseguirlo se lanza una excepción
+         */
         public bool updateAdministrador(ENAdministrador administrador)
         {
             SqlConnection conexion = null;

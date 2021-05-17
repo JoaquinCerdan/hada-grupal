@@ -11,11 +11,18 @@ namespace iquea
     {
         private string constring;
 
+        /*
+         * Inicialización de la cadena de conexión
+         */
         public CADUsuario()
         {
             constring = "";
         }
 
+        /*
+         * Método que inserta en la base de datos un nuevo usuario, en caso de 
+         * no conseguirlo se lanza una excepción
+         */
         public bool createUsuario(ENUsuario usuario)
         {
             SqlConnection conexion = null;
@@ -41,6 +48,10 @@ namespace iquea
             return creado;
         }
 
+        /*
+         * Método que lee de la base de datos un usuario en concreto, en caso de 
+         * no conseguirlo se lanza una excepción
+         */
         public bool readUsuario(ENUsuario usuario)
         {
             SqlConnection conexion = null;
@@ -70,6 +81,10 @@ namespace iquea
             return creado;
         }
 
+        /*
+         * Método que borra de la base de datos un usuario en concreto, en caso de 
+         * no conseguirlo se lanza una excepción
+         */
         public bool deleteUsuario(ENUsuario usuario)
         {
             SqlConnection conexion = null;
@@ -95,6 +110,10 @@ namespace iquea
             return creado;
         }
 
+        /*
+         * Método que actualiza la información de la base de datos sobre un usuario en concreto, en caso de 
+         * no conseguirlo se lanza una excepción
+         */
         public bool updateUsuario(ENUsuario usuario)
         {
             SqlConnection conexion = null;
