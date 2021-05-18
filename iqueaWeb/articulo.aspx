@@ -1,7 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.master" AutoEventWireup="true" CodeBehind="Articulo.aspx.cs" Inherits="iqueaWeb.Articulo" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-       <br />
+      
+    <!--
+    <br />
     &nbsp;&nbsp;<asp:Image ID="Image1" runat="server" ImageUrl="https://www.muebleselparaiso.es/102171-large_default/sofa-cama-de-3-plazas-tessa.jpg" />
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_nombre" runat="server" Text="Nombre del artículo:"></asp:Label></strong>
@@ -47,5 +49,37 @@
         <asp:Button ID="siguiente_com" runat="server" Text="siguiente comentario" style="border-style: groove; border-width: 1px"  />&nbsp;&nbsp;
     </p>
 
+    -->
+
+
+     <div class="col-lg-6" style="margin:0 auto;">
+                    <div class="card mt-2">
+                        <img class="card-img-top " width="400" height="600" src="https://www.muebleselparaiso.es/102171-large_default/sofa-cama-de-3-plazas-tessa.jpg" alt="..." />
+                        <div class="card-body">
+                            <h3 id="producto_name"  class="card-title">Product Name</h3>
+                            <h4>$24.99</h4>
+                            <p class="descripcion">Esta es la descripción</p>
+                            <span class="text-warning">★ ★ ★ ★ ☆</span>
+                            4.0 stars
+                        </div>
+                    </div>
+                    <div class="card card-outline-secondary my-4">
+                        <div class="card-header">Reseñas</div>
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+                            <small class="text-muted">Posted by Anonymous on 3/1/21</small>
+                            <hr />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+                            <small class="text-muted">Posted by Anonymous on 3/1/21</small>
+                            <hr />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+                            <small class="text-muted">Posted by Anonymous on 3/1/21</small>
+                            <hr />
+                            <a class="btn btn-success" href="#!">Leave a Review</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 </asp:Content>
