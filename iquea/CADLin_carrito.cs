@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Data.SqlClient;
 
 public class CADLin_carrito
@@ -7,7 +8,7 @@ public class CADLin_carrito
 
     public CADLin_carrito()
     {
-        constring = "";// ConfigurationManager.ConnectionStrings["connect"].ToString();
+        constring = ConfigurationManager.ConnectionStrings["Database"].ToString();
     }
 
     public bool createLin_carrito(ENLin_carrito lin_carrito)
@@ -18,7 +19,7 @@ public class CADLin_carrito
         {
             conn = new SqlConnection(constring);
             conn.Open();
-            String comand = "Insert INTO iquea.Lin_carrito (id, numArticulos) VALUES (" + lin_carrito.idP + " , " + lin_carrito.numArticulosP +")";
+            String comand = "Insert INTO iquea.Lin_carrito (id, numArticulos) VALUES (" + lin_carrito.idP + " , " + lin_carrito.numArticulosP + ")";
             SqlCommand execution = new SqlCommand(comand, conn);
             execution.ExecuteNonQuery();
             creating = true;
@@ -50,7 +51,7 @@ public class CADLin_carrito
         {
             conn = new SqlConnection(constring);
             conn.Open();
-            string comand = "DELETE FROM iquea.Lin_carrito WHERE id = " + lin_carrito.idP ;
+            string comand = "DELETE FROM iquea.Lin_carrito WHERE id = " + lin_carrito.idP;
             SqlCommand execution = new SqlCommand(comand, conn);
             execution.ExecuteNonQuery();
             creating = true;
@@ -127,7 +128,7 @@ public class CADLin_carrito
         {
             conn = new SqlConnection(constring);
             conn.Open();
-            string comand = "UPDATE iquea.Lin_carrito SET numArticulos=" + lin_carrito.numArticulosP + "WHERE id = " + lin_carrito.idP ;
+            string comand = "UPDATE iquea.Lin_carrito SET numArticulos=" + lin_carrito.numArticulosP + "WHERE id = " + lin_carrito.idP;
             SqlCommand execution = new SqlCommand(comand, conn);
             execution.ExecuteNonQuery();
             creating = true;

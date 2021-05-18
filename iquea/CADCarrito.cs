@@ -1,13 +1,14 @@
 ﻿using System;
+using System.Configuration;
 using System.Data.SqlClient;
 
 public class CADCarrito
 {
-	private string constring;
+    private string constring;
 
     public CADCarrito()
     {
-        constring = "";// ConfigurationManager.ConnectionStrings["connect"].ToString();
+        constring = ConfigurationManager.ConnectionStrings["Database"].ToString();
     }
 
     public bool createCarrito(ENCarrito carrito)

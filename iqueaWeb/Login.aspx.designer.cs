@@ -15,21 +15,33 @@ namespace iqueaWeb
     {
 
         /// <summary>
+<<<<<<< HEAD
         /// Control ErrorMessage.
+=======
+        /// Control Button1.
+>>>>>>> develop
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.PlaceHolder ErrorMessage;
 
         /// <summary>
         /// Control FailureText.
+=======
+        protected global::System.Web.UI.WebControls.Button Button1;
+
+        /// <summary>
+        /// Control Button2.
+>>>>>>> develop
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.Literal FailureText;
 
         /// <summary>
@@ -49,5 +61,8 @@ namespace iqueaWeb
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Password;
+=======
+        protected global::System.Web.UI.WebControls.Button Button2;
+>>>>>>> develop
     }
 }

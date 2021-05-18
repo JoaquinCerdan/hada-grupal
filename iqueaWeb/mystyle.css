@@ -1,8 +1,8 @@
 ﻿body {
     background-color: lightblue;
 }
-
 .footer {
+    position:relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -24,7 +24,6 @@
 .logo {
     position: relative;
     top: 5px;
-    position: relative;
 }
 
 .menu {
@@ -35,3 +34,25 @@
     color: white;
     text-align: center;
 }
+
+
+
+.final {
+    width: 500px;
+    float: left;
+}
+
+.final2 {
+    width: 500px;
+    float: left;
+}
+
+.oferta {
+}
+
+.arreglo {
+    float: none;
+}
+
+
+

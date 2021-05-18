@@ -5,20 +5,21 @@ public class ENLin_carrito
     private int id;
     private int numArticulos;
 
-    public int idP 
-    { 
-        get 
+    public int idP
+    {
+        get
         {
             int copy = id;
-            return copy; 
-        } 
-        set 
+            return copy;
+        }
+        set
         {
             id = value;
         }
     }
 
-    public int numArticulosP {
+    public int numArticulosP
+    {
         get
         {
             int copy = numArticulos;
@@ -77,5 +78,5 @@ public class ENLin_carrito
         realizado = numArticulos.deleteLin_carrito(this);
 
         return realizado;
-    } 
+    }
 }

@@ -2,8 +2,8 @@
 
 public class ENCarrito
 {
-	private int id;
-	private double importe;
+    private int id;
+    private double importe;
 
     public int idP
     {
@@ -81,5 +81,5 @@ public class ENCarrito
 
         return realizado;
     }
-    
+
 }
