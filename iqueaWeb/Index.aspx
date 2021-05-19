@@ -22,7 +22,7 @@
         <img class="img-fluid d-block mx-auto" src="https://casaydiseno.com/wp-content/uploads/2016/05/biblioteca-peque%C3%B1a-salon-monimalista.jpg" alt="muebles-sencillos">
         <div class="card-body p-4 py-0 h-xs-440p">
           <h4 class="card-title font-weight-semi-bold mb-3 w-xl-280p mx-auto">Muebles sencillos</h4>
-          
+           
         </div>
         <p class="btn w-100 px-4 mx-auto">
           
