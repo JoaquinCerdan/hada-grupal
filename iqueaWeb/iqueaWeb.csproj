@@ -88,9 +88,6 @@
     <Content Include="CrearCategoria.aspx" />
     <Content Include="CrearOferta.aspx" />
     <Content Include="Database.mdf" />
-    <Content Include="Database_log.ldf">
-      <DependentUpon>Database.mdf</DependentUpon>
-    </Content>
     <Content Include="etc.aspx" />
     <Content Include="Exterior.aspx" />
     <Content Include="Index.aspx" />
