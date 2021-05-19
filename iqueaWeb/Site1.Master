@@ -3,14 +3,14 @@
 <!DOCTYPE html>
 
 <html>
- <head runat="server">
-    
-     <link href="Content/bootstrap.min.css" rel="stylesheet"  type="text/css" />
-     <link rel="stylesheet" href="mystyle.css">
-     <link href="css/bootstrap.css" rel="stylesheet">   
-        <script src="Scripts/jquery-3.0.0.js"></script>        
-        <script src="Scripts/bootstrap.js"></script>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<head runat="server">
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="Scripts/jquery-3.0.0.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -19,74 +19,51 @@
     <form id="form1" runat="server">
         <div>
             <asp:ImageButton ID="ImageButton1" runat="server" Height="75px" ImageUrl="https://i.ibb.co/2S5ZYqC/logo-iquea.jpg" PostBackUrl="~/Index.aspx" Width="113px" />
+
+
+
+            <!-- MENU -->
            
-           <nav class="navbar navbar-expand-lg navbar-light bg-light">
+             
+             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                   
                   
 
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                      <li class="nav-item active">
+            <asp:Menu ID="Menu1" runat="server"  Orientation="Horizontal" OnMenuItemClick="Menu1_MenuItemClick">
+                <DynamicHoverStyle BackColor="#70B8C0" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="100px" VerticalPadding="6px" CssClass="SubMenu2" />
+                <DynamicMenuStyle BackColor="#798182" />
+                <DynamicSelectedStyle BackColor="#507CD1" />
+                <Items>
+                    <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Index.aspx"></asp:MenuItem>
+                    <asp:MenuItem Selectable="False" Text="Categorias" Value="Categorias">
+                        <asp:MenuItem Text="Interior" Value="Interior" NavigateUrl="~/Interior.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Exterior" Value="Exterior" NavigateUrl="~/Exterior.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Selectable="False" Text="Temporada" Value="Temporada">
+                        <asp:MenuItem Text="Sencillo" Value="Sencillo" NavigateUrl="~/Sencillo.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Clasico" Value="Clasico" NavigateUrl="~/Clasico.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Moderno" Value="Moderno" NavigateUrl="~/Moderno.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                   
+
+                 
+                     
                         
-                          <asp:button Text="Home" ID="ButtonHome" runat="server" Height="40px" PostBackUrl="~/Index.aspx" Width="150px"  BackColor="transparent" BorderWidth="0px" />
-                      </li>
-                      
-                                    <div class="navbar">
-                                        <div class="navbar-inner">
-                                            <div class="container">
-                                                <ul class="nav">
-                                                    <li class="dropdown" id="categorias">
-                                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categorias<b class="caret"  ></b></a>
+                  
+                        
+                        
+                </Items>
+                <StaticHoverStyle BackColor="#0099CC" ForeColor="White" />
+                <StaticMenuItemStyle HorizontalPadding="160px" VerticalPadding="11px" />
+                <StaticSelectedStyle BackColor="#507CD1" />
 
-                                                        <ul class="dropdown-menu">
-                                                            <li>
-                                                            <asp:button Text="Interior" ID="ButtonInt" runat="server" Height="40px" PostBackUrl="~/Interior.aspx" Width="150px"  />
-                                                                </li>
-                                                            <li>
-                                                            <asp:button Text="Exterior" ID="ButtonExt" runat="server" Height="40px" PostBackUrl="~/Exterior.aspx" Width="150px"  />
-                                                                </li>
-                                                            
-                                                            
-                                                            
-                                                            
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                 <div class="navbar">
-                                        <div class="navbar-inner">
-                                            <div class="container">
-                                                <ul class="nav">
-                                                    <li class="dropdown" id="temporada">
-                                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Temporada<b class="caret"  ></b></a>
 
-                                                        <ul class="dropdown-menu">
-                                                            <li>
-                                                            <asp:button Text="Sencillo" ID="ButtonSencillo" runat="server" Height="40px" PostBackUrl="~/Sencillo.aspx" Width="150px"  />
-                                                                </li>
-                                                            <li>
-                                                            <asp:button Text="Clasico" ID="ButtonClasico" runat="server" Height="40px" PostBackUrl="~/Clasico.aspx" Width="150px"  />
-                                                                </li>
-                                                            <li>
-                                                            <asp:button Text="Moderno" ID="ButtonModerno" runat="server" Height="40px" PostBackUrl="~/Moderno.aspx" Width="150px"  />
-                                                                </li>
-                                                            
-                                                            
-                                                            
-                                                            
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                      
-                    </ul>
-                    <div class="form-inline my-2 my-lg-0">
-                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </asp:Menu>
+                 &nbsp;<div class="form-inline my-2 my-lg-0">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input class="form-control mr-sm-6" type="search" placeholder="Search" aria-label="Search">
                       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                         &nbsp;
                         &nbsp;
@@ -99,29 +76,27 @@
                         
 
                     </div>
-                      
-                  
-                  </div>
+                      </div>
                 </nav>
-            
+            <!-- FIN DEL MENU -->
 
-           <br />
-    
+            <br />
+
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-            
+
 
             <footer class=" text-center footer text-lg-start">
-              <!-- Copyright -->
-              <div class="text-center p-3" >
-               Iquea & Company © 2021 Copyright:
+                <!-- Copyright -->
+                <div class="text-center p-3">
+                    Iquea & Company © 2021 Copyright:
                 <a class="enlace" href="mailto:Iqueacompany@gmail.com">Iqueacompany@gmail.com</a>
-              </div>
-              <!-- Copyright -->
+                </div>
+                <!-- Copyright -->
             </footer>
-            
+
         </div>
     </form>
-    
+
 </body>
 </html>

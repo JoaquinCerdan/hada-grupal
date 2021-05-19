@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="iqueaWeb.Login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!--
      <p style="text-align: center">
@@ -24,12 +25,12 @@
             <h5 class="card-title text-center">Inicio de sesión</h5>
             <form class="form-signin">
               <div class="form-label-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Correo electrónico" required autofocus>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Correo electrónico" >
                 <label for="inputEmail">Correo electrónico</label>
               </div>
 
               <div class="form-label-group">
-                <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" >
                 <label for="inputPassword">Contraseña</label>
               </div>
 
@@ -46,3 +47,4 @@
 </body>
 
 </asp:Content>
+

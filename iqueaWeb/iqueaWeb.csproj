@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Administrador.aspx" />
+    <Content Include="Anuncio.aspx" />
     <Content Include="articulo.aspx" />
     <Content Include="BorrarAnuncio.aspx" />
     <Content Include="BorrarArticulo.aspx" />
@@ -233,6 +234,13 @@
     </Compile>
     <Compile Include="Administrador.aspx.designer.cs">
       <DependentUpon>Administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Anuncio.aspx.cs">
+      <DependentUpon>Anuncio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Anuncio.aspx.designer.cs">
+      <DependentUpon>Anuncio.aspx</DependentUpon>
     </Compile>
     <Compile Include="Articulo.aspx.cs">
       <DependentUpon>articulo.aspx</DependentUpon>
