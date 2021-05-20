@@ -377,6 +377,7 @@
     </Compile>
     <Compile Include="Moderno.aspx.cs">
       <DependentUpon>Moderno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Moderno.aspx.designer.cs">
       <DependentUpon>Moderno.aspx</DependentUpon>
