@@ -8,6 +8,7 @@ using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
+using System.Configuration;
 
 public class CADcomentario
 {
@@ -15,7 +16,7 @@ public class CADcomentario
 
 	public CADcomentario()
 	{
-        constring = "";
+        constring = ConfigurationManager.ConnectionStrings["Database"].ToString();
 	}
 
     public bool createComentario(ENcomentario comentario)

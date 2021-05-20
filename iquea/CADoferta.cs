@@ -8,6 +8,7 @@ using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
+using System.Configuration;
 
 public class CADoferta
 {
@@ -15,7 +16,7 @@ public class CADoferta
 
 	public CADoferta()
 	{
-        constring = "";
+        constring = ConfigurationManager.ConnectionStrings["Database"].ToString();
     }
 
     public bool createOferta(ENoferta oferta)

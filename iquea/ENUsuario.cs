@@ -63,26 +63,44 @@ namespace iquea
 
         public ENUsuario(string email, string contra, string datosBancarios, string nombre, string direccion, int numTelefono)
         {
-
+            this.email = email;
+            this.contra = contra;
+            this.datosBancarios = datosBancarios;
+            this.nombre = nombre;
+            this.direccion = direccion;
+            this.numTelefono = numTelefono;
         }
 
         public bool createUsuario()
         {
-            return false;
+            bool isTrue;
+            CADUsuario usuario = new CADUsuario();
+            isTrue = usuario.createUsuario(this);
+            return isTrue;
         }
 
         public bool readUsuario()
         {
-            return false;
+            bool isTrue;
+            CADUsuario usuario = new CADUsuario();
+            isTrue = usuario.readUsuario(this);
+            return isTrue;
         }
 
         public bool updateUsuario()
         {
-            return false;
+            bool isTrue;
+            CADUsuario usuario = new CADUsuario();
+            isTrue = usuario.createUsuario(this);
+            return isTrue;
         }
+
         public bool deleteUsuario()
         {
-            return false;
+            bool isTrue;
+            CADUsuario usuario = new CADUsuario();
+            isTrue = usuario.deleteUsuario(this);
+            return isTrue;
         }
     }
 }
