@@ -25,13 +25,18 @@
             <h5 class="card-title text-center">Inicio de sesión</h5>
             <form class="form-signin">
               <div class="form-label-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Correo electrónico" >
-                <label for="inputEmail">Correo electrónico</label>
+                <!--<input type="email" id="inputEmail" class="form-control" placeholder="Correo electrónico" > -->
+                  Correo:<asp:TextBox ID="inputEmail" runat="server"></asp:TextBox>
+                  <asp:RequiredFieldValidator ID="EmailRequired" runat="server" ErrorMessage="Tienes que introducir un correo" ControlToValidate="inputEmail">                 
+                  </asp:RequiredFieldValidator>
+                <!--<label for="inputEmail">Correo electrónico</label>-->
               </div>
 
               <div class="form-label-group">
-                <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" >
-                <label for="inputPassword">Contraseña</label>
+                <!--<input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" >-->
+                  Contraseña:<asp:TextBox ID="inputPassword" runat="server"></asp:TextBox>
+                  <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ErrorMessage="Tienes que introducir una contraseña" ControlToValidate="inputPassword"></asp:RequiredFieldValidator>
+                <!--<label for="inputPassword">Contraseña</label>-->
               </div>
 
               
