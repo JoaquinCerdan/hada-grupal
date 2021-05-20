@@ -33,22 +33,70 @@ namespace iqueaWeb
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+<<<<<<< HEAD
         /// Control TextBox1.
+=======
+        /// Control ImageButton1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
 
         /// <summary>
-        /// Control Button1.
+        /// Control Menu1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
+        protected global::System.Web.UI.WebControls.Menu Menu1;
+
+        /// <summary>
+        /// Control ImageButton5.
+>>>>>>> develop
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton ImageButton5;
+
+        /// <summary>
+<<<<<<< HEAD
+        /// Control Button1.
+=======
+        /// Control ImageButton3.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton ImageButton3;
+
+        /// <summary>
+        /// Control ImageButton4.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton ImageButton4;
+
+        /// <summary>
+        /// Control ButtonLogin.
+>>>>>>> develop
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.Button Button1;
+=======
+        protected global::System.Web.UI.WebControls.Button ButtonLogin;
+>>>>>>> develop
 
         /// <summary>
         /// Control ContentPlaceHolder1.

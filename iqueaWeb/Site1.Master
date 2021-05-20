@@ -4,8 +4,13 @@
 
 <html>
 <head runat="server">
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="mystyle.css">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="Scripts/jquery-3.0.0.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -13,6 +18,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
+<<<<<<< HEAD
             <asp:ImageButton ID="ImageButton1" runat="server" Height="75px" ImageUrl="../logo_iquea.jpg" PostBackUrl="~/Site1.aspx" Width="113px" />
             <div class ="toolbar">
                  
@@ -32,14 +38,87 @@
 &nbsp;<asp:ImageButton ID="ImageButton5" runat="server" src="https://cdn.pixabay.com/photo/2017/06/26/20/33/icon-2445095_960_720.png" style="height: 36px; Width: 36px" PostBackUrl="~/Lista_deseos.aspx"/>
 >>>>>>> main
             </div>
+=======
+            <asp:ImageButton ID="ImageButton1" runat="server" Height="75px" ImageUrl="https://i.ibb.co/2S5ZYqC/logo-iquea.jpg" PostBackUrl="~/Index.aspx" Width="113px" />
+
+
+
+            <!-- MENU -->
+           
+             
+             <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  
+                  
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <asp:Menu ID="Menu1" runat="server"  Orientation="Horizontal" OnMenuItemClick="Menu1_MenuItemClick">
+                <DynamicHoverStyle BackColor="#70B8C0" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="100px" VerticalPadding="6px" CssClass="SubMenu2" />
+                <DynamicMenuStyle BackColor="#798182" />
+                <DynamicSelectedStyle BackColor="#507CD1" />
+                <Items>
+                    <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Index.aspx"></asp:MenuItem>
+                    <asp:MenuItem Selectable="False" Text="Categorias" Value="Categorias">
+                        <asp:MenuItem Text="Interior" Value="Interior" NavigateUrl="~/Interior.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Exterior" Value="Exterior" NavigateUrl="~/Exterior.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Selectable="False" Text="Temporada" Value="Temporada">
+                        <asp:MenuItem Text="Sencillo" Value="Sencillo" NavigateUrl="~/Sencillo.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Clasico" Value="Clasico" NavigateUrl="~/Clasico.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Moderno" Value="Moderno" NavigateUrl="~/Moderno.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                   
+
+                 
+                     
+                        
+                  
+                        
+                        
+                </Items>
+                <StaticHoverStyle BackColor="#0099CC" ForeColor="White" />
+                <StaticMenuItemStyle HorizontalPadding="160px" VerticalPadding="11px" />
+                <StaticSelectedStyle BackColor="#507CD1" />
+
+
+            </asp:Menu>
+                 &nbsp;<div class="form-inline my-2 my-lg-0">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input class="form-control mr-sm-6" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <asp:ImageButton ID="ImageButton5" runat="server" src="https://cdn.pixabay.com/photo/2017/06/26/20/33/icon-2445095_960_720.png" style="height: 36px; Width: 36px" PostBackUrl="~/Lista_deseos.aspx"/>
+                        <asp:ImageButton ID="ImageButton3" runat="server" Height="18px" ImageUrl="https://image.flaticon.com/icons/png/512/107/107831.png" PostBackUrl="~/Carrito.aspx" Width="25px" />
+                        &nbsp;
+                        <asp:ImageButton ID="ImageButton4" runat="server" Height="22px" ImageUrl="https://c0.klipartz.com/pngpicture/613/636/gratis-png-iconos-de-la-computadora-perfil-de-usuario-avatar-masculino-avatar.png" PostBackUrl="~/Login.aspx" Width="38px" />
+                         <asp:Button Text="Login" type="submit" class="btn btn-primary btn-lg " ID="ButtonLogin" runat="server" Height="50px"   PostBackUrl="~/Login.aspx" Width="80px" />
+                        
+
+                    </div>
+                      </div>
+                </nav>
+            <!-- FIN DEL MENU -->
+
+            <br />
+
+>>>>>>> develop
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-            <footer class ="footer"> 
-              <p>Author: Iquea & Company</p>
-              <p><a href="mailto:hege@example.com" class ="enlace">iquea@example.com</a></p>
+
+
+            <footer class=" text-center footer text-lg-start">
+                <!-- Copyright -->
+                <div class="text-center p-3">
+                    Iquea & Company © 2021 Copyright:
+                <a class="enlace" href="mailto:Iqueacompany@gmail.com">Iqueacompany@gmail.com</a>
+                </div>
+                <!-- Copyright -->
             </footer>
-            
+
         </div>
     </form>
+
 </body>
 </html>

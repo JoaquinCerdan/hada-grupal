@@ -1,8 +1,18 @@
 C:\Users\Alvaro\source\repos\hada-grupal\iquea\bin\Debug\iquea.dll
 C:\Users\Alvaro\source\repos\hada-grupal\iquea\bin\Debug\iquea.pdb
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\bin\Debug\System.Security.Permissions.dll
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\bin\Debug\System.Security.Permissions.xml
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\bin\Debug\System.Security.Principal.Windows.xml
 C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csproj.CoreCompileInputs.cache
+C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csproj.CopyComplete
 C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea.dll
 C:\Users\Alvaro\source\repos\hada-grupal\iquea\obj\Debug\iquea.pdb
+<<<<<<< HEAD
 C:\Users\Alvaro\Source\Repos\hada-grupal\iquea\obj\Debug\iquea_library.csprojAssemblyReference.cache
 <<<<<<< HEAD
 C:\Users\AdamBrahimGarcia\Source\Repos\hada-grupal\iquea\bin\Debug\iquea.dll
@@ -25,3 +35,20 @@ C:\Users\Daniel\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csprojAss
 C:\Users\Daniel\source\repos\hada-grupal\iquea\obj\Debug\iquea_library.csproj.CoreCompileInputs.cache
 C:\Users\Daniel\source\repos\hada-grupal\iquea\obj\Debug\iquea.dll
 C:\Users\Daniel\source\repos\hada-grupal\iquea\obj\Debug\iquea.pdb
+=======
+C:\Users\pepos\Source\Repos\hada-grupal\iquea\bin\Debug\iquea.dll
+C:\Users\pepos\Source\Repos\hada-grupal\iquea\bin\Debug\iquea.pdb
+C:\Users\pepos\Source\Repos\hada-grupal\iquea\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\pepos\Source\Repos\hada-grupal\iquea\bin\Debug\System.Security.AccessControl.dll
+C:\Users\pepos\Source\Repos\hada-grupal\iquea\bin\Debug\System.Security.Permissions.dll
+C:\Users\pepos\Source\Repos\hada-grupal\iquea\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\pepos\Source\Repos\hada-grupal\iquea\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\pepos\Source\Repos\hada-grupal\iquea\bin\Debug\System.Security.AccessControl.xml
+C:\Users\pepos\Source\Repos\hada-grupal\iquea\bin\Debug\System.Security.Permissions.xml
+C:\Users\pepos\Source\Repos\hada-grupal\iquea\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\pepos\Source\Repos\hada-grupal\iquea\obj\Debug\iquea_library.csprojAssemblyReference.cache
+C:\Users\pepos\Source\Repos\hada-grupal\iquea\obj\Debug\iquea_library.csproj.CoreCompileInputs.cache
+C:\Users\pepos\Source\Repos\hada-grupal\iquea\obj\Debug\iquea_library.csproj.CopyComplete
+C:\Users\pepos\Source\Repos\hada-grupal\iquea\obj\Debug\iquea.dll
+C:\Users\pepos\Source\Repos\hada-grupal\iquea\obj\Debug\iquea.pdb
+>>>>>>> develop

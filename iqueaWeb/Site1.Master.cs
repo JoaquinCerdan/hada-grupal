@@ -13,5 +13,10 @@ namespace iqueaWeb
         {
 
         }
+
+        protected void Menu1_MenuItemClick(object sender, System.Web.UI.WebControls.MenuEventArgs e)
+        {
+
+        }
     }
 }
