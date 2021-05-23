@@ -12,7 +12,7 @@ namespace iquea
         public string constring;
         public CADPedido()
         {
-            constring = "";
+            constring = ConfigurationManager.ConnectionStrings["Database"].ToString();
         }
         public bool leerPedido(ENPedido pedido)
         {

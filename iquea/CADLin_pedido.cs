@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,7 @@ namespace iquea
         public string constring;
         public CADLin_pedido()
         {
-            constring = "";
+            constring = ConfigurationManager.ConnectionStrings["Database"].ToString();
         }
         public bool leerLineaPedido(ENLin_pedido linped)
         {
