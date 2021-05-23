@@ -19,7 +19,7 @@ public class ENArticulo
 
     }
 
-    public ENArticulo(int id, string descripcion, double precio, string imagen, bool stock)
+    public ENArticulo(string descripcion, double precio, string imagen, int stock)
     {
 
     }

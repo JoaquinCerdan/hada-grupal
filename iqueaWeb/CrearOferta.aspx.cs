@@ -8,5 +8,12 @@ namespace iqueaWeb
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            ENoferta en = new ENoferta(Convert.ToInt32(TextBox3.Text), Convert.ToDateTime(TextBox4.Text));
+            en.createOferta();
+        }
+
     }
 }
