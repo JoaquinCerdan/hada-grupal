@@ -62,10 +62,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CADCarrito.cs" />
-    <Compile Include="CADCategoria.cs" />
     <Compile Include="CADLin_carrito.cs" />
     <Compile Include="ENCarrito.cs" />
-    <Compile Include="ENCategoria.cs" />
     <Compile Include="ENLin_carrito.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
