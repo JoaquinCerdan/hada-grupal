@@ -4,6 +4,6 @@
         &nbsp;Email del Usuario: &nbsp;<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
     </p>
     <p>
-        &nbsp;<asp:Button ID="Button1" runat="server" Text="Borrar" />
+        &nbsp;<asp:Button ID="Button1" runat="server" Text="Borrar" CssClass="btn btn-primary" OnClick="Button1_Click" />
         &nbsp;</p>
 </asp:Content>

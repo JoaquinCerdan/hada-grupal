@@ -4,10 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace iquea
-{
-    class CADUsuario
+    public class CADUsuario
     {
         private string constring;
 
@@ -139,5 +136,4 @@ namespace iquea
             }
             return creado;
         }
-    }
 }

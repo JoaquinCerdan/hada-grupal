@@ -4,9 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace iquea
-{
-    class ENUsuario
+    public class ENUsuario
     {
         private string email;
         private string contra;
@@ -102,5 +100,4 @@ namespace iquea
             isTrue = usuario.deleteUsuario(this);
             return isTrue;
         }
-    }
 }
