@@ -37,7 +37,7 @@ public class ENAnuncio
 
 	public bool createAnuncio()
     {
-		return false;
+		return true;
 	}
 
 	public bool readAnuncio()
