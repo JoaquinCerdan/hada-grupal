@@ -1,22 +1,16 @@
 ﻿
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data;
-using System.Data.Common;
+using System;
+using System.Configuration;
 using System.Data.SqlClient;
-using System.Data.SqlTypes;
 
 public class CADcomentario
 {
-	private string constring;
+    private string constring;
 
-	public CADcomentario()
-	{
-        constring = "";
-	}
+    public CADcomentario()
+    {
+        constring = ConfigurationManager.ConnectionStrings["Database"].ToString();
+    }
 
     public bool createComentario(ENcomentario comentario)
     {

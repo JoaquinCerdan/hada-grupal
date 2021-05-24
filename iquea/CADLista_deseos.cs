@@ -1,26 +1,19 @@
 ﻿
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Configuration;
-using System.Data.SqlTypes;
 using System.Data.SqlClient;
-using System.Data.Common;
-using System.Data;
 
 
 public class CADLista_deseos
 {
-	private String constring;
-	public CADLista_deseos()
-	{
-		constring = ConfigurationManager.ConnectionStrings["Database"].ToString(); ;
-	}
+    private String constring;
+    public CADLista_deseos()
+    {
+        constring = ConfigurationManager.ConnectionStrings["Database"].ToString(); ;
+    }
 
 
-	public bool createLista_deseos(ENLista_deseos list)
+    public bool createLista_deseos(ENLista_deseos list)
     {
         bool create = false;
         SqlConnection c = new SqlConnection(constring);
@@ -48,8 +41,8 @@ public class CADLista_deseos
 
         return create;
     }
-	public bool readLista_deseos(ENLista_deseos list) 
-	{
+    public bool readLista_deseos(ENLista_deseos list)
+    {
         bool read = false;
         SqlConnection c = new SqlConnection(constring);
         try
@@ -62,7 +55,7 @@ public class CADLista_deseos
             if (dr["Id"].ToString() == list.intId.ToString())
             {
                 list.intId = int.Parse(dr["Id"].ToString());
-                list.intId_articulo =int.Parse( dr["Id_art"].ToString());
+                list.intId_articulo = int.Parse(dr["Id_art"].ToString());
                 list.intId_user = int.Parse(dr["Id_user"].ToString());
                 read = true;
             }
@@ -90,7 +83,7 @@ public class CADLista_deseos
 
         return read;
     }
-	public bool updateLista_deseos(ENLista_deseos list)
+    public bool updateLista_deseos(ENLista_deseos list)
     {
         bool update = false;
 
@@ -116,7 +109,7 @@ public class CADLista_deseos
         }
         return update;
     }
-	public bool deleteLista_deseos (ENLista_deseos list)
+    public bool deleteLista_deseos(ENLista_deseos list)
     {
         bool delete = false;
 
