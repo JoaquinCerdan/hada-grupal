@@ -26,7 +26,7 @@ public class CADAnuncio
         try
         {
             c.Open();
-            SqlCommand com = new SqlCommand("Insert INTO [dbo].[Usuarios] (nombre,nif,edad) VALUES('" + en.stringNombre + "', '" + en.stringNIF + "','" + en.intEdad + "')", c);
+            SqlCommand com = new SqlCommand("Insert INTO [dbo].[Anuncio] (Enlace,Descripcion) VALUES('" + anun.intId + "', '" + anun.stringEnlace + "','" + anun.stringDescripcion + "')", c);
 
             com.ExecuteNonQuery();
             create = true;
@@ -49,16 +49,98 @@ public class CADAnuncio
     }
     public bool readAnuncio(ENAnuncio anun)
     {
-        return false;
+        bool read = false;
+        SqlConnection c = new SqlConnection(constring);
+        try
+        {
+            c.Open();
+            SqlCommand com = new SqlCommand("Select * From [dbo].[Anuncio] Where Id = '" + anun.intId + "' ", c);
+            SqlDataReader dr = com.ExecuteReader();
+            dr.Read();
+
+            if (dr["Id"].ToString() == anun.intId.ToString())
+            {
+                anun.intId = int.Parse(dr["Id"].ToString());
+                anun.stringEnlace = dr["Enlace"].ToString();
+                anun.stringDescripcion = dr["Descripcion"].ToString();
+                read = true;
+            }
+            else read = false;
+            dr.Close();
+
+        }
+        catch (SqlException e)
+        {
+            read = false;
+            Console.WriteLine("User operation has failed.Error: {0}", e.Message);
+
+        }
+        catch (Exception e)
+        {
+            read = false;
+            Console.WriteLine("User operation has failed.Error: {0}", e.Message);
+        }
+
+        finally
+        {
+            c.Close();
+        }
+
+
+        return read;
     }
     public bool updateAnuncio(ENAnuncio anun)
     {
-        return false;
+        bool update = false;
+
+
+        SqlConnection c = new SqlConnection(constring);
+        try
+        {
+            c.Open();
+            SqlCommand com = new SqlCommand("UPDATE [dbo].[Anuncio] SET Enlace= '" + anun.stringEnlace + "' ,Descripcion=" + anun.stringDescripcion + "WHERE Id = '" + anun.intId + "'", c);
+            com.ExecuteNonQuery();
+
+            update = true;
+
+            c.Close();
+
+
+        }
+        catch (SqlException e)
+        {
+            update = false;
+            Console.WriteLine("User operation has failed.Error: {0}", e.Message);
+
+        }
+        return update;
     }
 
     public bool deleteAnuncio(ENAnuncio anun)
     {
-        return false;
+        bool delete = false;
+
+        SqlConnection c = new SqlConnection(constring);
+        try
+        {
+
+            c.Open();
+            SqlCommand com = new SqlCommand("DELETE FROM [dbo].[Anuncio] WHERE Id = '" + anun.intId + "'", c);
+            com.ExecuteNonQuery();
+            delete = true;
+            c.Close();
+        }
+        catch (SqlException e)
+        {
+            delete = false;
+            Console.WriteLine("User operation has failed.Error: {0}", e.Message);
+        }
+        catch (Exception e)
+        {
+            delete = false;
+            Console.WriteLine("User operation has failed.Error: {0}", e.Message);
+        }
+        return delete;
     }
 
 
