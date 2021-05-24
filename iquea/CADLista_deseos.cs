@@ -20,7 +20,7 @@ public class CADLista_deseos
         try
         {
             c.Open();
-            SqlCommand com = new SqlCommand("Insert INTO [dbo].[Lista_deseos] (Id,Id_art,Id_user) VALUES('" + list.intId + "', '" + list.intId_articulo + "','" + list.intId_user + "')", c);
+            SqlCommand com = new SqlCommand("Insert INTO [dbo].[Lista_deseos] (Id_art,Id_user) VALUES( '" + list.intId_articulo + "','" + list.intId_user + "')", c);
 
             com.ExecuteNonQuery();
             create = true;
