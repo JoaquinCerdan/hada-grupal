@@ -1,6 +1,4 @@
-﻿using System;
-
-public class ENLin_carrito
+﻿public class ENLin_carrito
 {
     private int id;
     private int numArticulos;
