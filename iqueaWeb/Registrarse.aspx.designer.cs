@@ -123,6 +123,15 @@ namespace iqueaWeb
         protected global::System.Web.UI.WebControls.TextBox Direccion;
 
         /// <summary>
+        /// Control DireccionRequired.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator DireccionRequired;
+
+        /// <summary>
         /// Control Telefono.
         /// </summary>
         /// <remarks>
@@ -132,6 +141,15 @@ namespace iqueaWeb
         protected global::System.Web.UI.WebControls.TextBox Telefono;
 
         /// <summary>
+        /// Control TelefonoRequired.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator TelefonoRequired;
+
+        /// <summary>
         /// Control Banco.
         /// </summary>
         /// <remarks>
@@ -139,6 +157,15 @@ namespace iqueaWeb
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Banco;
+
+        /// <summary>
+        /// Control BancoRequired.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator BancoRequired;
 
         /// <summary>
         /// Control CrearUsuario.
