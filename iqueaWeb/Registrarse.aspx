@@ -8,16 +8,17 @@
         <p>
             Correo:&nbsp;<asp:TextBox ID="Correo" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="CorreoRequired" runat="server" ErrorMessage="Tienes que introducir un correo." ControlToValidate="Correo" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" ControlToValidate="Correo" ValidationExpression="\S+@gmail+\.com" runat="server" ForeColor="Red"  ErrorMessage="Formato incorrecto del correo  (Ejemplo: prueba@gmail.com)"></asp:RegularExpressionValidator>
         </p>
         <p>
             Contraseña:&nbsp;<asp:TextBox ID="Contraseña1" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="PasswordRequired1" runat="server" ErrorMessage="Tienes que introducir una contraseña." ControlToValidate="Contraseña1" ForeColor="#CC0000"></asp:RequiredFieldValidator>
-        
+            
         </p>
         <p>
             Repetir Contraseña:&nbsp;<asp:TextBox ID="Contraseña2" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="PasswordRequired2" runat="server" ErrorMessage="Tienes que introducir una contraseña." ControlToValidate="Contraseña2" ForeColor="#CC0000"></asp:RequiredFieldValidator>
-            
+            <asp:CompareValidator ID="CompareValidator1" runat="server"  Type="String" Operator="Equal"  ControlToCompare="Contraseña1" ControlToValidate="Contraseña2" ErrorMessage="La contraseña no es la misma"></asp:CompareValidator>
         </p>
         <p>Nombre:&nbsp;<asp:TextBox ID="Nombre" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator ID="NombreRequired" runat="server" ErrorMessage="Tienes que introducir tu nombre." ControlToValidate="Nombre" ForeColor="#CC0000"></asp:RequiredFieldValidator>
