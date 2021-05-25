@@ -3,16 +3,34 @@
     <p>
         &nbsp;ID del Anuncio:
         &nbsp;<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" 
+            runat="server" ErrorMessage=" *Campo Obligatorio" 
+            forecolor="red" ControlToValidate="TextBox2">
+        </asp:RequiredFieldValidator>
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator2"
+        ControlToValidate="TextBox2" runat="server"
+        ErrorMessage=" *Solo números"
+        ForeColor="Red"
+        ValidationExpression="\d+">
+        </asp:RegularExpressionValidator>
     </p>
     <p>
         &nbsp;Descripción del Anuncio:
         <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" 
+            runat="server" ErrorMessage=" *Campo Obligatorio" 
+            forecolor="red" ControlToValidate="TextBox3">
+        </asp:RequiredFieldValidator>
         &nbsp;</p>
     <p>
         &nbsp;Enlace del Anuncio:
         <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" 
+            runat="server" ErrorMessage=" *Campo Obligatorio" 
+            forecolor="red" ControlToValidate="TextBox4">
+        </asp:RequiredFieldValidator>
     </p>
     <p>
-        &nbsp;<asp:Button ID="Button1" runat="server" Text="Modificar" />
+        &nbsp;<asp:Button ID="Button1" Class="btn btn-primary" runat="server" Text="Modificar" />
         &nbsp;</p>
 </asp:Content>

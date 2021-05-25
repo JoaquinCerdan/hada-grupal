@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Data.SqlClient;
 public class CADUsuario
 {
@@ -9,7 +10,7 @@ public class CADUsuario
      */
     public CADUsuario()
     {
-        constring = "";
+        constring = ConfigurationManager.ConnectionStrings["Database"].ToString();
     }
 
     /*
