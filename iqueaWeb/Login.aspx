@@ -20,7 +20,7 @@
               <div class="form-label-group">
                 <!--<input type="email" id="inputEmail" class="form-control" placeholder="Correo electrónico" > -->
                   Correo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <asp:TextBox ID="inputEmail" runat="server" Width="189px" Height="26px"></asp:TextBox>
+                  <asp:TextBox ID="inputEmail" runat="server" Width="189px" Height="26px" OnTextChanged="inputEmail_TextChanged"></asp:TextBox>
                   <asp:RequiredFieldValidator ID="EmailRequired" runat="server" ErrorMessage="*Campo<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp; Obligatorio" forecolor="red" ControlToValidate="inputEmail">                 
                   </asp:RequiredFieldValidator>
                 <!--<label for="inputEmail">Correo electrónico</label>-->
@@ -29,15 +29,16 @@
 
               <div class="form-label-group">
                 <!--<input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" >-->
-                  Contraseña:&nbsp;&nbsp;&nbsp; <asp:TextBox ID="inputPassword" runat="server" Width="189px" Height="26px"></asp:TextBox>
+                  Contraseña:&nbsp;&nbsp;&nbsp; <asp:TextBox ID="inputPassword" runat="server" Width="189px" Height="26px" OnTextChanged="inputPassword_TextChanged"></asp:TextBox>
                   <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ErrorMessage="*Campo<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp; Obligatorio" forecolor="red" ControlToValidate="inputPassword"></asp:RequiredFieldValidator>
                 <!--<label for="inputPassword">Contraseña</label>-->
                   <br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <asp:Label ID="Label1" runat="server" ForeColor="Red" Text=""></asp:Label>
                   <br />
               </div>
 
-              
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+                <asp:Button ID="Button3" Class="btn btn-lg btn-primary btn-block text-uppercase" runat="server" Text="Sign in" OnClick="Button3_Click" />
               <hr class="my-4">
               
             </form>
