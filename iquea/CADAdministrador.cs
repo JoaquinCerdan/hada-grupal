@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Data.SqlClient;
 
 namespace iquea
@@ -12,7 +13,7 @@ namespace iquea
          */
         public CADAdministrador()
         {
-            constring = "";
+            constring = ConfigurationManager.ConnectionStrings["Database"].ToString();
         }
 
         /*
