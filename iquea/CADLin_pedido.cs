@@ -16,7 +16,7 @@ public class CADLin_pedido
         {
             conexion = new SqlConnection(constring);
             conexion.Open();
-            String comando = "Select * FROM iquea.Lin_pedido WHERE id = '" + linped.getId() + "'";
+            String comando = "Select * FROM dbo.Lin_pedido WHERE id = '" + linped.getId() + "'";
             SqlCommand ejecucion = new SqlCommand(comando, conexion);
             SqlDataReader leer = ejecucion.ExecuteReader();
             leer.Read();
@@ -44,7 +44,7 @@ public class CADLin_pedido
         {
             conexion = new SqlConnection(constring);
             conexion.Open();
-            String comando = "Insert INTO iquea.Lin_pedido (id, numArticulos) VALUES (" + linped.getId() + " , " + linped.getNumArticulos() + ")";
+            String comando = "Insert INTO dbo.Lin_pedido (id, numArticulos) VALUES (" + linped.getId() + " , " + linped.getNumArticulos() + ")";
             SqlCommand ejecucion = new SqlCommand(comando, conexion);
             ejecucion.ExecuteNonQuery();
             creado = true;
@@ -68,7 +68,7 @@ public class CADLin_pedido
         {
             conexion = new SqlConnection(constring);
             conexion.Open();
-            String comando = "UPDATE iquea.Lin_pedido SET numArticulos = '" + linped.getNumArticulos() + "' WHERE id = '" + linped.getId() + "'";
+            String comando = "UPDATE dbo.Lin_pedido SET numArticulos = '" + linped.getNumArticulos() + "' WHERE id = '" + linped.getId() + "'";
             SqlCommand ejecucion = new SqlCommand(comando, conexion);
             ejecucion.ExecuteNonQuery();
             creado = true;
@@ -92,7 +92,7 @@ public class CADLin_pedido
         {
             conexion = new SqlConnection(constring);
             conexion.Open();
-            String comando = "DELETE FROM iquea.Lin_pedido WHERE id = '" + linped.getId() + "'";
+            String comando = "DELETE FROM dbo.Lin_pedido WHERE id = '" + linped.getId() + "'";
             SqlCommand ejecucion = new SqlCommand(comando, conexion);
             ejecucion.ExecuteNonQuery();
             creado = true;

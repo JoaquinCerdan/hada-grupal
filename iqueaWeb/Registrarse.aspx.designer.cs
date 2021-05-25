@@ -33,15 +33,6 @@ namespace iqueaWeb
         protected global::System.Web.UI.WebControls.RequiredFieldValidator CorreoRequired;
 
         /// <summary>
-        /// Control RegularExpressionCorreo.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionCorreo;
-
-        /// <summary>
         /// Control Contraseña1.
         /// </summary>
         /// <remarks>
@@ -60,15 +51,6 @@ namespace iqueaWeb
         protected global::System.Web.UI.WebControls.RequiredFieldValidator PasswordRequired1;
 
         /// <summary>
-        /// Control RangePassword1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator RangePassword1;
-
-        /// <summary>
         /// Control Contraseña2.
         /// </summary>
         /// <remarks>
@@ -85,15 +67,6 @@ namespace iqueaWeb
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator PasswordRequired2;
-
-        /// <summary>
-        /// Control RangePassword2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator RangePassword2;
 
         /// <summary>
         /// Control Nombre.
@@ -175,5 +148,14 @@ namespace iqueaWeb
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button CrearUsuario;
+
+        /// <summary>
+        /// Control etiqueta.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label etiqueta;
     }
 }
