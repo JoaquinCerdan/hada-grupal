@@ -39,7 +39,6 @@ namespace iqueaWeb
                     usuario.stringNombre = Nombre.Text;
                     usuario.stringDireccion = Direccion.Text;
                     usuario.stringDatosBancarios = Banco.Text;
-                    usuario.intNumTelefono = Telefono.Text;
 
                     caso = usuario.createUsuario();
 

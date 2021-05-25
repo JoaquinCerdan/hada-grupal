@@ -17,18 +17,17 @@ namespace iqueaWeb
         protected void Button3_Click(object sender, EventArgs e)
         {
             cn.Open();
-            string query = "select count(*) from iquea.Usuario where email= @usuario and contra = @password";
+            string query = "select count(*) from Usuarios where email= @usuario and contra = @password";
             SqlCommand cm = new SqlCommand(query, cn);
             cm.Parameters.AddWithValue("@usuario", inputEmail.Text);
             cm.Parameters.AddWithValue("@password", inputPassword.Text);
-
             //Si existe un usuario con los datos retorna true, caso contrario false
             bool correcto = Convert.ToInt32(cm.ExecuteScalar()) > 0;
 
             if (correcto)
             {
                 //Si existe, Bienvenido...
-                Response.Redirect("home.aspx");
+                Response.Redirect("Administrador.aspx");
 
             }
             else
