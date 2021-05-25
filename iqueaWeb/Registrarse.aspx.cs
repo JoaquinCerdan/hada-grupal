@@ -42,7 +42,10 @@ namespace iqueaWeb
                     usuario.stringNombre = Nombre.Text;
                     usuario.stringDireccion = Direccion.Text;
                     usuario.stringDatosBancarios = Banco.Text;
+<<<<<<< HEAD
                     usuario.intNumTelefono = Convert.ToInt32(Telefono.Text);
+=======
+>>>>>>> 27030080baf2fc14450f0e3b62e996c45cba01ce
 
                     caso = usuario.createUsuario();
 
