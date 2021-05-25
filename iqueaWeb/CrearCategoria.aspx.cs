@@ -11,8 +11,6 @@ namespace iqueaWeb
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            ENCategoria en = new ENCategoria(TextBox2.Text, TextBox3.Text);
-            en.createCategoria();
         }
     }
 }
