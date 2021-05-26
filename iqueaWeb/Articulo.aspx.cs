@@ -8,5 +8,10 @@ namespace iqueaWeb
         {
 
         }
+
+        protected void descripcion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

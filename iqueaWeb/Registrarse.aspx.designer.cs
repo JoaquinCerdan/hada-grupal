@@ -33,6 +33,15 @@ namespace iqueaWeb
         protected global::System.Web.UI.WebControls.RequiredFieldValidator CorreoRequired;
 
         /// <summary>
+        /// Control RegularExpressionCorreo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionCorreo;
+
+        /// <summary>
         /// Control Contraseña1.
         /// </summary>
         /// <remarks>

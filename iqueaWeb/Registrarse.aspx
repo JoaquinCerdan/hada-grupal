@@ -8,6 +8,7 @@
         <p>
             Correo:&nbsp;<asp:TextBox ID="Correo" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="CorreoRequired" runat="server" ErrorMessage="Tienes que introducir un correo." ControlToValidate="Correo" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionCorreo" runat="server" ErrorMessage="No has dado un correo valido" ControlToValidate="Correo" ValidationExpression="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"></asp:RegularExpressionValidator>
         </p>
         <p>
             Contraseña:&nbsp;<asp:TextBox ID="Contraseña1" runat="server"></asp:TextBox>
