@@ -25,7 +25,7 @@ public class CADUsuario
         {
             conexion = new SqlConnection(constring);
             conexion.Open();
-            String comando = "Insert INTO dbo.Usuarios (email, contra, datosBancarios, nombre, direccion, numTelefono) VALUES ('" + usuario.stringEmail + "' , '" + usuario.stringContra + "' , '" + usuario.stringDatosBancarios + "' , '" + usuario.stringNombre + "' , '" + usuario.stringDireccion + "' , " + usuario.intNumTelefono + ")";
+            String comando = "Insert INTO [dbo].[Usuarios] (email, contra, datosBancarios, nombre, direccion, numTelefono) VALUES ('" + usuario.stringEmail + "' , '" + usuario.stringContra + "' , '" + usuario.stringDatosBancarios + "' , '" + usuario.stringNombre + "' , '" + usuario.stringDireccion + "' , " + usuario.intNumTelefono + ")";
             SqlCommand ejecucion = new SqlCommand(comando, conexion);
             ejecucion.ExecuteNonQuery();
             creado = true;
@@ -132,5 +132,35 @@ public class CADUsuario
             conexion.Close();
         }
         return creado;
+    }
+
+    public bool readUsuarioWithEmail(String email)
+    {
+
+        bool leido = false;
+        SqlConnection conec = new SqlConnection(constring);
+        try
+        {
+            conec.Open();
+            SqlCommand consulta = new SqlCommand("SELECT * FROM [dbo].[Usuarios] WHERE email = '" + email + "' ", conec);
+            SqlDataReader dr = consulta.ExecuteReader();
+
+
+            if (dr.HasRows)
+                leido = true;
+        }
+        catch (SqlException ex)
+        {
+            Console.WriteLine("The operation has failed.Error: {0}", ex.Message);
+        }
+        catch (Exception exe)
+        {
+            Console.WriteLine("The operation has failed.Error: {0}", exe.Message);
+        }
+        finally
+        {
+            conec.Close();
+        }
+        return leido;
     }
 }

@@ -28,9 +28,12 @@
         </p>
         <p>Teléfono:&nbsp;<asp:TextBox ID="Telefono" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="TelefonoRequired" runat="server" ErrorMessage="Tienes que introducir un Teléfono." ControlToValidate="Telefono" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" ControlToValidate="Telefono" ValidationExpression="(\d{9})" runat="server" ErrorMessage="Formato incorrecto del teléfono (Tienen que ser 9 números)"></asp:RegularExpressionValidator>
         </p>
-        <p>Numero Bancario:&nbsp;<asp:TextBox ID="Banco" runat="server"></asp:TextBox>
+        <p>Numero Bancario:&nbsp;ES<asp:TextBox ID="Banco" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="BancoRequired" runat="server" ErrorMessage="Tienes que introducir una cuenta bancaria." ControlToValidate="Banco" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator3" ControlToValidate="Banco" ValidationExpression="(\d{22})" runat="server" ErrorMessage="Formato incorrecto de cuenta bancaria (Ej:1212341234121234567890) "></asp:RegularExpressionValidator>
+        
         </p>
 
         &nbsp;&nbsp;&nbsp;<asp:Button ID="CrearUsuario" runat="server" Text="Registrar" OnClick="CrearUsuario_Click" />

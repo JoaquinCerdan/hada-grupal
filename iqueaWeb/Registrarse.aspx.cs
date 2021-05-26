@@ -14,9 +14,11 @@ namespace iqueaWeb
             bool caso;
             bool prueba;
             ENUsuario todosUsuarios = new ENUsuario();
-            todosUsuarios.stringEmail = Correo.Text;
+            string emailAux = Correo.Text;
+            
 
-            prueba = todosUsuarios.readUsuario();
+            prueba = todosUsuarios.readUsuarioWithEmail(emailAux);
+            
             if (prueba == true)
             {
                 etiqueta.Text= "error1";
@@ -41,7 +43,7 @@ namespace iqueaWeb
                     usuario.stringContra = Contraseña1.Text;
                     usuario.stringNombre = Nombre.Text;
                     usuario.stringDireccion = Direccion.Text;
-                    usuario.stringDatosBancarios = Banco.Text;
+                    usuario.stringDatosBancarios = "ES"+Banco.Text;
                     usuario.intNumTelefono = Convert.ToInt32(Telefono.Text);
 
 
