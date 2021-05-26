@@ -14,7 +14,7 @@
     </p>
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_precio" runat="server" Text="Precio del articulo:"></asp:Label></strong>
-        <asp:TextBox ID="precio" runat="server" Enabled="False"></asp:TextBox>
+        <asp:TextBox ID="precio" runat="server" Enabled="False" OnTextChanged="precio_TextChanged"></asp:TextBox>
     </p>
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_stock" runat="server" Text="Stock del artículo:"></asp:Label></strong>
@@ -23,8 +23,8 @@
 
     <p>
         &nbsp;&nbsp;
-        <asp:Button ID="comprar" runat="server" Text="comprar" style="border-style: groove; border-width: 1px" /> &nbsp;&nbsp;
-        <asp:Button ID="lista_deseos" runat="server" Text="añadir a lista de deseos" style="border-style: groove; border-width: 1px" />&nbsp;&nbsp;
+        <asp:Button ID="comprar" runat="server" Text="comprar" style="border-style: groove; border-width: 1px" OnClick="comprar_Click" /> &nbsp;&nbsp;
+        <asp:Button ID="lista_deseos" runat="server" Text="añadir a lista de deseos" style="border-style: groove; border-width: 1px" OnClick="lista_deseos_Click" />&nbsp;&nbsp;
     </p>
 
     <br />
@@ -44,8 +44,8 @@
         <asp:TextBox ID="TextBox3" runat="server" Enabled="False"></asp:TextBox>
     </p>
     <p>
-        &nbsp;&nbsp;<asp:Button ID="anterior_com" runat="server" Text="anterior comentario" style="border-style: groove; border-width: 1px" /> &nbsp;&nbsp;
-        <asp:Button ID="siguiente_com" runat="server" Text="siguiente comentario" style="border-style: groove; border-width: 1px"  />&nbsp;&nbsp;
+        &nbsp;&nbsp;<asp:Button ID="anterior_com" runat="server" Text="anterior comentario" style="border-style: groove; border-width: 1px" OnClick="anterior_com_Click" /> &nbsp;&nbsp;
+        <asp:Button ID="siguiente_com" runat="server" Text="siguiente comentario" style="border-style: groove; border-width: 1px" OnClick="siguiente_com_Click"  />&nbsp;&nbsp;
     </p>
 
 
