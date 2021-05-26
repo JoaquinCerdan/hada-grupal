@@ -19,7 +19,7 @@ public class CADCarrito
         {
             conn = new SqlConnection(constring);
             conn.Open();
-            String comand = "Insert INTO iquea.Carrito (id, importe) VALUES (" + carrito.idP + " , " + carrito.importeP + ")";
+            String comand = "Insert INTO [dbo].[Carrito] (id, importe) VALUES (" + carrito.idP + " , " + carrito.importeP + ")";
             SqlCommand execution = new SqlCommand(comand, conn);
             execution.ExecuteNonQuery();
             creating = true;
@@ -51,7 +51,7 @@ public class CADCarrito
         {
             conn = new SqlConnection(constring);
             conn.Open();
-            string comand = "DELETE FROM iquea.Carrito WHERE id = " + carrito.idP;
+            string comand = "DELETE FROM [dbo].[Carrito] WHERE id = " + carrito.idP;
             SqlCommand execution = new SqlCommand(comand, conn);
             execution.ExecuteNonQuery();
             creating = true;
@@ -84,7 +84,7 @@ public class CADCarrito
         {
             conn = new SqlConnection(constring);
             conn.Open();
-            string comand = "Select * From iquea.Carrito";
+            string comand = "Select * From [dbo].[Carrito]";
             SqlCommand execution = new SqlCommand(comand, conn);
             searching = execution.ExecuteReader();
             searching.Read();
@@ -127,7 +127,7 @@ public class CADCarrito
         {
             conn = new SqlConnection(constring);
             conn.Open();
-            string comand = "UPDATE iquea.Carrito SET importe=" + carrito.importeP + "WHERE id = " + carrito.idP;
+            string comand = "UPDATE [dbo].[Carrito] SET importe=" + carrito.importeP + "WHERE id = " + carrito.idP;
             SqlCommand execution = new SqlCommand(comand, conn);
             execution.ExecuteNonQuery();
             creating = true;
