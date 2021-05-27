@@ -23,6 +23,7 @@ namespace iqueaWeb
                         nombre.Text = articulo.stringNombre;
                         descripcion.Text = articulo.stringDescripcion;
                         precio.Text = Convert.ToString(articulo.doublePrecio);
+                        stock.Checked = Convert.ToBoolean(articulo.boolStock);
 
                     }
                     else
