@@ -10,11 +10,11 @@
     </p>
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_descripcion" runat="server" Text="Descripción del artículo:"></asp:Label></strong>
-        <asp:TextBox ID="descripcion" runat="server" Enabled="False" OnTextChanged="descripcion_TextChanged"></asp:TextBox>
+        <asp:TextBox ID="descripcion" runat="server" Enabled="False" ></asp:TextBox>
     </p>
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_precio" runat="server" Text="Precio del articulo:"></asp:Label></strong>
-        <asp:TextBox ID="precio" runat="server" Enabled="False" OnTextChanged="precio_TextChanged"></asp:TextBox>
+        <asp:TextBox ID="precio" runat="server" Enabled="False" ></asp:TextBox>
     </p>
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_stock" runat="server" Text="Stock del artículo:"></asp:Label></strong>
