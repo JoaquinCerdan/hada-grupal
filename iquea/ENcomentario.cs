@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 using System;
 ﻿using System;
@@ -11,6 +12,9 @@ using System.Data.SqlClient;
 using System.Data.SqlTypes;
 
 public class ENcomentario
+=======
+﻿public class ENcomentario
+>>>>>>> develop
 {
     private string comentario;
     private int valoracion;
@@ -41,11 +45,11 @@ public class ENcomentario
         this.valoracion = 0;
     }
 
-    public ENcomentario(string comentario,int valoracion)
+    public ENcomentario(string comentario, int valoracion)
     {
         this.comentario = comentario;
         //la valoración va desde 0 a 100.Si el valor dado no esta entre esos parametros no se aceptará
-        if(valoracion>=0 && valoracion <= 100)
+        if (valoracion >= 0 && valoracion <= 100)
         {
             this.valoracion = valoracion;
         }
@@ -59,7 +63,7 @@ public class ENcomentario
     {
         bool respuesta;
 
-        CADcomentario comentario=new CADcomentario();
+        CADcomentario comentario = new CADcomentario();
         respuesta = comentario.createComentario(this);
 
         return respuesta;

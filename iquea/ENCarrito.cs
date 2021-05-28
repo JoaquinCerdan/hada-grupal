@@ -1,6 +1,4 @@
-﻿using System;
-
-public class ENCarrito
+﻿public class ENCarrito
 {
     private int id;
     private double importe;

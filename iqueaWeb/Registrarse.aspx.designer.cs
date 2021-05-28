@@ -60,76 +60,133 @@ namespace iqueaWeb
         protected global::System.Web.UI.WebControls.RequiredFieldValidator PasswordRequired1;
 
         /// <summary>
+<<<<<<< HEAD
         /// Control RangePassword1.
+=======
+        /// Control Contraseña2.
+>>>>>>> develop
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.RangeValidator RangePassword1;
 
         /// <summary>
         /// Control Contraseña2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
+=======
         protected global::System.Web.UI.WebControls.TextBox Contraseña2;
 
         /// <summary>
         /// Control PasswordRequired2.
+>>>>>>> develop
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
+<<<<<<< HEAD
+        protected global::System.Web.UI.WebControls.TextBox Contraseña2;
+
+        /// <summary>
+        /// Control PasswordRequired2.
+=======
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator PasswordRequired2;
+
+        /// <summary>
+        /// Control Nombre.
+>>>>>>> develop
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.RequiredFieldValidator PasswordRequired2;
 
         /// <summary>
         /// Control RangePassword2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator RangePassword2;
-
-        /// <summary>
-        /// Control Nombre.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
+=======
         protected global::System.Web.UI.WebControls.TextBox Nombre;
 
         /// <summary>
         /// Control NombreRequired.
+>>>>>>> develop
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
+<<<<<<< HEAD
+        protected global::System.Web.UI.WebControls.RangeValidator RangePassword2;
+
+        /// <summary>
+        /// Control Nombre.
+=======
         protected global::System.Web.UI.WebControls.RequiredFieldValidator NombreRequired;
 
         /// <summary>
         /// Control Direccion.
+>>>>>>> develop
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
+<<<<<<< HEAD
+        protected global::System.Web.UI.WebControls.TextBox Nombre;
+
+        /// <summary>
+        /// Control NombreRequired.
+=======
+        protected global::System.Web.UI.WebControls.TextBox Direccion;
+
+        /// <summary>
+        /// Control DireccionRequired.
+>>>>>>> develop
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+<<<<<<< HEAD
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator NombreRequired;
+
+        /// <summary>
+        /// Control Direccion.
+=======
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator DireccionRequired;
+
+        /// <summary>
+        /// Control Telefono.
+>>>>>>> develop
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.TextBox Direccion;
 
         /// <summary>
         /// Control Telefono.
+=======
+        protected global::System.Web.UI.WebControls.TextBox Telefono;
+
+        /// <summary>
+        /// Control TelefonoRequired.
+>>>>>>> develop
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.TextBox Telefono;
+=======
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator TelefonoRequired;
+>>>>>>> develop
 
         /// <summary>
         /// Control Banco.
@@ -141,6 +198,18 @@ namespace iqueaWeb
         protected global::System.Web.UI.WebControls.TextBox Banco;
 
         /// <summary>
+<<<<<<< HEAD
+=======
+        /// Control BancoRequired.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator BancoRequired;
+
+        /// <summary>
+>>>>>>> develop
         /// Control CrearUsuario.
         /// </summary>
         /// <remarks>
@@ -148,5 +217,17 @@ namespace iqueaWeb
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button CrearUsuario;
+<<<<<<< HEAD
+=======
+
+        /// <summary>
+        /// Control etiqueta.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label etiqueta;
+>>>>>>> develop
     }
 }

@@ -1,18 +1,10 @@
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data;
-using System.Data.Common;
-using System.Data.SqlClient;
-using System.Data.SqlTypes;
 
 public class ENoferta
 {
-	private double descuento;
-	private DateTime fechaValidez;
+    private double descuento;
+    private DateTime fechaValidez;
     private string cod;
 
     public double descuentoP
@@ -43,13 +35,13 @@ public class ENoferta
     public ENoferta(double descuento, DateTime fechaValidez)
     {
         //solo se aceptará el descuento si es mayor que 0 y menor que 100(el descuento funciona en forma de proporcion sobre el precio)
-        if(descuento>0 && descuento < 100)
+        if (descuento > 0 && descuento < 100)
         {
             this.descuento = descuento;
         }
         //la fecha de validez tiene que ser mayor que la actual
         this.fechaValidez = fechaValidez;
-        
+
     }
 
     public bool createOferta()

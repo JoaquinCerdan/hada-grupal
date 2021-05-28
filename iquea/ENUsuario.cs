@@ -1,106 +1,97 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace iquea
+﻿public class ENUsuario
 {
-    class ENUsuario
+    private string email;
+    private string contra;
+    private string datosBancarios;
+    private string nombre;
+    private string direccion;
+    private int numTelefono;
+
+    public string stringEmail
     {
-        private string email;
-        private string contra;
-        private string datosBancarios;
-        private string nombre;
-        private string direccion;
-        private int numTelefono;
+        get { return email; }
+        set { email = value; }
+    }
 
-        public string stringEmail
-        {
-            get { return email; }
-            set { email = value; }
-        }
+    public string stringContra
+    {
+        get { return contra; }
+        set { contra = value; }
+    }
 
-        public string stringContra
-        {
-            get { return contra; }
-            set { contra = value; }
-        }
+    public string stringDatosBancarios
+    {
+        get { return datosBancarios; }
+        set { datosBancarios = value; }
+    }
 
-        public string stringDatosBancarios
-        {
-            get { return datosBancarios; }
-            set { datosBancarios = value; }
-        }
+    public string stringDireccion
+    {
+        get { return direccion; }
+        set { direccion = value; }
+    }
 
-        public string stringDireccion
-        {
-            get { return direccion; }
-            set { direccion = value; }
-        }
+    public string stringNombre
+    {
+        get { return nombre; }
+        set { nombre = value; }
+    }
 
-        public string stringNombre
-        {
-            get { return nombre; }
-            set { nombre = value; }
-        }
+    public int intNumTelefono
+    {
+        get { return numTelefono; }
+        set { numTelefono = value; }
+    }
 
-        public int intNumTelefono
-        {
-            get { return numTelefono; }
-            set { numTelefono = value; }
-        }
+    public ENUsuario()
+    {
+        stringEmail = "";
+        stringContra = "";
+        stringDatosBancarios = "";
+        stringDireccion = "";
+        stringNombre = "";
+        intNumTelefono = 0;
+    }
 
-        public ENUsuario()
-        {
-            stringEmail = "";
-            stringContra = "";
-            stringDatosBancarios = "";
-            stringDireccion = "";
-            stringNombre = "";
-            intNumTelefono = 0;
-        }
+    public ENUsuario(string email, string contra, string datosBancarios, string nombre, string direccion, int numTelefono)
+    {
+        this.email = email;
+        this.contra = contra;
+        this.datosBancarios = datosBancarios;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.numTelefono = numTelefono;
+    }
 
-        public ENUsuario(string email, string contra, string datosBancarios, string nombre, string direccion, int numTelefono)
-        {
-            this.email = email;
-            this.contra = contra;
-            this.datosBancarios = datosBancarios;
-            this.nombre = nombre;
-            this.direccion = direccion;
-            this.numTelefono = numTelefono;
-        }
+    public bool createUsuario()
+    {
+        bool isTrue;
+        CADUsuario usuario = new CADUsuario();
+        isTrue = usuario.createUsuario(this);
+        return isTrue;
+    }
 
-        public bool createUsuario()
-        {
-            bool isTrue;
-            CADUsuario usuario = new CADUsuario();
-            isTrue = usuario.createUsuario(this);
-            return isTrue;
-        }
+    public bool readUsuario()
+    {
+        bool isTrue;
+        CADUsuario usuario = new CADUsuario();
+        isTrue = usuario.readUsuario(this);
+        return isTrue;
+    }
 
-        public bool readUsuario()
-        {
-            bool isTrue;
-            CADUsuario usuario = new CADUsuario();
-            isTrue = usuario.readUsuario(this);
-            return isTrue;
-        }
+    public bool updateUsuario()
+    {
+        bool isTrue;
+        CADUsuario usuario = new CADUsuario();
+        isTrue = usuario.createUsuario(this);
+        return isTrue;
+    }
 
-        public bool updateUsuario()
-        {
-            bool isTrue;
-            CADUsuario usuario = new CADUsuario();
-            isTrue = usuario.createUsuario(this);
-            return isTrue;
-        }
-
-        public bool deleteUsuario()
-        {
-            bool isTrue;
-            CADUsuario usuario = new CADUsuario();
-            isTrue = usuario.deleteUsuario(this);
-            return isTrue;
-        }
+    public bool deleteUsuario()
+    {
+        bool isTrue;
+        CADUsuario usuario = new CADUsuario();
+        isTrue = usuario.deleteUsuario(this);
+        return isTrue;
     }
 }

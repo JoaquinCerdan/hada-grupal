@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 ﻿using System;
 using System.Collections.Generic;
@@ -8,14 +9,19 @@ using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
+=======
+﻿
+using System;
+>>>>>>> develop
 using System.Configuration;
+using System.Data.SqlClient;
 
 public class CADoferta
 {
-	private string constring;
+    private string constring;
 
-	public CADoferta()
-	{
+    public CADoferta()
+    {
         constring = ConfigurationManager.ConnectionStrings["Database"].ToString();
     }
 
@@ -26,7 +32,11 @@ public class CADoferta
         try
         {
             a.Open();
+<<<<<<< HEAD
             String orden = "Insert Into dbo.oferta (cod, descuento, fechaValidez) VALUES ('"+oferta.codP+"' , '" + oferta.descuentoP + "' , '" + oferta.fechaValidezP + ")";
+=======
+            String orden = "Insert Into iquea.oferta (cod, descuento, fechaValidez) VALUES ('" + oferta.codP + "' , '" + oferta.descuentoP + "' , '" + oferta.fechaValidezP + ")";
+>>>>>>> develop
             SqlCommand comando = new SqlCommand(orden, a);
             comando.ExecuteNonQuery();
 
@@ -54,7 +64,11 @@ public class CADoferta
         try
         {
             a.Open();
+<<<<<<< HEAD
             SqlCommand comando = new SqlCommand("Select * from dbo.oferta where cod = '" + oferta.codP + "'" , a);
+=======
+            SqlCommand comando = new SqlCommand("Select * from iquea.oferta where cod = '" + oferta.codP + "'", a);
+>>>>>>> develop
             SqlDataReader dr = comando.ExecuteReader();
 
             dr.Read();
@@ -82,7 +96,7 @@ public class CADoferta
 
     public bool deleteOferta(ENoferta oferta)
     {
-        bool respuesta = false; 
+        bool respuesta = false;
         SqlConnection a = new SqlConnection(constring);
         try
         {

@@ -1,12 +1,10 @@
-﻿using System;
-
-public class ENLista_deseos
+﻿public class ENLista_deseos
 {
-	private int id;
+    private int id;
     private int id_articulo;
     private int id_user;
 
-	public int intId
+    public int intId
     {
         get { return id; }
         set { id = value; }
@@ -23,13 +21,13 @@ public class ENLista_deseos
     }
 
     public ENLista_deseos()
-	{
+    {
         intId = 0;
         intId_articulo = 0;
         intId_user = 0;
-	}
+    }
 
-	public ENLista_deseos(int id,int id_articulos)
+    public ENLista_deseos(int id, int id_articulos)
     {
         intId = id;
         intId_articulo = id_articulo;
@@ -46,7 +44,7 @@ public class ENLista_deseos
     }
     public bool readLista_deseos()
     {
-        CADLista_deseos lista= new CADLista_deseos();
+        CADLista_deseos lista = new CADLista_deseos();
         bool read = lista.readLista_deseos(this);
         return read;
     }
@@ -59,14 +57,14 @@ public class ENLista_deseos
         aux.id = this.id;
         aux.id_articulo = this.id_articulo;
         aux.id_user = this.id_user;
-        
+
 
         if (lista.readLista_deseos(this))
         {
             this.id = aux.id;
             this.id_articulo = aux.id_articulo;
             this.id_user = aux.id_user;
-            
+
             updated = lista.updateLista_deseos(this);
         }
 

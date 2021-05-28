@@ -2,30 +2,29 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
       
-    <!--
     <br />
     &nbsp;&nbsp;<asp:Image ID="Image1" runat="server" ImageUrl="https://www.muebleselparaiso.es/102171-large_default/sofa-cama-de-3-plazas-tessa.jpg" />
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_nombre" runat="server" Text="Nombre del artículo:"></asp:Label></strong>
-        <asp:TextBox ID="nombre" runat="server"></asp:TextBox>
+        <asp:TextBox ID="nombre" runat="server" Enabled="False"></asp:TextBox>
     </p>
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_descripcion" runat="server" Text="Descripción del artículo:"></asp:Label></strong>
-        <asp:TextBox ID="descripcion" runat="server"></asp:TextBox>
+        <asp:TextBox ID="descripcion" runat="server" Enabled="False" ></asp:TextBox>
     </p>
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_precio" runat="server" Text="Precio del articulo:"></asp:Label></strong>
-        <asp:TextBox ID="precio" runat="server"></asp:TextBox>
+        <asp:TextBox ID="precio" runat="server" Enabled="False" ></asp:TextBox>
     </p>
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_stock" runat="server" Text="Stock del artículo:"></asp:Label></strong>
-        <asp:CheckBox ID="stock" runat="server" />
+        <asp:CheckBox ID="stock" runat="server" Enabled="False" />
     </p>
 
     <p>
         &nbsp;&nbsp;
-        <asp:Button ID="comprar" runat="server" Text="comprar" style="border-style: groove; border-width: 1px" /> &nbsp;&nbsp;
-        <asp:Button ID="lista_deseos" runat="server" Text="añadir a lista de deseos" style="border-style: groove; border-width: 1px" />&nbsp;&nbsp;
+        <asp:Button ID="comprar" runat="server" Text="comprar" style="border-style: groove; border-width: 1px" OnClick="comprar_Click" /> &nbsp;&nbsp;
+        <asp:Button ID="lista_deseos" runat="server" Text="añadir a lista de deseos" style="border-style: groove; border-width: 1px" OnClick="lista_deseos_Click" />&nbsp;&nbsp;
     </p>
 
     <br />
@@ -34,25 +33,23 @@
     </p>
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_usuario" runat="server" Text="Usuario:"></asp:Label></strong>
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TextBox1" runat="server" Enabled="False"></asp:TextBox>
     </p>
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_comentario" runat="server" Text="Comentario:"></asp:Label></strong>
-        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TextBox2" runat="server" Enabled="False"></asp:TextBox>
     </p>
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_valoracion" runat="server" Text="Valoración:"></asp:Label></strong>
-        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TextBox3" runat="server" Enabled="False"></asp:TextBox>
     </p>
     <p>
-        &nbsp;&nbsp;<asp:Button ID="anterior_com" runat="server" Text="anterior comentario" style="border-style: groove; border-width: 1px" /> &nbsp;&nbsp;
-        <asp:Button ID="siguiente_com" runat="server" Text="siguiente comentario" style="border-style: groove; border-width: 1px"  />&nbsp;&nbsp;
+        &nbsp;&nbsp;<asp:Button ID="anterior_com" runat="server" Text="anterior comentario" style="border-style: groove; border-width: 1px" OnClick="anterior_com_Click" /> &nbsp;&nbsp;
+        <asp:Button ID="siguiente_com" runat="server" Text="siguiente comentario" style="border-style: groove; border-width: 1px" OnClick="siguiente_com_Click"  />&nbsp;&nbsp;
     </p>
 
-    -->
 
-
-     <div class="col-lg-6" style="margin:0 auto;">
+     <!--<div class="col-lg-6" style="margin:0 auto;">
                     <div class="card mt-2">
                         <img class="card-img-top " width="400" height="600" src="https://www.muebleselparaiso.es/102171-large_default/sofa-cama-de-3-plazas-tessa.jpg" alt="..." />
                         <div class="card-body">
@@ -82,6 +79,6 @@
                         </div>
                     </div>
                 </div>
-            
+            -->
 
 </asp:Content>

@@ -1,18 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace iquea
-{
     public class CADPedido
     {
         public string constring;
         public CADPedido()
         {
-            constring = "";
+            constring = ConfigurationManager.ConnectionStrings["Database"].ToString();
         }
         public bool leerPedido(ENPedido pedido)
         {
@@ -22,7 +17,7 @@ namespace iquea
             {
                 conexion = new SqlConnection(constring);
                 conexion.Open();
-                String comando = "Select * FROM iquea.Pedido WHERE id = '" + pedido.getID() + "'";
+                String comando = "Select * FROM dbo.Pedido WHERE id = '" + pedido.getID() + "'";
                 SqlCommand ejecucion = new SqlCommand(comando, conexion);
                 SqlDataReader leer = ejecucion.ExecuteReader();
                 leer.Read();
@@ -51,7 +46,7 @@ namespace iquea
             {
                 conexion = new SqlConnection(constring);
                 conexion.Open();
-                String comando = "Insert INTO iquea.Pedido (id, importe, recibo) VALUES (" + pedido.getID() + " , " + pedido.getImporte() + " , " + pedido.getRecibo() + ")";
+                String comando = "Insert INTO dbo.Pedido (id, importe, recibo) VALUES (" + pedido.getID() + " , " + pedido.getImporte() + " , " + pedido.getRecibo() + ")";
                 SqlCommand ejecucion = new SqlCommand(comando, conexion);
                 ejecucion.ExecuteNonQuery();
                 creado = true;
@@ -75,7 +70,7 @@ namespace iquea
             {
                 conexion = new SqlConnection(constring);
                 conexion.Open();
-                String comando = "UPDATE iquea.Pedido SET importe = '" + pedido.getImporte() + "' , recibo = '" + pedido.getRecibo() + "' WHERE id = '" + pedido.getID() + "'";
+                String comando = "UPDATE dbo.Pedido SET importe = '" + pedido.getImporte() + "' , recibo = '" + pedido.getRecibo() + "' WHERE id = '" + pedido.getID() + "'";
                 SqlCommand ejecucion = new SqlCommand(comando, conexion);
                 ejecucion.ExecuteNonQuery();
                 creado = true;
@@ -99,7 +94,7 @@ namespace iquea
             {
                 conexion = new SqlConnection(constring);
                 conexion.Open();
-                String comando = "DELETE FROM iquea.Pedido WHERE id = '" + pedido.getID() + "'";
+                String comando = "DELETE FROM dbo.Pedido WHERE id = '" + pedido.getID() + "'";
                 SqlCommand ejecucion = new SqlCommand(comando, conexion);
                 ejecucion.ExecuteNonQuery();
                 creado = true;
@@ -115,5 +110,4 @@ namespace iquea
             }
             return creado;
         }
-    }
 }
