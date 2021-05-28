@@ -55,7 +55,7 @@
         </Columns>
     </asp:GridView>
 
-    <asp:SqlDataSource ID="SqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:Database %>" SelectCommand="SELECT [Imagen], [Nombre] FROM [Articulo]"></asp:SqlDataSource>
+    <!--<asp:SqlDataSource ID="SqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:Database %>" SelectCommand="SELECT [Imagen], [Nombre] FROM [Articulo]"></asp:SqlDataSource>-->
 
     <!--Productos disponibles:<br />
     <br />
