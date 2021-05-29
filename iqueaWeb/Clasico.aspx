@@ -38,6 +38,24 @@
         <asp:Button ID="Ordenar" runat="server" PostBackUrl="~/OrdenaC.aspx" Text="Ordenar" />
             
     </div>
+
+    <asp:GridView ID="GridView" runat="server" AutoGenerateColumns="False" ShowHeader="False" Width="256px" HorizontalAlign="Center" OnRowCommand="GridView_RowCommand1" OnSelectedIndexChanged="GridView_SelectedIndexChanged">
+        <Columns>
+            <asp:ButtonField DataTextField="Nombre" Text="Botón_nombre" CommandName="id" >
+            <FooterStyle HorizontalAlign="Center" />
+            <HeaderStyle HorizontalAlign="Center" />
+            <ItemStyle HorizontalAlign="Center" />
+            </asp:ButtonField>
+            <asp:ImageField DataImageUrlField="Imagen" HeaderText="Imagen">
+                <FooterStyle HorizontalAlign="Center" />
+                <HeaderStyle HorizontalAlign="Center" />
+                <ItemStyle HorizontalAlign="Center" />
+            </asp:ImageField>
+        </Columns>
+    </asp:GridView>
+
+
+    <!--
     <div>
         <center><p><asp:Image ID="Image2" ImageUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Estrella_roja.svg/400px-Estrella_roja.svg.png" runat="server" Height="21px" Width="23px" />El producto estrella<asp:Image ID="Image1" ImageUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Estrella_roja.svg/400px-Estrella_roja.svg.png" runat="server" Height="21px" Width="23px" />
             </p></center>
@@ -57,4 +75,5 @@
             <asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="https://lw-cdn.com/images/D9963761E243/k_f8a7d8b0a190c36347dbba136cee5b27;w_1600;h_1600;q_70/lampara-de-pared-luca-de-cristal-rustica-blanca.webp" Height="164px" Width="279px" ImageAlign="Right" PostBackUrl="Articulo.aspx" />
             <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="https://cdn.sklum.com/es/875214/planta-artificial-monstera.jpg?cf-resize=gallery" Height="164px" Width="279px" ImageAlign="Middle" PostBackUrl="Articulo.aspx" />
         </center>
+    -->
 </asp:Content>
