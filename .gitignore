@@ -11,14 +11,14 @@ slnx.sqlite
 #*.mdf
 
 #carpeta .vs
-/hada-grupal/.vs/
-/hada-grupal/iquea/.vs/
+/.vs/
+/iquea/.vs/
 
 #carpeta bin
-/hada-grupal/iqueaWeb/bin/
-/hada-grupal/iquea/bin/
+/iqueaWeb/bin/
+/iquea/bin/
 
 #carpeta obj
-/hada-grupal/iqueaWeb/obj/
-/hada-grupal/iquea/obj/
+/iqueaWeb/obj/
+/iquea/obj/
 
