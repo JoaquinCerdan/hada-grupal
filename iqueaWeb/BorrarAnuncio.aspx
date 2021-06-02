@@ -4,9 +4,17 @@
         &nbsp;
         ID del anuncio:
         <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+        &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*Campo Obligatorio" forecolor="red" ControlToValidate="TextBox9">                 
+                  </asp:RequiredFieldValidator>
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator2"
+        ControlToValidate="TextBox9" runat="server"
+        ErrorMessage=" *Solo números"
+        ForeColor="Red"
+        ValidationExpression="\d+">
+        </asp:RegularExpressionValidator>
     </p>
     <p>
         &nbsp;
-        <asp:Button ID="Button3" runat="server" Text="Borrar" />
+        <asp:Button ID="Button3" runat="server" Class="btn btn-primary" Text="Borrar" />
     </p>
 </asp:Content>
