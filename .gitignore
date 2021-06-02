@@ -1,2 +1,14 @@
 slnx.sqlite
-/hada-p1/obj/Debug
+/hada-grupal/obj/Debug
+
+#archivos de la solución
+*.sln
+
+#carpeta Debug
+[Db]ebug/
+
+#archivo de BBDD
+*.mdf
+
+#carpeta .vs
+/hada-grupal/.vs
