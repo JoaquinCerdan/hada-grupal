@@ -11,7 +11,11 @@ namespace iqueaWeb
         public SqlConnection cn = new SqlConnection(constring);
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(Session["email"] != null)
+            {
+                //si ya hay alguien logeado se le envia directamente a la pagina de usuario
+                Response.Redirect("Usuario.aspx");
+            }
         }
 
         protected void Button3_Click(object sender, EventArgs e)
@@ -27,6 +31,7 @@ namespace iqueaWeb
             if (correcto)
             {
                 //Si existe, Bienvenido...
+                Session.Add("email", inputEmail.Text);
                 Response.Redirect("Administrador.aspx");
 
             }
