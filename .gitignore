@@ -2,13 +2,13 @@ slnx.sqlite
 /hada-grupal/obj/Debug
 
 #archivos de la solución
-*.sln
+#*.sln
 
 #carpeta Debug
 [Db]ebug/
 
 #archivo de BBDD
-*.mdf
+#*.mdf
 
 #carpeta .vs
 /hada-grupal/.vs
