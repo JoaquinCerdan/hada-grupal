@@ -21,17 +21,14 @@ namespace iqueaWeb
             
             if (prueba == true)
             {
-                etiqueta.Text= "error1";
                 throw new Exception("El correo dado ya esta identificado dentro de la web");
             }
             if (Correo.Text == null || Nombre.Text == null || Contraseña1.Text == null || Contraseña2.Text==null || Direccion.Text==null || Telefono.Text==null || Banco.Text==null)
             {
-                etiqueta.Text = "error2";
                 throw new Exception("Los datos dados son insuficientes.");
             }
             else if (Contraseña1.Text != Contraseña2.Text)
             {
-                etiqueta.Text = "error3";
                 throw new Exception("Las contraseñas no son iguales");
             }
             else
@@ -56,7 +53,6 @@ namespace iqueaWeb
                     }
                     else
                     {
-                        etiqueta.Text = "error5";
                         throw new Exception("no se han podido almacenar los datos.");
                     }
                 }

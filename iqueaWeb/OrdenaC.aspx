@@ -39,7 +39,25 @@
             
     </div>
      <br />
-    Productos disponibles:<br />
+
+    <asp:GridView ID="GridView" runat="server" AutoGenerateColumns="False" ShowHeader="False" Width="256px" HorizontalAlign="Center" OnRowCommand="GridView_RowCommand1">
+        <Columns>
+            <asp:ButtonField DataTextField="Nombre" Text="Botón_nombre" CommandName="id" >
+            <FooterStyle HorizontalAlign="Center" />
+            <HeaderStyle HorizontalAlign="Center" />
+            <ItemStyle HorizontalAlign="Center" />
+            </asp:ButtonField>
+            <asp:ImageField DataImageUrlField="Imagen" HeaderText="Imagen">
+                <FooterStyle HorizontalAlign="Center" />
+                <HeaderStyle HorizontalAlign="Center" />
+                <ItemStyle HorizontalAlign="Center" />
+            </asp:ImageField>
+        </Columns>
+    </asp:GridView>
+
+    <!--<asp:SqlDataSource ID="SqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:Database %>" SelectCommand="SELECT [Imagen], [Nombre] FROM [Articulo]"></asp:SqlDataSource>-->
+
+    <!--Productos disponibles:<br />
     <br />
     <center>
             <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="https://st01.ventamueblesonline.es/58096-thickbox_default/composicion-de-salon-argos-twin-sable.jpg" Height="164px" Width="279px" ImageAlign="Left" PostBackUrl="Articulo.aspx" />
@@ -50,4 +68,5 @@
     <center>
         <asp:ImageButton ID="ImageButton5" runat="server" ImageUrl="https://pictureserver.net/images/pic/d9/76/undef_src_sa_picid_749405_x_1800_type_color_image.jpg?ver=14" Height="160px" style="margin-left: 0px; margin-top: 0px" Width="290px" PostBackUrl="Articulo.aspx" />
     </center>
+    -->
 </asp:Content>

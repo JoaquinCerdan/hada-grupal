@@ -38,6 +38,23 @@
         <asp:Button ID="Ordenar" runat="server" PostBackUrl="~/OrdenaM.aspx" Text="Ordenar" />
             
     </div>
+
+    <asp:GridView ID="GridView" runat="server" AutoGenerateColumns="False" ShowHeader="False" Width="256px" HorizontalAlign="Center" OnRowCommand="GridView_RowCommand1" OnSelectedIndexChanged="GridView_SelectedIndexChanged">
+        <Columns>
+            <asp:ButtonField DataTextField="Nombre" Text="Botón_nombre" CommandName="id" >
+            <FooterStyle HorizontalAlign="Center" />
+            <HeaderStyle HorizontalAlign="Center" />
+            <ItemStyle HorizontalAlign="Center" />
+            </asp:ButtonField>
+            <asp:ImageField DataImageUrlField="Imagen" HeaderText="Imagen">
+                <FooterStyle HorizontalAlign="Center" />
+                <HeaderStyle HorizontalAlign="Center" />
+                <ItemStyle HorizontalAlign="Center" />
+            </asp:ImageField>
+        </Columns>
+    </asp:GridView>
+
+    <!--
     <div>
         <center><p><asp:Image ID="Image2" ImageUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Estrella_roja.svg/400px-Estrella_roja.svg.png" runat="server" Height="21px" Width="23px" />El producto estrella<asp:Image ID="Image1" ImageUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Estrella_roja.svg/400px-Estrella_roja.svg.png" runat="server" Height="21px" Width="23px" />
             </p></center>
@@ -57,4 +74,5 @@
             <asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="https://medias.maisonsdumonde.com/image/upload/q_auto,f_auto/w_1000/img/sofa-de-2-3-plazas-de-terciopelo-azul-1000-9-30-188097_9.jpg" Height="164px" Width="279px" ImageAlign="Right" PostBackUrl="Articulo.aspx" />
             <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="https://www.muebledesign.com/img/cms/mesa-noguche-coffe-mueble-design.jpg" Height="164px" Width="279px" ImageAlign="Middle" PostBackUrl="Articulo.aspx" />
         </center>
+    -->
 </asp:Content>

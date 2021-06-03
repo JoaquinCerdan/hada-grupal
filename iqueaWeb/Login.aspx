@@ -38,11 +38,13 @@
                   <br />
               </div>
 
-                <asp:Button ID="Button3" Class="btn btn-lg btn-primary btn-block text-uppercase" runat="server" Text="Sign in" OnClick="Button3_Click" />
+                <asp:Button ID="Button3" Class="btn btn-lg btn-primary btn-block text-uppercase" runat="server" Text="Iniciar Sesión" OnClick="Button3_Click" />
+                <p style="font-size:1em"> ¿No se ha registrado? <a style="font-size:1em" href="Registrarse.aspx"> Registrarse </a></p> 
               <hr class="my-4">
               
             </form>
           </div>
+
         </div>
       </div>
     </div>

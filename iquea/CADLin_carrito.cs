@@ -19,7 +19,7 @@ public class CADLin_carrito
         {
             conn = new SqlConnection(constring);
             conn.Open();
-            String comand = "Insert INTO iquea.Lin_carrito (id, numArticulos) VALUES (" + lin_carrito.idP + " , " + lin_carrito.numArticulosP + ")";
+            String comand = "Insert INTO [dbo].[Lin_carrito] (id, numArticulos) VALUES (" + lin_carrito.idP + " , " + lin_carrito.numArticulosP + ")";
             SqlCommand execution = new SqlCommand(comand, conn);
             execution.ExecuteNonQuery();
             creating = true;
@@ -51,7 +51,7 @@ public class CADLin_carrito
         {
             conn = new SqlConnection(constring);
             conn.Open();
-            string comand = "DELETE FROM iquea.Lin_carrito WHERE id = " + lin_carrito.idP;
+            string comand = "DELETE FROM [dbo].[Lin_carrito] WHERE id = " + lin_carrito.idP;
             SqlCommand execution = new SqlCommand(comand, conn);
             execution.ExecuteNonQuery();
             creating = true;
@@ -85,7 +85,7 @@ public class CADLin_carrito
         {
             conn = new SqlConnection(constring);
             conn.Open();
-            string comand = "Select * From iquea.Lin_carrito";
+            string comand = "Select * From [dbo].[Lin_carrito]";
             SqlCommand execution = new SqlCommand(comand, conn);
             searching = execution.ExecuteReader();
             searching.Read();
@@ -128,7 +128,7 @@ public class CADLin_carrito
         {
             conn = new SqlConnection(constring);
             conn.Open();
-            string comand = "UPDATE iquea.Lin_carrito SET numArticulos=" + lin_carrito.numArticulosP + "WHERE id = " + lin_carrito.idP;
+            string comand = "UPDATE [dbo].[Lin_carrito] SET numArticulos=" + lin_carrito.numArticulosP + "WHERE id = " + lin_carrito.idP;
             SqlCommand execution = new SqlCommand(comand, conn);
             execution.ExecuteNonQuery();
             creating = true;
