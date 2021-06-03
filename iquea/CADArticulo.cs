@@ -29,7 +29,7 @@ public class CADArticulo
 		try
 		{
 			c.Open();
-			SqlCommand com = new SqlCommand("Insert INTO [dbo].[Articulo] (Id,Nombre,Descripcion,Precio,Imagen,Stock) VALUES('"
+			SqlCommand com = new SqlCommand("Insert INTO [dbo].[Articulo] (Id,Nombre,Descripcion,Precio,Imagen,Stock,IdCategoria,Temporada) VALUES('"
 				+ art.intId
 				+ "', '"
 				+ art.stringNombre
@@ -40,7 +40,11 @@ public class CADArticulo
 				+ "','"
 				+ art.stringImagen
 				+ "','"
-				+ art.boolStock
+				+ art.intStock
+				+ "','"
+				+ art.stringCategoria
+				+ "','"
+				+ art.stringTemporada
 				+ "')", c);
 
 			com.ExecuteNonQuery();
@@ -77,7 +81,9 @@ public class CADArticulo
 				+ "' ,Descripcion=" + art.stringDescripcion
 				+ "' ,Precio=" + art.doublePrecio
 				+ "' ,Imagen=" + art.stringImagen
-				+ "' ,Stock=" + art.boolStock
+				+ "' ,Stock=" + art.intStock
+				+ "' ,IdCategoria=" + art.stringCategoria
+				+ "' ,Temporada=" + art.stringTemporada
 				+ "WHERE Id = '" + art.intId + "'", c);
 			com.ExecuteNonQuery();
 
@@ -115,7 +121,9 @@ public class CADArticulo
 				art.stringDescripcion = dr["Descripcion"].ToString();
 				art.doublePrecio = double.Parse(dr["Precio"].ToString());
 				art.stringImagen = dr["Imagen"].ToString();
-				art.boolStock = bool.Parse(dr["Stock"].ToString());
+				art.intStock = int.Parse(dr["Stock"].ToString());
+				art.stringCategoria = dr["IdCategoria"].ToString();
+				art.stringTemporada = dr["Temporada"].ToString();
 				read = true;
 			}
 			else read = false;

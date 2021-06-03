@@ -11,6 +11,35 @@ namespace iqueaWeb
 
         protected void Button2_Click(object sender, EventArgs e)
         {
+            ENArticulo en = new ENArticulo();
+            en.stringNombre = TextBox1.Text;
+            en.stringDescripcion = TextBox5.Text;
+            en.doublePrecio = double.Parse(TextBox6.Text);
+            en.stringImagen = TextBox7.Text;
+            en.intStock = int.Parse(TextBox8.Text);
+            if (Categoria.SelectedValue == "0")
+            {
+                en.stringCategoria = "Interior";
+            } else
+            {
+                en.stringCategoria = "Exterior";
+            }
+
+            if (Temporada.SelectedValue=="0")
+            {
+                
+            }
+
+
+            bool creado = en.createArticulo();
+            if (creado)
+            {
+                etiqueta.Text = "Creado correctamente ";
+            }
+            else
+            {
+                etiqueta.Text = "error ";
+            }
         }
     }
 }

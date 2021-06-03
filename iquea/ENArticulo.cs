@@ -46,12 +46,26 @@ public class ENArticulo
 		set { imagen = value; }
 	}
 
-	private bool stock;
+	private int stock;
 
-	public bool boolStock
+	public int intStock
 	{
 		get { return stock; }
 		set { stock = value; }
+	}
+
+	private string categoria;
+	public string stringCategoria
+
+    {
+		get { return categoria; }
+		set { categoria = value; }
+	}
+	private string temporada;
+	public string stringTemporada
+    {
+		get { return temporada; }
+		set { temporada = value; }
 	}
 
 	public ENArticulo()
@@ -61,17 +75,21 @@ public class ENArticulo
 		stringDescripcion = "";
 		doublePrecio = 0.0;
 		stringImagen = "";
-		boolStock = false;
+		intStock = 0;
+		stringCategoria = "";
+		stringTemporada = "";
 	}
 
-	public ENArticulo(int id, string nombre, string descripcion, double precio, string imagen, bool stock)
+	public ENArticulo(int id, string nombre, string descripcion, double precio, string imagen, int stock, string categoria, string temporada)
 	{
 		intId = id;
 		stringNombre = nombre;
 		stringDescripcion = descripcion;
 		doublePrecio = precio;
 		stringImagen = imagen;
-		boolStock = stock;
+		intStock = stock;
+		stringCategoria = categoria;
+		stringTemporada = temporada;
 	}
 
 	public bool createArticulo()
@@ -95,6 +113,8 @@ public class ENArticulo
 		aux.precio = this.precio;
 		aux.imagen = this.imagen;
 		aux.stock = this.stock;
+		aux.temporada = this.temporada;
+		aux.categoria = this.categoria;
 
 		if (articulo.readArticulo(this))
 		{
@@ -104,6 +124,8 @@ public class ENArticulo
 			this.precio = aux.precio;
 			this.imagen = aux.imagen;
 			this.stock = aux.stock;
+			this.categoria = aux.categoria;
+			this.temporada = aux.temporada;
 			updated = articulo.updateArticulo(this);
 		}
 
