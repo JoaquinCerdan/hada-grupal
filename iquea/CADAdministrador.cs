@@ -27,7 +27,7 @@ using System.Data.SqlClient;
             {
                 conexion = new SqlConnection(constring);
                 conexion.Open();
-                String comando = "Insert INTO iquea.Administrador (codigo,correo) VALUES (" + administrador.intcodigo + ",'"+administrador.StringCorreo+"')";
+                String comando = "Insert INTO dbo.Administrador (codigo,correo) VALUES ('" + administrador.stringcodigo + "','"+administrador.StringCorreo+"')";
                 SqlCommand ejecucion = new SqlCommand(comando, conexion);
                 ejecucion.ExecuteNonQuery();
                 creado = true;
@@ -56,7 +56,7 @@ using System.Data.SqlClient;
             {
                 conexion = new SqlConnection(constring);
                 conexion.Open();
-                String comando = "Select * FROM iquea.Administrador WHERE codigo = " + administrador.intcodigo ;
+                String comando = "Select * FROM dbo.Administrador WHERE codigo = '" + administrador.stringcodigo+"'" ;
                 SqlCommand ejecucion = new SqlCommand(comando, conexion);
                 SqlDataReader leer = ejecucion.ExecuteReader();
                 leer.Read();
@@ -88,7 +88,7 @@ using System.Data.SqlClient;
             {
                 conexion = new SqlConnection(constring);
                 conexion.Open();
-                String comando = "DELETE FROM iquea.Administrador WHERE codigo = " + administrador.intcodigo ;
+                String comando = "DELETE FROM dbo.Administrador WHERE codigo = '" + administrador.stringcodigo + "'";
                 SqlCommand ejecucion = new SqlCommand(comando, conexion);
                 ejecucion.ExecuteNonQuery();
                 creado = true;
@@ -117,7 +117,7 @@ using System.Data.SqlClient;
             {
                 conexion = new SqlConnection(constring);
                 conexion.Open();
-                SqlCommand comando = new SqlCommand("UPDATE iquea.Usuario SET correo = '" + administrador.StringCorreo + "' WHERE codigo = " + administrador.intcodigo , conexion);
+                SqlCommand comando = new SqlCommand("UPDATE dbo.Usuario SET correo = '" + administrador.StringCorreo + "' WHERE codigo = '" + administrador.stringcodigo + "'", conexion);
                 //SqlCommand ejecucion = new SqlCommand(comando, conexion);
                 comando.ExecuteNonQuery();
                 creado = true;

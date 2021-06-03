@@ -1,10 +1,10 @@
 ﻿
     public class ENAdministrador
     {
-        private int codigo;
+        private string codigo;
         private string correo;
 
-        public int intcodigo
+        public string stringcodigo
         {
             get { return this.codigo; }
             set { this.codigo = value; }
@@ -18,7 +18,7 @@
 
         public ENAdministrador()
         {
-            codigo = 0;
+            codigo = "";
             correo = "";
         }
 

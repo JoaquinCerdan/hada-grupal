@@ -49,14 +49,18 @@ namespace iqueaWeb
         protected void admin_Click(object sender, EventArgs e)
         {
             ENAdministrador admin = new ENAdministrador();
-            admin.intcodigo = Convert.ToInt32(Administrador.Text);
+            admin.stringcodigo = Administrador.Text;
 
             bool caso = admin.readAdministrador();
 
             if (caso == true)
             {
-                Session.Add("codigo", admin.intcodigo);
+                Session.Add("codigo", admin.stringcodigo);
                 Response.Redirect("Administrador.aspx");
+            }
+            else
+            {
+                Response.Redirect("Index.aspx");
             }
         }
 
