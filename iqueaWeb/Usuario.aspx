@@ -9,27 +9,24 @@
     </div>
     <br />
     <div>
-         Email <asp:TextBox ID="TextBox4" runat="server" Width="203px"></asp:TextBox>  <asp:Button ID="Button4" runat="server" Text="Modificar" />
+         Email <asp:TextBox ID="TextBox2" runat="server" Width="203px"></asp:TextBox>  <asp:Button ID="Button4" runat="server" Text="Modificar" />
     </div>
     <br />
     <div>
-         Contraseña <asp:TextBox ID="TextBox5" runat="server" Width="167px"></asp:TextBox>  <asp:Button ID="Button5" runat="server" Text="Modificar" />
+         Contraseña <asp:TextBox ID="TextBox3" runat="server" Width="167px"></asp:TextBox>  <asp:Button ID="Button5" runat="server" Text="Modificar" />
     </div>
     <br />
     <div>
-         Cuenta bancaria <asp:TextBox ID="TextBox2" runat="server" Width="137px"></asp:TextBox>  <asp:Button ID="Button2" runat="server" Text="Modificar" />
+         Cuenta bancaria <asp:TextBox ID="TextBox4" runat="server" Width="137px"></asp:TextBox>  <asp:Button ID="Button2" runat="server" Text="Modificar" />
+    </div>
+    <br />
+    <br />
+    <div>
+         Dirección <asp:TextBox ID="TextBox5" runat="server" Width="175px"></asp:TextBox>  <asp:Button ID="Button3" runat="server" Text="Modificar" />
     </div>
     <br />
     <div>
-         Ciudad <asp:TextBox ID="TextBox6" runat="server" Width="189px"></asp:TextBox>  <asp:Button ID="Button6" runat="server" Text="Modificar" />
-    </div>
-    <br />
-    <div>
-         Dirección <asp:TextBox ID="TextBox3" runat="server" Width="175px"></asp:TextBox>  <asp:Button ID="Button3" runat="server" Text="Modificar" />
-    </div>
-    <br />
-    <div>
-         Número de teléfono <asp:TextBox ID="TextBox7" runat="server" Width="108px"></asp:TextBox>  <asp:Button ID="Button7" runat="server" Text="Modificar" />
+         Número de teléfono <asp:TextBox ID="TextBox6" runat="server" Width="108px"></asp:TextBox>  <asp:Button ID="Button7" runat="server" Text="Modificar" />
     </div>
     <br /> <br />
     <center><asp:Button ID="Button8" runat="server" Text="Modificar todo" /></center>

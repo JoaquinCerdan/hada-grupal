@@ -79,6 +79,16 @@ public class ENcomentario
         return respuesta;
     }
 
+    public bool readComentario_datos()
+    {
+        bool respuesta;
+
+        CADcomentario comentario = new CADcomentario();
+        respuesta = comentario.readComentario_datos(this);
+
+        return respuesta;
+    }
+
     public bool deleteComentario()
     {
         bool respuesta;
@@ -99,7 +109,40 @@ public class ENcomentario
         return respuesta;
     }
 
+<<<<<<< HEAD
         return respuesta;
     }
 
 }
+=======
+    public bool readFirstComentario(int id)
+    {
+        bool respuesta;
+
+        CADcomentario comentario = new CADcomentario();
+        respuesta = comentario.readFirstComentario(this,id);
+
+        return respuesta;
+    }
+
+    public bool readNextComentario(int id)
+    {
+        bool respuesta;
+
+        CADcomentario comentario = new CADcomentario();
+        respuesta = comentario.readNextComentario(this,id);
+
+        return respuesta;
+    }
+
+    public bool readPrevComentario(int id)
+    {
+        bool respuesta;
+
+        CADcomentario comentario = new CADcomentario();
+        respuesta = comentario.readPrevComentario(this,id);
+
+        return respuesta;
+    }
+}
+>>>>>>> develop
