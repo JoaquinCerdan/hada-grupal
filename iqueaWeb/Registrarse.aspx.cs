@@ -19,21 +19,21 @@ namespace iqueaWeb
             bool prueba;
             ENUsuario todosUsuarios = new ENUsuario();
             string emailAux = Correo.Text;
-            
+
 
             prueba = todosUsuarios.readUsuarioWithEmail(emailAux);
-            
+
             if (prueba == true)
             {
-                throw new Exception("El correo dado ya esta identificado dentro de la web");
+                etiqueta.Text = "El correo dado ya esta identificado dentro de la web.";
             }
-            if (Correo.Text == null || Nombre.Text == null || Contraseña1.Text == null || Contraseña2.Text==null || Direccion.Text==null || Telefono.Text==null || Banco.Text==null)
+            if (Correo.Text == null || Nombre.Text == null || Contraseña1.Text == null || Contraseña2.Text == null || Direccion.Text == null || Telefono.Text == null || Banco.Text == null)
             {
-                throw new Exception("Los datos dados son insuficientes.");
+                etiqueta.Text = "Los datos dados son insuficientes.";
             }
             else if (Contraseña1.Text != Contraseña2.Text)
             {
-                throw new Exception("Las contraseñas no son iguales");
+                etiqueta.Text = "Las contraseñas no son iguales";
             }
             else
             {
@@ -44,26 +44,30 @@ namespace iqueaWeb
                     usuario.stringContra = Contraseña1.Text;
                     usuario.stringNombre = Nombre.Text;
                     usuario.stringDireccion = Direccion.Text;
-                    usuario.stringDatosBancarios = "ES"+Banco.Text;
+                    usuario.stringDatosBancarios = "ES" + Banco.Text;
                     usuario.intNumTelefono = Convert.ToInt32(Telefono.Text);
 
 
                     caso = usuario.createUsuario();
-                    Response.Redirect("Login.aspx");
+
+
+                    if (etiqueta.Text != "El correo dado ya esta identificado dentro de la web." &&
+                       etiqueta.Text != "Los datos dados son insuficientes." &&
+                       etiqueta.Text != "Las contraseñas no son iguales.")
+                    {
+                        Response.Redirect("Login.aspx");
+                    }
 
                     if (caso == true)
                     {
-                        etiqueta.Text = "Creado correctamente ";
-                        throw new Exception("los datos han sido guardados con exito.");
-
-                        
+                        Response.Redirect("Login.aspx");
                     }
                     else
                     {
                         throw new Exception("no se han podido almacenar los datos.");
                     }
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     Console.WriteLine("User operation has failed. Error: {0}", ex.Message);
                 }
