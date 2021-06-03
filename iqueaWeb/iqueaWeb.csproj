@@ -111,6 +111,7 @@
     <Content Include="OrdenaS.aspx" />
     <Content Include="Pedido.aspx" />
     <Content Include="Registrarse.aspx" />
+    <Content Include="Results.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -477,6 +478,13 @@
     </Compile>
     <Compile Include="Registrarse.aspx.designer.cs">
       <DependentUpon>Registrarse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Results.aspx.cs">
+      <DependentUpon>Results.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Results.aspx.designer.cs">
+      <DependentUpon>Results.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sencillo.aspx.cs">
       <DependentUpon>Sencillo.aspx</DependentUpon>

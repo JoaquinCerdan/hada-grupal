@@ -149,4 +149,15 @@ public class ENArticulo
 		return read;
 	}
 
+	public bool getArticulos(string searchString)
+    {
+		CADArticulo articulo = new CADArticulo();
+		bool read = false;
+		if (articulo.getArticulos(this, searchString))
+			read = articulo.deleteArticulo(this);
+		return read;
+	}
+
+	//string query = "select * from [dbo].[Articulo] where Nombre like '" + searchString + "%'";
+
 }
