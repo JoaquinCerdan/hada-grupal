@@ -15,7 +15,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body style =" background-color: lightblue;">
     <form id="form1" runat="server">
         <div>
             <asp:ImageButton ID="ImageButton1" runat="server" Height="75px" ImageUrl="https://i.ibb.co/2S5ZYqC/logo-iquea.jpg" PostBackUrl="~/Index.aspx" Width="113px" />
