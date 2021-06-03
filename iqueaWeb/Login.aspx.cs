@@ -32,7 +32,7 @@ namespace iqueaWeb
             {
                 //Si existe, Bienvenido...
                 Session.Add("email", inputEmail.Text);
-                Response.Redirect("Administrador.aspx");
+                Response.Redirect("Usuario.aspx");
 
             }
             else

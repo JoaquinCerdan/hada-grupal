@@ -29,6 +29,9 @@ namespace iqueaWeb
                     TextBox5.Text = usuario.stringDireccion;
                     TextBox6.Text = usuario.intNumTelefono.ToString();
                 }
+                else
+                {
+                }
             }
         }
     }

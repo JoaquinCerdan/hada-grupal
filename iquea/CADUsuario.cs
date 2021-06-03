@@ -48,17 +48,20 @@ public class CADUsuario
      */
     public bool readUsuario(ENUsuario usuario)
     {
-        SqlConnection conexion = null;
+        SqlConnection conexion = new SqlConnection(constring);
         bool creado = false;
         try
         {
-            conexion = new SqlConnection(constring);
             conexion.Open();
-            String comando = "Select * FROM [dbo].[Usuarios] WHERE email = '" + usuario.stringEmail + "'";
-            SqlCommand ejecucion = new SqlCommand(comando, conexion);
+            SqlCommand ejecucion = new SqlCommand("Select * FROM [dbo].[Usuarios] where email = '" + usuario.stringEmail + "'", conexion);
             SqlDataReader leer = ejecucion.ExecuteReader();
+
             leer.Read();
-            // Completar con ENUsuario usuario.setUsuario();
+            usuario.stringNombre = leer["nombre"].ToString();
+            usuario.stringContra = leer["contra"].ToString();
+            usuario.stringDireccion = leer["direccion"].ToString();
+            usuario.stringDatosBancarios = leer["datosBancarios"].ToString();
+            usuario.intNumTelefono = Convert.ToInt32(leer["numTelefono"]);
             leer.Close();
             conexion.Close();
             creado = true;
