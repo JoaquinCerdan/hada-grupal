@@ -15,6 +15,22 @@ namespace iqueaWeb
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            ENCategoria en = new ENCategoria();
+            en.stringNombre = TextBox2.Text;
+            en.stringDescripcion = TextBox3.Text;
+            
+
+
+
+            bool creado = en.createCategoria();
+            if (creado)
+            {
+                etiqueta.Text = "Creado correctamente ";
+            }
+            else
+            {
+                etiqueta.Text = "error " + en.intId + en.stringNombre + en.stringDescripcion ;
+            }
         }
     }
 }

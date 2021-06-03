@@ -31,7 +31,7 @@ public class ENCategoria
 
 	public ENCategoria()
 	{
-		intId = 0;
+		//intId = 0;
 		stringNombre = "";
 		stringDescripcion = "";
 	}
@@ -47,7 +47,7 @@ public class ENCategoria
 	{
 		CADCategoria categoria = new CADCategoria();
 		bool created = false;
-		if (!categoria.readCategoria(this))
+		//if (!categoria.readCategoria(this))
 			created = categoria.createCategoria(this);
 		return created;
 	}

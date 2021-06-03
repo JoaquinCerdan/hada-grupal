@@ -70,7 +70,8 @@ public class ENArticulo
 
 	public ENArticulo()
 	{
-		intId = 0;
+		CADArticulo aux = new CADArticulo();
+		intId = 2;
 		stringNombre = "";
 		stringDescripcion = "";
 		doublePrecio = 0.0;
@@ -96,8 +97,8 @@ public class ENArticulo
 	{
 		CADArticulo articulo = new CADArticulo();
 		bool created = false;
-		if (!articulo.readArticulo(this))
-			created = articulo.createArticulo(this);
+		//if (!articulo.readArticulo(this))
+		created = articulo.createArticulo(this);
 		return created;
 	}
 

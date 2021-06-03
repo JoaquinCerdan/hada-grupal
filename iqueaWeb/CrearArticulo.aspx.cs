@@ -45,8 +45,9 @@ namespace iqueaWeb
             }
             else
             {
-                etiqueta.Text = "error "+ en.stringNombre+ en.stringDescripcion+ en.doublePrecio+ en.stringImagen+en.intStock+en.intCategoria+en.stringTemporada;
+                etiqueta.Text = "error "+en.intId+ en.stringNombre+ en.stringDescripcion+ en.doublePrecio+ en.stringImagen+en.intStock+en.intCategoria+en.stringTemporada;
             }
+            
         }
     }
 }

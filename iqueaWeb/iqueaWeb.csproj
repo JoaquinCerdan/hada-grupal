@@ -68,6 +68,10 @@
   <ItemGroup>
     <Content Include="Administrador.aspx" />
     <Content Include="Anuncio.aspx" />
+    <Content Include="App_Data\Database.mdf" />
+    <Content Include="App_Data\Database_log.ldf">
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
     <Content Include="articulo.aspx" />
     <Content Include="BorrarAnuncio.aspx" />
     <Content Include="BorrarArticulo.aspx" />
