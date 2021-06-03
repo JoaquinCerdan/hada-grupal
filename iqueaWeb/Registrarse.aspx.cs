@@ -45,11 +45,14 @@ namespace iqueaWeb
 
 
                     caso = usuario.createUsuario();
+                    Response.Redirect("Login.aspx");
 
                     if (caso == true)
                     {
                         etiqueta.Text = "Creado correctamente ";
                         throw new Exception("los datos han sido guardados con exito.");
+
+                        
                     }
                     else
                     {
