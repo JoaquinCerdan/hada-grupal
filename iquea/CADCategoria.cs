@@ -12,6 +12,7 @@ using System.Data;
 /// <summary>
 /// Summary description for CADCategoria
 /// </summary>
+/// 
 public class CADCategoria
 {
 	public string constring;
