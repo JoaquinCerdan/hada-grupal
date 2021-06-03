@@ -178,5 +178,54 @@ public class CADArticulo
 		}
 		return delete;
 	}
+
+	public bool getArticulos(ENArticulo art, string searchString)
+	{
+		bool read = false;
+		SqlConnection c = new SqlConnection(constring);
+		try
+		{
+			c.Open();
+			SqlCommand com = new SqlCommand("select * from [dbo].[Articulo] where Nombre like '" + searchString + "%'", c);
+			SqlDataReader dr = com.ExecuteReader();
+			dr.Read();
+
+			if (dr["Id"].ToString() == art.intId.ToString())
+			{
+
+				art.intId = int.Parse(dr["Id"].ToString());
+				art.stringNombre = dr["Nombre"].ToString();
+				art.stringDescripcion = dr["Descripcion"].ToString();
+				art.doublePrecio = double.Parse(dr["Precio"].ToString());
+				art.stringImagen = dr["Imagen"].ToString();
+				art.intStock = int.Parse(dr["Stock"].ToString());
+				art.intCategoria = int.Parse(dr["IdCategoria"].ToString());
+				art.stringTemporada = dr["Temporada"].ToString();
+				read = true;
+			}
+			else read = false;
+			dr.Close();
+
+		}
+		catch (SqlException e)
+		{
+			read = false;
+			Console.WriteLine("User operation has failed.Error: {0}", e.Message);
+
+		}
+		catch (Exception e)
+		{
+			read = false;
+			Console.WriteLine("User operation has failed.Error: {0}", e.Message);
+		}
+
+		finally
+		{
+			c.Close();
+		}
+
+
+		return read;
+	}
 }
 
