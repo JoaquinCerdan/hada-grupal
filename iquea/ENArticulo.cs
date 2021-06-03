@@ -71,7 +71,7 @@ public class ENArticulo
 	public ENArticulo()
 	{
 		CADArticulo aux = new CADArticulo();
-		intId = 2;
+		intId = aux.obtenerId();
 		stringNombre = "";
 		stringDescripcion = "";
 		doublePrecio = 0.0;
