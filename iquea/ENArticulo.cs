@@ -54,8 +54,8 @@ public class ENArticulo
 		set { stock = value; }
 	}
 
-	private string categoria;
-	public string stringCategoria
+	private int categoria;
+	public int intCategoria
 
     {
 		get { return categoria; }
@@ -76,11 +76,11 @@ public class ENArticulo
 		doublePrecio = 0.0;
 		stringImagen = "";
 		intStock = 0;
-		stringCategoria = "";
+		intCategoria = 0;
 		stringTemporada = "";
 	}
 
-	public ENArticulo(int id, string nombre, string descripcion, double precio, string imagen, int stock, string categoria, string temporada)
+	public ENArticulo(int id, string nombre, string descripcion, double precio, string imagen, int stock, int categoria, string temporada)
 	{
 		intId = id;
 		stringNombre = nombre;
@@ -88,7 +88,7 @@ public class ENArticulo
 		doublePrecio = precio;
 		stringImagen = imagen;
 		intStock = stock;
-		stringCategoria = categoria;
+		intCategoria = categoria;
 		stringTemporada = temporada;
 	}
 

@@ -29,6 +29,7 @@ public class CADArticulo
 		try
 		{
 			c.Open();
+			
 			SqlCommand com = new SqlCommand("Insert INTO [dbo].[Articulo] (Id,Nombre,Descripcion,Precio,Imagen,Stock,IdCategoria,Temporada) VALUES('"
 				+ art.intId
 				+ "', '"
@@ -42,7 +43,7 @@ public class CADArticulo
 				+ "','"
 				+ art.intStock
 				+ "','"
-				+ art.stringCategoria
+				+ art.intCategoria
 				+ "','"
 				+ art.stringTemporada
 				+ "')", c);
@@ -82,7 +83,7 @@ public class CADArticulo
 				+ "' ,Precio=" + art.doublePrecio
 				+ "' ,Imagen=" + art.stringImagen
 				+ "' ,Stock=" + art.intStock
-				+ "' ,IdCategoria=" + art.stringCategoria
+				+ "' ,IdCategoria=" + art.intCategoria
 				+ "' ,Temporada=" + art.stringTemporada
 				+ "WHERE Id = '" + art.intId + "'", c);
 			com.ExecuteNonQuery();
@@ -122,7 +123,7 @@ public class CADArticulo
 				art.doublePrecio = double.Parse(dr["Precio"].ToString());
 				art.stringImagen = dr["Imagen"].ToString();
 				art.intStock = int.Parse(dr["Stock"].ToString());
-				art.stringCategoria = dr["IdCategoria"].ToString();
+				art.intCategoria = int.Parse(dr["IdCategoria"].ToString());
 				art.stringTemporada = dr["Temporada"].ToString();
 				read = true;
 			}

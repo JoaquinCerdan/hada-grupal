@@ -21,18 +21,21 @@ namespace iqueaWeb
             en.doublePrecio = double.Parse(TextBox6.Text);
             en.stringImagen = TextBox7.Text;
             en.intStock = int.Parse(TextBox8.Text);
-            if (Categoria.SelectedValue == "0")
-            {
-                en.stringCategoria = "Interior";
-            } else
-            {
-                en.stringCategoria = "Exterior";
-            }
+            
+            en.intCategoria =   int.Parse( Categoria.SelectedValue);
+            
 
             if (Temporada.SelectedValue=="0")
             {
-                
+                en.stringTemporada = "sencillo";
+            } else if (Temporada.SelectedValue=="1"){
+                en.stringTemporada = "clasico";
+
+            } else
+            {
+                en.stringTemporada = "moderno";
             }
+
 
 
             bool creado = en.createArticulo();
@@ -42,7 +45,7 @@ namespace iqueaWeb
             }
             else
             {
-                etiqueta.Text = "error ";
+                etiqueta.Text = "error "+ en.stringNombre+ en.stringDescripcion+ en.doublePrecio+ en.stringImagen+en.intStock+en.intCategoria+en.stringTemporada;
             }
         }
     }
