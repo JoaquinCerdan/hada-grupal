@@ -83,7 +83,7 @@
     {
         bool isTrue;
         CADUsuario usuario = new CADUsuario();
-        isTrue = usuario.createUsuario(this);
+        isTrue = usuario.updateUsuario(this);
         return isTrue;
     }
 

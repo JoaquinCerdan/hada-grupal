@@ -34,5 +34,10 @@ namespace iqueaWeb
                 }
             }
         }
+
+        protected void Button_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Modificar.aspx");
+        }
     }
 }
