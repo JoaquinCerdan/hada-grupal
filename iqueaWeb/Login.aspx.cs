@@ -45,5 +45,28 @@ namespace iqueaWeb
             }
             cn.Close();
         }
+
+        protected void admin_Click(object sender, EventArgs e)
+        {
+            ENAdministrador admin = new ENAdministrador();
+            admin.stringcodigo = Administrador.Text;
+
+            bool caso = admin.readAdministrador();
+
+            if (caso == true)
+            {
+                Session.Add("codigo", admin.stringcodigo);
+                Response.Redirect("Administrador.aspx");
+            }
+            else
+            {
+                Response.Redirect("Index.aspx");
+            }
+        }
+
+        protected void Admin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
