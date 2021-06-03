@@ -83,7 +83,7 @@
     {
         bool isTrue;
         CADUsuario usuario = new CADUsuario();
-        isTrue = usuario.createUsuario(this);
+        isTrue = usuario.updateUsuario(this);
         return isTrue;
     }
 
@@ -93,5 +93,10 @@
         CADUsuario usuario = new CADUsuario();
         isTrue = usuario.deleteUsuario(this);
         return isTrue;
+    }
+    public bool readUsuarioWithEmail(string email)
+    {
+        CADUsuario user = new CADUsuario();
+        return user.readUsuarioWithEmail(email);
     }
 }

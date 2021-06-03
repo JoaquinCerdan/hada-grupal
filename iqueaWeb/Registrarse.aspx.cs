@@ -14,7 +14,11 @@ namespace iqueaWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["email"] != null)
+            {
+                //si no hay alguien logeado se le envia directamente a la pagina de login
+                Response.Redirect("Login.aspx");
+            }
         }
 <<<<<<< HEAD
 =======
@@ -24,9 +28,11 @@ namespace iqueaWeb
             bool caso;
             bool prueba;
             ENUsuario todosUsuarios = new ENUsuario();
-            todosUsuarios.stringEmail = Correo.Text;
+            string emailAux = Correo.Text;
+            
 
-            prueba = todosUsuarios.readUsuario();
+            prueba = todosUsuarios.readUsuarioWithEmail(emailAux);
+            
             if (prueba == true)
             {
                 throw new Exception("El correo dado ya esta identificado dentro de la web");
@@ -48,15 +54,19 @@ namespace iqueaWeb
                     usuario.stringContra = Contraseña1.Text;
                     usuario.stringNombre = Nombre.Text;
                     usuario.stringDireccion = Direccion.Text;
-                    usuario.stringDatosBancarios = Banco.Text;
+                    usuario.stringDatosBancarios = "ES"+Banco.Text;
                     usuario.intNumTelefono = Convert.ToInt32(Telefono.Text);
 
 
                     caso = usuario.createUsuario();
+                    Response.Redirect("Login.aspx");
 
                     if (caso == true)
                     {
+                        etiqueta.Text = "Creado correctamente ";
                         throw new Exception("los datos han sido guardados con exito.");
+
+                        
                     }
                     else
                     {

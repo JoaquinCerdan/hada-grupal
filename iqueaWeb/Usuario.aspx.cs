@@ -29,7 +29,15 @@ namespace iqueaWeb
                     TextBox5.Text = usuario.stringDireccion;
                     TextBox6.Text = usuario.intNumTelefono.ToString();
                 }
+                else
+                {
+                }
             }
+        }
+
+        protected void Button_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Modificar.aspx");
         }
     }
 }

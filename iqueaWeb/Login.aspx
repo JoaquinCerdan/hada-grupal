@@ -20,12 +20,16 @@
               <div class="form-label-group">
                 <!--<input type="email" id="inputEmail" class="form-control" placeholder="Correo electrónico" > -->
 <<<<<<< HEAD
+<<<<<<< HEAD
                   Correo:<asp:TextBox ID="inputEmail" runat="server"></asp:TextBox>
                   <asp:RequiredFieldValidator ID="EmailRequired" runat="server" ErrorMessage="Tienes que introducir un correo" ControlToValidate="inputEmail">                 
                   </asp:RequiredFieldValidator>
                 <!--<label for="inputEmail">Correo electrónico</label>-->
 =======
                   Correo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+=======
+                  Correo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;
+>>>>>>> develop
                   <asp:TextBox ID="inputEmail" runat="server" Width="189px" Height="26px" ></asp:TextBox>
                   <asp:RequiredFieldValidator ID="EmailRequired" runat="server" ErrorMessage="*Campo<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp; Obligatorio" forecolor="red" ControlToValidate="inputEmail">                 
                   </asp:RequiredFieldValidator>
@@ -51,11 +55,13 @@
 >>>>>>> develop
               </div>
 
-                <asp:Button ID="Button3" Class="btn btn-lg btn-primary btn-block text-uppercase" runat="server" Text="Sign in" OnClick="Button3_Click" />
+                <asp:Button ID="Button3" Class="btn btn-lg btn-primary btn-block text-uppercase" runat="server" Text="Iniciar Sesión" OnClick="Button3_Click" />
+                <p style="font-size:1em"> ¿No se ha registrado? <a style="font-size:1em" href="Registrarse.aspx"> Registrarse </a></p> 
               <hr class="my-4">
               
             </form>
           </div>
+
         </div>
       </div>
     </div>

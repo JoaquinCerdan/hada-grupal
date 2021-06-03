@@ -14,7 +14,7 @@
         </asp:RegularExpressionValidator>
     </p>
     <p>
-        &nbsp;
+        &nbsp;&nbsp;&nbsp;
         <asp:Button ID="Button3" runat="server" Class="btn btn-primary" Text="Borrar" />
     </p>
 </asp:Content>

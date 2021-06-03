@@ -25,7 +25,7 @@ public class CADUsuario
         {
             conexion = new SqlConnection(constring);
             conexion.Open();
-            String comando = "Insert INTO dbo.Usuarios (email, contra, datosBancarios, nombre, direccion, numTelefono) VALUES ('" + usuario.stringEmail + "' , '" + usuario.stringContra + "' , '" + usuario.stringDatosBancarios + "' , '" + usuario.stringNombre + "' , '" + usuario.stringDireccion + "' , " + usuario.intNumTelefono + ")";
+            String comando = "Insert INTO [dbo].[Usuarios] (email, contra, datosBancarios, nombre, direccion, numTelefono) VALUES ('" + usuario.stringEmail + "' , '" + usuario.stringContra + "' , '" + usuario.stringDatosBancarios + "' , '" + usuario.stringNombre + "' , '" + usuario.stringDireccion + "' , " + usuario.intNumTelefono + ")";
             SqlCommand ejecucion = new SqlCommand(comando, conexion);
             ejecucion.ExecuteNonQuery();
             creado = true;
@@ -48,17 +48,20 @@ public class CADUsuario
      */
     public bool readUsuario(ENUsuario usuario)
     {
-        SqlConnection conexion = null;
+        SqlConnection conexion = new SqlConnection(constring);
         bool creado = false;
         try
         {
-            conexion = new SqlConnection(constring);
             conexion.Open();
-            String comando = "Select * FROM dbo.Usuarios WHERE email = '" + usuario.stringEmail + "'";
-            SqlCommand ejecucion = new SqlCommand(comando, conexion);
+            SqlCommand ejecucion = new SqlCommand("Select * FROM [dbo].[Usuarios] where email = '" + usuario.stringEmail + "'", conexion);
             SqlDataReader leer = ejecucion.ExecuteReader();
+
             leer.Read();
-            // Completar con ENUsuario usuario.setUsuario();
+            usuario.stringNombre = leer["nombre"].ToString();
+            usuario.stringContra = leer["contra"].ToString();
+            usuario.stringDireccion = leer["direccion"].ToString();
+            usuario.stringDatosBancarios = leer["datosBancarios"].ToString();
+            usuario.intNumTelefono = Convert.ToInt32(leer["numTelefono"]);
             leer.Close();
             conexion.Close();
             creado = true;
@@ -87,7 +90,7 @@ public class CADUsuario
         {
             conexion = new SqlConnection(constring);
             conexion.Open();
-            String comando = "DELETE FROM dbo.Usuarios WHERE email = '" + usuario.stringEmail + "'";
+            String comando = "DELETE FROM [dbo].[Usuarios] WHERE email = '" + usuario.stringEmail + "'";
             SqlCommand ejecucion = new SqlCommand(comando, conexion);
             ejecucion.ExecuteNonQuery();
             creado = true;
@@ -117,10 +120,11 @@ public class CADUsuario
         {
             conexion = new SqlConnection(constring);
             conexion.Open();
-            SqlCommand comando = new SqlCommand("UPDATE dbo.Usuarios SET email = '" + usuario.stringEmail + "' , contra = '" + usuario.stringContra + "' , datosBancarios = '" + usuario.stringDatosBancarios + "' , nombre = '" + usuario.stringNombre + "' , direccion = '" + usuario.stringDireccion + "' , numTelefono = '" + usuario.intNumTelefono + "' WHERE id = '" + usuario.stringEmail + "'", conexion);
+            SqlCommand comando = new SqlCommand("UPDATE [dbo].[Usuarios] SET contra = '" + usuario.stringContra + "' , datosBancarios = '" + usuario.stringDatosBancarios + "' , nombre = '" + usuario.stringNombre + "' , direccion = '" + usuario.stringDireccion + "' , numTelefono = " + usuario.intNumTelefono + " WHERE email = '" + usuario.stringEmail + "'", conexion);
             //SqlCommand ejecucion = new SqlCommand(comando, conexion);
             comando.ExecuteNonQuery();
             creado = true;
+            conexion.Close();
         }
         catch (Exception e)
         {
@@ -132,5 +136,35 @@ public class CADUsuario
             conexion.Close();
         }
         return creado;
+    }
+
+    public bool readUsuarioWithEmail(String email)
+    {
+
+        bool leido = false;
+        SqlConnection conec = new SqlConnection(constring);
+        try
+        {
+            conec.Open();
+            SqlCommand consulta = new SqlCommand("SELECT * FROM [dbo].[Usuarios] WHERE email = '" + email + "' ", conec);
+            SqlDataReader dr = consulta.ExecuteReader();
+
+
+            if (dr.HasRows)
+                leido = true;
+        }
+        catch (SqlException ex)
+        {
+            Console.WriteLine("The operation has failed.Error: {0}", ex.Message);
+        }
+        catch (Exception exe)
+        {
+            Console.WriteLine("The operation has failed.Error: {0}", exe.Message);
+        }
+        finally
+        {
+            conec.Close();
+        }
+        return leido;
     }
 }

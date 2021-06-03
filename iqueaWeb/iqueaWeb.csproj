@@ -95,6 +95,7 @@
     <Content Include="Lista_deseos.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Moderno.aspx" />
+    <Content Include="Modificar.aspx" />
     <Content Include="ModificarAnuncio.aspx" />
     <Content Include="ModificarArticulo.aspx" />
     <Content Include="ModificarCategoria.aspx" />
@@ -389,6 +390,13 @@
     </Compile>
     <Compile Include="Moderno.aspx.designer.cs">
       <DependentUpon>Moderno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar.aspx.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modificar.aspx.designer.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
     </Compile>
     <Compile Include="ModificarAnuncio.aspx.cs">
       <DependentUpon>ModificarAnuncio.aspx</DependentUpon>
