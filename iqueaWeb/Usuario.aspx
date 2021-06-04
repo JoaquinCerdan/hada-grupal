@@ -20,7 +20,6 @@
          Cuenta bancaria <asp:TextBox ID="TextBox4" runat="server" Width="137px" Enabled="False"></asp:TextBox>
     </div>
     <br />
-    <br />
     <div>
          Dirección <asp:TextBox ID="TextBox5" runat="server" Width="175px" Enabled="False"></asp:TextBox>
     </div>
@@ -28,7 +27,8 @@
     <div>
          Número de teléfono <asp:TextBox ID="TextBox6" runat="server" Width="108px" Enabled="False"></asp:TextBox>
     </div>
-    <br /> <br />
+
+    <br /> 
     <center><asp:Button ID="Button" runat="server" Text="Modificar todo" OnClick="Button_Click" /></center>
     <div>
     <center><asp:Button ID="Button1" runat="server" Text="Borrar usuario" OnClick="Button_Click1" /></center>

@@ -6,6 +6,7 @@ namespace iqueaWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
             //al cargar la pagina debe cargar los datos del usuario y su primer comentario
             try
             {
@@ -33,8 +34,9 @@ namespace iqueaWeb
                         if (casob == true)
                         {
                             //si se encuentra un comentario sobre el objeto se ponen sus datos en las etiquetas
-                            TextBox3.Text = comentario.comentarioP;
-                            TextBox2.Text = comentario.valoracionP.ToString();
+                            TextBox2.Text = comentario.comentarioP;
+                            TextBox3.Text = comentario.valoracionP.ToString();
+                            TextBox1.Text = comentario.Usuario_correoP;
                         }
 
                     }
@@ -111,6 +113,7 @@ namespace iqueaWeb
             //se guardan los datos actuales en el antiguo y se consigue su id
             antiguo.valoracionP = Convert.ToInt32(TextBox3.Text);
             antiguo.comentarioP = TextBox2.Text;
+            antiguo.Usuario_correoP = TextBox1.Text;
             antiguo.readComentario_datos();
 
             bool funciona=nuevo.readPrevComentario(antiguo.idP);
@@ -121,8 +124,9 @@ namespace iqueaWeb
                 nuevo.idP = antiguo.idP;
                 nuevo.readPrevComentario(Convert.ToInt32(Request.QueryString["id"]));
 
-                TextBox3.Text = nuevo.valoracionP.ToString();
                 TextBox2.Text = nuevo.comentarioP;
+                TextBox3.Text = nuevo.valoracionP.ToString();
+                TextBox1.Text = nuevo.Usuario_correoP;
             }
 
         }
@@ -137,6 +141,7 @@ namespace iqueaWeb
             //se guardan los datos actuales en el antiguo y se consigue su id
             antiguo.valoracionP = Convert.ToInt32(TextBox3.Text);
             antiguo.comentarioP = TextBox2.Text;
+            antiguo.Usuario_correoP = TextBox1.Text;
             bool funciona=antiguo.readComentario_datos();
 
             if (funciona == true)
@@ -145,8 +150,9 @@ namespace iqueaWeb
                 nuevo.idP = antiguo.idP;
                 nuevo.readNextComentario(Convert.ToInt32(Request.QueryString["id"]));
 
-                TextBox3.Text = nuevo.valoracionP.ToString();
                 TextBox2.Text = nuevo.comentarioP;
+                TextBox3.Text = nuevo.valoracionP.ToString();
+                TextBox1.Text = nuevo.Usuario_correoP;
             }
         }
 
