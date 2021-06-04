@@ -21,7 +21,7 @@ namespace iqueaWeb
             try
             {
                 conn.Open();
-                SqlDataAdapter sqa = new SqlDataAdapter("Select * From [dbo].[Articulo] inner join [dbo].[Categoria] where Articulo.id=Categoria.articulo_id and Categoria.Nombre='interior'", conn);
+                SqlDataAdapter sqa = new SqlDataAdapter("Select * From [dbo].[Articulo] inner join [dbo].[Categoria] where Articulo.IdCategoria=Categoria.id and Categoria.Nombre='interior'", conn);
                 DataSet ds = new DataSet();
                 sqa.Fill(ds);
                 GridView.DataSource = ds;
