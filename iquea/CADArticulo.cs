@@ -31,7 +31,7 @@ public class CADArticulo
 			c.Open();
 			
 			SqlCommand com = new SqlCommand("Insert INTO [dbo].[Articulo] (Id,Nombre,Descripcion,Precio,Imagen,Stock,temporada,Categoria_id) VALUES("
-				+ ENArticulo.NextID
+				+ art.intId
 				+ ", '"
 				+ art.stringNombre
 				+ "','"
@@ -64,7 +64,6 @@ public class CADArticulo
 		{
 			c.Close();
 		}
-		ENArticulo.NextID++;
 		return create;
 	}
 
