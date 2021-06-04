@@ -12,7 +12,7 @@
                   </asp:RequiredFieldValidator>
     <br />
     <br />
-&nbsp;<asp:Button ID="Button1" runat="server" Class="btn btn-primary" Text="Crear" />
+&nbsp;<asp:Button ID="Button1" runat="server" Class="btn btn-primary" Text="Crear"/>
 &nbsp;
     <br />
     <br />

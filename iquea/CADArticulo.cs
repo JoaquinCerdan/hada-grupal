@@ -64,7 +64,6 @@ public class CADArticulo
 		{
 			c.Close();
 		}
-
 		return create;
 	}
 
@@ -182,17 +181,17 @@ public class CADArticulo
 		try
 		{
 			conec.Open();
-			SqlCommand consulta = new SqlCommand("Select max(id) maxId, Count(id) numRows from [dbo].[Articulo]", conec);
+			SqlCommand consulta = new SqlCommand("Select max(Id) maxId,Count(Id) numRows from [dbo].[Articulo]", conec);
 
 			SqlDataReader dr = consulta.ExecuteReader();
-
 			dr.Read();
 
 			if (int.Parse(dr["numRows"].ToString()) != 0)
-			{
-				idNuevo = int.Parse(dr["maxId"].ToString()) + 1;
-				dr.Close();
+            {
+				idNuevo = Convert.ToInt32(dr["maxId"]) + 1;
 			}
+			dr.Close();
+			
 
 		}
 		catch (SqlException ex)
