@@ -23,7 +23,8 @@
 
     public ENAnuncio()
     {
-        intId = 0;
+        CADAnuncio cad = new CADAnuncio();
+        intId = cad.obtenerId();
         stringEnlace = "";
         stringDescripcion = "";
     }
@@ -39,8 +40,7 @@
     {
         CADAnuncio anuncio = new CADAnuncio();
         bool created = false;
-        if (!anuncio.readAnuncio(this))
-            created = anuncio.createAnuncio(this);
+        created = anuncio.createAnuncio(this);
         return created;
     }
 

@@ -12,5 +12,22 @@ namespace iqueaWeb
                 Response.Redirect("Login.aspx");
             }
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            ENAnuncio en = new ENAnuncio();
+            en.intId = int.Parse(TextBox2.Text);
+            en.stringDescripcion = TextBox3.Text;
+            en.stringEnlace = TextBox4.Text;
+            bool result = en.updateAnuncio();
+            if (result)
+            {
+                Label1.Text = "Anuncio Modificado.";
+            }
+            else
+            {
+                Label1.Text = "Anuncio no Modificado.";
+            }
+        }
     }
 }
