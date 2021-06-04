@@ -1,18 +1,5 @@
-<<<<<<< HEAD
-
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data;
-using System.Data.Common;
-using System.Data.SqlClient;
-using System.Data.SqlTypes;
-=======
 ﻿
 using System;
->>>>>>> develop
 using System.Configuration;
 using System.Data.SqlClient;
 
@@ -32,11 +19,7 @@ public class CADcomentario
         try
         {
             a.Open();
-<<<<<<< HEAD
-            String orden = "Insert Into dbo.comentario (id, comentario, valoracion) VALUES ('" + comentario.idP + "' , '" + comentario.comentarioP + "' , '" + comentario.valoracionP + ")";
-=======
             String orden = "Insert Into dbo.comentario (id, comentario, valoracion,Articulo_id,Usuario_correo) VALUES (" + comentario.idP + " , '" + comentario.comentarioP + "' , " + comentario.valoracionP +" , "+ comentario.Articulo_idP +" ,'"+comentario.Usuario_correoP+ "')";
->>>>>>> develop
             SqlCommand comando = new SqlCommand(orden, a);
             comando.ExecuteNonQuery();
 
@@ -64,11 +47,7 @@ public class CADcomentario
         try
         {
             a.Open();
-<<<<<<< HEAD
-            SqlCommand comando = new SqlCommand("Select * from dbo.comentario where id = '" + comentario.idP + "'", a);
-=======
             SqlCommand comando = new SqlCommand("Select * from dbo.comentario where id = " + comentario.idP , a);
->>>>>>> develop
             SqlDataReader dr = comando.ExecuteReader();
 
             dr.Read();
@@ -179,12 +158,6 @@ public class CADcomentario
         return respuesta;
     }
 
-<<<<<<< HEAD
-}
-
-}
-
-=======
     public bool readFirstComentario(ENcomentario comentario,int id)
     {
         bool respuesta = false;
@@ -199,6 +172,8 @@ public class CADcomentario
             dr.Read();
             comentario.comentarioP = dr["comentario"].ToString();
             comentario.valoracionP = Convert.ToInt32(dr["valoracion"]);
+            comentario.Usuario_correoP = dr["Usuario_correo"].ToString();
+            comentario.Articulo_idP = Convert.ToInt32(dr["Articulo_id"]);
 
             dr.Close();
             a.Close();
@@ -229,10 +204,21 @@ public class CADcomentario
         try
         {
             a.Open();
-            SqlCommand comando = new SqlCommand("Select * from dbo.comentario where comentario.Articulo_id=" + id, a);
+            SqlCommand comando = new SqlCommand("Select * from dbo.comentario where comentario.Articulo_id=" +id +"and comentario.id="+(comentario.idP+1), a);
             SqlDataReader dr = comando.ExecuteReader();
 
-            aux.idP = 0;
+            dr.Read();
+            comentario.idP = Convert.ToInt32(dr["id"]);
+            comentario.comentarioP = dr["comentario"].ToString();
+            comentario.valoracionP = Convert.ToInt32(dr["valoracion"]);
+            comentario.Usuario_correoP = dr["Usuario_correo"].ToString();
+            comentario.Articulo_idP = Convert.ToInt32(dr["Articulo_id"]);
+
+            dr.Close();
+            a.Close();
+            respuesta = true;
+
+            /*aux.idP = 0;
             while (dr.Read())
             {
                 if (comentario.idP == aux.idP)
@@ -242,18 +228,19 @@ public class CADcomentario
                         comentario.idP= Convert.ToInt32(dr["id"]);
                         comentario.comentarioP = dr["comentario"].ToString();
                         comentario.valoracionP = Convert.ToInt32(dr["valoracion"]);
+                        comentario.Usuario_correoP = dr["Usuario_correo"].ToString();
+                        comentario.Articulo_idP = Convert.ToInt32(dr["Articulo_id"]);
                         unavez = true;
                     }
                 }
                 aux.idP = Convert.ToInt32(dr["id"]);
                 aux.comentarioP = dr["comentario"].ToString();
                 aux.valoracionP = Convert.ToInt32(dr["valoracion"]);
+                aux.Usuario_correoP = dr["Usuario_correo"].ToString();
+                aux.Articulo_idP = Convert.ToInt32(dr["Articulo_id"]);
 
-            }
+            }*/
 
-            dr.Close();
-            a.Close();
-            respuesta = true;
         }
         catch (Exception e)
         {
@@ -279,10 +266,20 @@ public class CADcomentario
         try
         {
             a.Open();
-            SqlCommand comando = new SqlCommand("Select * from dbo.comentario where comentario.Articulo_id=" + id, a);
+            SqlCommand comando = new SqlCommand("Select * from dbo.comentario where comentario.Articulo_id = " +id +"and comentario.id = "+(comentario.idP-1), a);
             SqlDataReader dr = comando.ExecuteReader();
 
-            aux.idP = 0;
+            dr.Read();
+            comentario.idP = Convert.ToInt32(dr["id"]);
+            comentario.comentarioP = dr["comentario"].ToString();
+            comentario.valoracionP = Convert.ToInt32(dr["valoracion"]);
+            comentario.Usuario_correoP = dr["Usuario_correo"].ToString();
+            comentario.Articulo_idP = Convert.ToInt32(dr["Articulo_id"]);
+
+            dr.Close();
+            a.Close();
+            respuesta = true;
+            /*aux.idP = 0;
             while (dr.Read())
             {
                 if (comentario.idP == Convert.ToInt32(dr["id"]))
@@ -292,19 +289,19 @@ public class CADcomentario
                         comentario.idP = Convert.ToInt32(dr["id"]);
                         comentario.comentarioP = dr["comentario"].ToString();
                         comentario.valoracionP = Convert.ToInt32(dr["valoracion"]);
+                        comentario.Usuario_correoP = dr["Usuario_correo"].ToString();
+                        comentario.Articulo_idP = Convert.ToInt32(dr["Articulo_id"]);
                         unavez = true;
                     }
                 }
                 aux.idP = Convert.ToInt32(dr["id"]);
                 aux.comentarioP = dr["comentario"].ToString();
                 aux.valoracionP = Convert.ToInt32(dr["valoracion"]);
+                aux.Usuario_correoP = dr["Usuario_correo"].ToString();
+                aux.Articulo_idP = Convert.ToInt32(dr["Articulo_id"]);
 
 
-            }
-
-            dr.Close();
-            a.Close();
-            respuesta = true;
+            }*/
         }
         catch (Exception e)
         {
@@ -319,5 +316,36 @@ public class CADcomentario
 
         return respuesta;
     }
+
+    public int obtenerId()
+    {
+        int idNuevo = 0;
+        SqlConnection conec = new SqlConnection(constring);
+        try
+        {
+            conec.Open();
+            SqlCommand consulta = new SqlCommand("Select max(id) maxId,Count(id) numRows from [dbo].[comentario]", conec);
+
+            SqlDataReader dr = consulta.ExecuteReader();
+            dr.Read();
+
+            if (int.Parse(dr["numRows"].ToString()) != 0)
+            {
+                idNuevo = Convert.ToInt32(dr["maxId"]) + 1;
+            }
+            dr.Close();
+
+
+        }
+        catch (SqlException ex)
+        {
+            Console.WriteLine("The operation has failed.Error: {0}", ex.Message);
+        }
+        finally
+        {
+            conec.Close();
+        }
+
+        return idNuevo;
+    }
 }
->>>>>>> develop

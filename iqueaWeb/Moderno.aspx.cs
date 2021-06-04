@@ -45,7 +45,7 @@ namespace iqueaWeb
         protected void GridView_RowCommand1(object sender, GridViewCommandEventArgs e)
         {
             int indexrow = int.Parse(e.CommandArgument.ToString());
-            int id = int.Parse(e.CommandArgument.ToString());
+            int id = int.Parse(e.CommandArgument.ToString()) ;
             Response.Redirect("articulo.aspx?id=" + id.ToString());
         }
     }

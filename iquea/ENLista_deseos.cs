@@ -2,7 +2,7 @@
 {
     private int id;
     private int id_articulo;
-    private int id_user;
+    private string id_user;
 
     public int intId
     {
@@ -14,7 +14,7 @@
         get { return id_articulo; }
         set { id_articulo = value; }
     }
-    public int intId_user
+    public string intId_user
     {
         get { return id_user; }
         set { id_user = value; }
@@ -24,7 +24,7 @@
     {
         intId = 0;
         intId_articulo = 0;
-        intId_user = 0;
+        intId_user = "";
     }
 
     public ENLista_deseos(int id, int id_articulos)

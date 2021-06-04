@@ -52,6 +52,8 @@ public class ENcomentario
 
     public ENcomentario()
     {
+        CADcomentario aux = new CADcomentario();
+        this.idP = aux.obtenerId();
         this.comentario = "";
         this.valoracion = null;
         this.valoracion = 0;

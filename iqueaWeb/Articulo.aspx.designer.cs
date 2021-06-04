@@ -114,6 +114,15 @@ namespace iqueaWeb
         protected global::System.Web.UI.WebControls.Button lista_deseos;
 
         /// <summary>
+        /// Control Comentar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Comentar;
+
+        /// <summary>
         /// Control enunciado_comentarios.
         /// </summary>
         /// <remarks>

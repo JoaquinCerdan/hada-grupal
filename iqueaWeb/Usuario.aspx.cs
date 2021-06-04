@@ -39,5 +39,24 @@ namespace iqueaWeb
         {
             Response.Redirect("Modificar.aspx");
         }
+
+        protected void Button_Click1(object sender, EventArgs e)
+        {
+            ENUsuario usuario = new ENUsuario();
+            usuario.stringEmail = Session["email"].ToString();
+
+            bool caso = usuario.deleteUsuario();
+
+            if (caso == true)
+            {
+                Session.Abandon();
+                Response.Redirect("Index.aspx");
+            }
+            else
+            {
+                throw new Exception("no se ha podido borrar el usuario");
+            }
+
+        }
     }
 }

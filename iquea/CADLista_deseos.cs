@@ -20,7 +20,7 @@ public class CADLista_deseos
         try
         {
             c.Open();
-            SqlCommand com = new SqlCommand("Insert INTO [dbo].[Lista_deseos] (Id_art,Id_user) VALUES( '" + list.intId_articulo + "','" + list.intId_user + "')", c);
+            SqlCommand com = new SqlCommand("Insert INTO [dbo].[Lista_deseos] (Id_art,Id_user) VALUES( " + list.intId_articulo + ",'" + list.intId_user + "')", c);
 
             com.ExecuteNonQuery();
             create = true;
@@ -56,7 +56,7 @@ public class CADLista_deseos
             {
                 list.intId = int.Parse(dr["Id"].ToString());
                 list.intId_articulo = int.Parse(dr["Id_art"].ToString());
-                list.intId_user = int.Parse(dr["Id_user"].ToString());
+                list.intId_user = dr["Id_user"].ToString();
                 read = true;
             }
             else read = false;
