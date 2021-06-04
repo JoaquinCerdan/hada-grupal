@@ -15,6 +15,11 @@ namespace iqueaWeb
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+
+            ENUsuario en = new ENUsuario();
+            en.stringEmail = TextBox2.Text;
+            en.deleteUsuario(); 
+          
         }
     }
 }
