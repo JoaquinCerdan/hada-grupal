@@ -79,6 +79,7 @@
     <Content Include="BorrarComentario.aspx" />
     <Content Include="BorrarOferta.aspx" />
     <Content Include="BorrarUsuario.aspx" />
+    <Content Include="Busqueda.aspx" />
     <Content Include="Carrito.aspx" />
     <Content Include="Clasico.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -93,6 +94,7 @@
     <Content Include="CrearOferta.aspx" />
     <Content Include="etc.aspx" />
     <Content Include="Exterior.aspx" />
+    <Content Include="Formulario web1.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="Interior.aspx" />
     <Content Include="Lista_deseos.aspx" />
@@ -304,6 +306,13 @@
     <Compile Include="BorrarUsuario.aspx.designer.cs">
       <DependentUpon>BorrarUsuario.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Busqueda.aspx.cs">
+      <DependentUpon>Busqueda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Busqueda.aspx.designer.cs">
+      <DependentUpon>Busqueda.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Carrito.aspx.cs">
       <DependentUpon>Carrito.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -359,6 +368,13 @@
     </Compile>
     <Compile Include="Exterior.aspx.designer.cs">
       <DependentUpon>Exterior.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario web1.aspx.cs">
+      <DependentUpon>Formulario web1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formulario web1.aspx.designer.cs">
+      <DependentUpon>Formulario web1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>

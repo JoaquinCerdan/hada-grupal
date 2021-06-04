@@ -16,7 +16,12 @@ namespace iqueaWeb
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Results.aspx?srch=" + txtSearchMaster.Text);
+            Response.Redirect("Busqueda.aspx?nombre=" + txtSearchMaster.Text.ToString());
+        }
+
+        protected void txtSearchMaster_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
