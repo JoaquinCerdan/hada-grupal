@@ -22,5 +22,20 @@ namespace iqueaWeb
             en.createAnuncio();
         }
 
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
+            ENAnuncio en = new ENAnuncio();
+            en.stringDescripcion = TextBox2.Text;
+            en.stringEnlace = TextBox3.Text;
+            bool result = en.createAnuncio();
+            if(result == true)
+            {
+                Label1.Text = "Anuncio creado";
+            }
+            else
+            {
+                Label1.Text = "No se ha podido crear el Anuncio.";
+            }
+        }
     }
 }

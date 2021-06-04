@@ -26,7 +26,7 @@ public class CADAnuncio
         try
         {
             c.Open();
-            SqlCommand com = new SqlCommand("Insert INTO [dbo].[Anuncio] (Enlace,Descripcion) VALUES('" + anun.intId + "', '" + anun.stringEnlace + "','" + anun.stringDescripcion + "')", c);
+            SqlCommand com = new SqlCommand("Insert INTO Anuncio(Id,Enlace,Descripcion) VALUES('" + anun.intId + "', '" + anun.stringEnlace + "','" + anun.stringDescripcion + "')", c);
 
             com.ExecuteNonQuery();
             create = true;
@@ -98,7 +98,7 @@ public class CADAnuncio
         try
         {
             c.Open();
-            SqlCommand com = new SqlCommand("UPDATE [dbo].[Anuncio] SET Enlace= '" + anun.stringEnlace + "' ,Descripcion=" + anun.stringDescripcion + "WHERE Id = '" + anun.intId + "'", c);
+            SqlCommand com = new SqlCommand("UPDATE [dbo].[Anuncio] SET Enlace= '" + anun.stringEnlace + "' ,Descripcion='" + anun.stringDescripcion + "'WHERE Id = " + anun.intId, c);
             com.ExecuteNonQuery();
 
             update = true;
@@ -141,6 +141,37 @@ public class CADAnuncio
             Console.WriteLine("User operation has failed.Error: {0}", e.Message);
         }
         return delete;
+    }
+    public int obtenerId()
+    {
+        int idNuevo = 0;
+        SqlConnection conec = new SqlConnection(constring);
+        try
+        {
+            conec.Open();
+            SqlCommand consulta = new SqlCommand("Select max(Id) maxId,Count(Id) numRows from dbo.Anuncio", conec);
+
+            SqlDataReader dr = consulta.ExecuteReader();
+            dr.Read();
+
+            if (int.Parse(dr["numRows"].ToString()) != 0)
+            {
+                idNuevo = Convert.ToInt32(dr["maxId"]) + 1;
+            }
+            dr.Close();
+
+
+        }
+        catch (SqlException ex)
+        {
+            Console.WriteLine("The operation has failed.Error: {0}", ex.Message);
+        }
+        finally
+        {
+            conec.Close();
+        }
+
+        return idNuevo;
     }
 
 

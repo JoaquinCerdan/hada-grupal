@@ -31,6 +31,7 @@
         </asp:RequiredFieldValidator>
     </p>
     <p>
-        &nbsp;<asp:Button ID="Button1" Class="btn btn-primary" runat="server" Text="Modificar" />
-        &nbsp;</p>
+        &nbsp;<asp:Button ID="Button1" Class="btn btn-primary" runat="server" Text="Modificar" OnClick="Button1_Click" />
+        &nbsp;<asp:Label ID="Label1" runat="server" ></asp:Label>
+    </p>
 </asp:Content>
