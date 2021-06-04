@@ -16,7 +16,15 @@ namespace iqueaWeb
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Busqueda.aspx?nombre=" + txtSearchMaster.Text.ToString());
+            string val = OptionBusqueda.Value;
+            if (val == "OptionNombre")
+            {
+                Response.Redirect("~/Results.aspx?srch=" + txtSearchMaster.Text);
+            } else if(val == "OptionPrecio")
+            {
+                Response.Redirect("~/Results.aspx?price=" + txtSearchMaster.Text);
+            }
+                
         }
 
         protected void txtSearchMaster_TextChanged(object sender, EventArgs e)
