@@ -29,7 +29,7 @@
         </asp:RegularExpressionValidator>
     </p>
     <p>
-        &nbsp;Fecha de Validez: &nbsp;<asp:TextBox ID="TextBox4"  TextMode = "Date" runat="server" OnTextChanged="TextBox4_TextChanged"></asp:TextBox>
+        &nbsp;Fecha de Validez: &nbsp;<asp:TextBox ID="TextBox4"  TextMode = "Date" runat="server"></asp:TextBox>
 
         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" 
             runat="server" ErrorMessage=" *Campo Obligatorio" 

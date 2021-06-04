@@ -52,7 +52,7 @@
                     </div>
                     <hr>
                     <!-- END PRODUCT -->
-                    <asp:GridView ID="GridView" runat="server" AutoGenerateColumns="False" ShowHeader="False" Width="256px" HorizontalAlign="Center" OnRowCommand="GridView_RowCommand1" OnSelectedIndexChanged="GridView_SelectedIndexChanged">
+                    <asp:GridView ID="GridView" runat="server" AutoGenerateColumns="False" ShowHeader="False" Width="256px" HorizontalAlign="Center"  >
                         <Columns>
                             <asp:ButtonField DataTextField="Nombre" Text="Botón_nombre" CommandName="id" >
                             <FooterStyle HorizontalAlign="Center" />
