@@ -66,3 +66,87 @@ Creación de muebles a medida según una serie de especificaciones dadas por los
 Creación de un parque en el cual los hijos de los clientes puedan divertirse mientras que los padres realizan sus compras
 Instalación de cosas electrónicas y montado de muebles.
 Reparación de muebles a domicilio.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Entrega final:
+
++Cambios y problemas respecto a la idea original:
+
+-No se ha podido implementar carrito ni pedido.
+-Se ha creado un email y unas redes sociales (Instagram,Twitter) con el que se puede contactar.
+-Falta de comunicación y orden dentro del grupo.
+-Falta de tiempo.
+-las ofertas están creadas,pero no implementadas de forma efectiva.
+
++Tiempo gastado:
+
+-Daniel Bolaño Morillas:100 horas.
+-Álvaro Lario Sánchez: 100 horas
+-Pedro Simarro Santamaría:100 horas.
+-Joaquín José Cerdán López: 100 horas.
+-Adrian Ubeda Touati: 100 horas.
+-Adam Brahim García: 100 horas.
+
++Trabajo realizado por cada persona:
+
+-Daniel Bolaño Morillas:
+Capa EN:Oferta y Comentario.
+Capa CAD:Oferta y Comentario.
+Interfaz:Master.aspx,articulos.aspx,Busqueda.aspx,Comentar.aspx,Modificar.aspx.
+Validación:controles de validación de registrarse y modificar.
+Otros:diseñar diagrama de la BD,Presentación,Filtro por nombre,gridview de las mayoría de vistas,objeto Session,enlace de gridview con la pagina articulo.aspx,salir de la sesion abierta.
+
+-Álvaro Lario Sánchez:
+Capa EN:Lin_pedido y pedido.
+Capa CAD:Lin_pedido y pedido.
+Interfaz:Administrador.aspx y todas las vistas que se derivan de esta,Master.aspx,Carrito.aspx,
+Validación:
+Otros:diseñar diagrama de la BD,Presentación, Tablas de pedido, lin_pedido.
+
+
+
+
+
+
+-Pedro Simarro Santamaría:
+Capa EN:Lista_deseos,Anuncio.
+Capa CAD:Lista_deseos,Anuncio.
+Interfaz:Master.aspx,Index.aspx, Login.aspx, Lista_deseos.aspx, Registrarse.aspx,CrearArticulo.aspx
+Validación: Registrarse.aspx
+Otros:diseñar diagrama de la BD,Presentación,creación de redes sociales, Implementación de los CRUD en CAD_ListaDeseos, Implementación de los CRUD en CAD_Articulo, Implementación de Bootstrap en todas las vistas del proyecto,Aplicado el Bootstrap a las vistas Index, Registrarse,Articulo, Login y Perfil, GridView Lista_deseos, GridView Articulo.
+
+-Joaquín José Cerdán López:
+Capa EN:Categoría,Artículo.
+Capa CAD:Categoría,Artículo.
+Interfaz:Master.aspx,Pedido.aspx,Lista_deseos.aspx, Login.aspx, Index.aspx,
+Validación:
+Otros:diseñar diagrama de la BD,Presentación, crear la variable sesión,  modificaciones diagrama de la BD, implementación de la Base de Datos, mystyle.css, ayuda en la creación de artículo, ayuda en la corrección de GridView.
+
+-Adam Brahim García:
+Capa EN:Administrador,Usuario.
+Capa CAD:Administrador,Usuario.
+Interfaz:Master.aspx,Usuario.aspx,barra de búsqueda.
+Validación: CrearOferta.aspx
+Otros:diseñar diagrama de la BD,Presentación, implementación de la barra de búsqueda con filtrado por nombre y precio
+
+-Adrian Ubeda Touati: 
+Capa EN:Lin_Carrito,Carrito.
+Capa CAD:Lin_Carrito,Carrito.
+Interfaz:Master.aspx,Categoría.aspx,Exterior.aspx,Interior.aspx,Temporada.aspx,Sencillo.aspx,Moderno.aspx,Clásico.aspx,Index.aspx,Ofertas.aspx,menu asp.
+Validación: 
+Otros:diseñar diagrama de la BD,Presentación, Implementación de la sql en codigo (se modificó posteriormente por casi todos), ayude en creacion artículo, GridViews, mystyle.css (parte), búsqueda de información de todos los artículos y de la implementación de estos en la base de datos a través del archivo sql, ayude en la variable sesión.
+
++forma de actuar:
+
+dentro de la carpeta de IqueaWeb/App_Data hay un ejecutable llamado “ejecutableBD.sql”.Se debe conectar a la base de datos “Database.mdf” y ejecutarlo para introducir unos datos básicos en la web.
+
+Al ejecutarlo se crean 4 usuarios con los siguientes correos y contraseña:
+-Correo:profegod@gmail.com Contraseña:123456789
+-Correo:dbm39@gmail.com Contraseña:987654321
+-Correo:pepo@gmail.com Contraseña:789654123
+-Correo:willyrex@gmail.com Contraseña:3455623626
+
+El código para acceder a Administrador es:Admin_god
+
+
