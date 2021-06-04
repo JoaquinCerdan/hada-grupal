@@ -36,6 +36,8 @@
 
     public ENcomentario()
     {
+        CADcomentario aux = new CADcomentario();
+        this.idP = aux.obtenerId();
         this.comentario = "";
         this.valoracion = 0;
     }

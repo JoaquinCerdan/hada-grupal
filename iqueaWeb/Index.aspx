@@ -56,10 +56,15 @@
       </div>
     </div>
   </div>
+  <br />
+            <h1>Descubre las super ofertas!!!!</h1>
+  <asp:ImageButton ID="ImageButton6" runat="server" Height="126px" ImageUrl="~/Imagenes/oferta.png" Width="184px" PostBackUrl="~/Ofertas.aspx" />
+            <br />
 </body>
     <br />
     
     
     
 
+    </div>
 </asp:Content>
