@@ -177,9 +177,6 @@ public class CADArticulo
 
 	public int obtenerId()
 	{
-<<<<<<< HEAD
-		return ENArticulo.NextID;
-=======
 		int idNuevo = 0;
 		SqlConnection conec = new SqlConnection(constring);
 		try
@@ -208,7 +205,6 @@ public class CADArticulo
 		}
 
 		return idNuevo;
->>>>>>> f456ca0874be5f4138165dceffe1363da04fa35a
 	}
 
 	public bool getArticulos(ENArticulo art, string searchString)
