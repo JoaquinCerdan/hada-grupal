@@ -40,7 +40,10 @@ namespace iqueaWeb
                     }
                     else
                     {
-                        throw new Exception("Error con el articulo");
+                        nombre.Text = Request.QueryString["id"];
+                        descripcion.Text = articulo.intId.ToString();
+                        //Response.Redirect("Login.aspx");
+                        //throw new Exception("Error con el articulo");
                     }
                 }
                 else

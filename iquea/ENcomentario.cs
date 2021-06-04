@@ -3,6 +3,8 @@
     private string comentario;
     private int valoracion;
     private int id;
+    private int Articulo_id;
+    private string Usuario_correo;
 
     public string comentarioP
     {
@@ -21,25 +23,21 @@
         get { return this.id; }
         set { this.id = value; }
     }
+    public int Articulo_idP
+    {
+        get { return this.Articulo_id; }
+        set { this.Articulo_id = value; }
+    }
+    public string Usuario_correoP
+    {
+        get { return this.Usuario_correo; }
+        set { this.Usuario_correo = value; }
+    }
 
     public ENcomentario()
     {
         this.comentario = "";
         this.valoracion = 0;
-    }
-
-    public ENcomentario(string comentario, int valoracion)
-    {
-        this.comentario = comentario;
-        //la valoración va desde 0 a 100.Si el valor dado no esta entre esos parametros no se aceptará
-        if (valoracion >= 0 && valoracion <= 100)
-        {
-            this.valoracion = valoracion;
-        }
-        else
-        {
-            //crear error
-        }
     }
 
     public bool createComentario()

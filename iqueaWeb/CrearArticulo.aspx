@@ -35,7 +35,7 @@
     </p>
     <p>
 &nbsp; Url Imagen:
-        <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TextBox7" runat="server" ></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" 
             runat="server" ErrorMessage=" *Campo Obligatorio" 
             forecolor="red" ControlToValidate="TextBox7">
@@ -67,9 +67,9 @@
     Temporada: 
      <asp:DropDownList ID="Temporada"  style="margin-bottom:10px; width:10%; height:40px;"  AutoPostBack="true" runat="server">
                         
-                        <asp:ListItem Value="0"> Sencillo </asp:ListItem>
-                        <asp:ListItem Value="1"> Clásico </asp:ListItem>
-                         <asp:ListItem Value="2"> Moderno </asp:ListItem>
+                        <asp:ListItem Value="Sencillo"> Sencillo </asp:ListItem>
+                        <asp:ListItem Value="Clasico"> Clásico </asp:ListItem>
+                         <asp:ListItem Value="Moderno"> Moderno </asp:ListItem>
                 </asp:DropDownList>
     </p>
     <p>

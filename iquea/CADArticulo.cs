@@ -30,23 +30,23 @@ public class CADArticulo
 		{
 			c.Open();
 			
-			SqlCommand com = new SqlCommand("Insert INTO [dbo].[Articulo] (Id,Nombre,Descripcion,Precio,Imagen,Stock,IdCategoria,Temporada) VALUES('"
+			SqlCommand com = new SqlCommand("Insert INTO [dbo].[Articulo] (Id,Nombre,Descripcion,Precio,Imagen,Stock,temporada,Categoria_id) VALUES("
 				+ art.intId
-				+ "', '"
+				+ ", '"
 				+ art.stringNombre
 				+ "','"
 				+ art.stringDescripcion
-				+ "','"
-				+ art.doublePrecio
-				+ "','"
+				+ "',"
+				+ Convert.ToDecimal(art.doublePrecio)
+				+ ",'"
 				+ art.stringImagen
-				+ "','"
+				+ "',"
 				+ art.intStock
-				+ "','"
-				+ art.intCategoria
-				+ "','"
+				+ ",'"
 				+ art.stringTemporada
-				+ "')", c);
+				+ "',"
+				+ art.intCategoria
+				+ ")", c);
 
 			com.ExecuteNonQuery();
 			create = true;
@@ -110,24 +110,19 @@ public class CADArticulo
 		try
 		{
 			c.Open();
-			SqlCommand com = new SqlCommand("Select * From [dbo].[Articulo] Where Id = '" + art.intId + "' ", c);
+			SqlCommand com = new SqlCommand("Select * From [dbo].[Articulo] Where Id = " + art.intId , c);
 			SqlDataReader dr = com.ExecuteReader();
 			dr.Read();
 
-			if (dr["Id"].ToString() == art.intId.ToString())
-			{
+			art.stringNombre = dr["Nombre"].ToString();
+			art.stringDescripcion = dr["Descripcion"].ToString();
+			art.doublePrecio = Convert.ToDouble(dr["Precio"]);
+			art.stringImagen = dr["Imagen"].ToString();
+			art.intStock = Convert.ToInt32(dr["Stock"]);
+			art.intCategoria = Convert.ToInt32(dr["Categoria_id"]);
+			art.stringTemporada = dr["temporada"].ToString();
+			read = true;
 
-				art.intId = int.Parse(dr["Id"].ToString());
-				art.stringNombre = dr["Nombre"].ToString();
-				art.stringDescripcion = dr["Descripcion"].ToString();
-				art.doublePrecio = double.Parse(dr["Precio"].ToString());
-				art.stringImagen = dr["Imagen"].ToString();
-				art.intStock = int.Parse(dr["Stock"].ToString());
-				art.intCategoria = int.Parse(dr["IdCategoria"].ToString());
-				art.stringTemporada = dr["Temporada"].ToString();
-				read = true;
-			}
-			else read = false;
 			dr.Close();
 
 		}
@@ -182,7 +177,7 @@ public class CADArticulo
 
 	public int obtenerId()
 	{
-		int idNuevo = 1;
+		int idNuevo = 0;
 		SqlConnection conec = new SqlConnection(constring);
 		try
 		{

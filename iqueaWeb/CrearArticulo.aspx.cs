@@ -20,23 +20,9 @@ namespace iqueaWeb
             en.stringDescripcion = TextBox5.Text;
             en.doublePrecio = double.Parse(TextBox6.Text);
             en.stringImagen = TextBox7.Text;
-            en.intStock = int.Parse(TextBox8.Text);
-            
-            en.intCategoria =   int.Parse( Categoria.SelectedValue);
-            
-
-            if (Temporada.SelectedValue=="0")
-            {
-                en.stringTemporada = "sencillo";
-            } else if (Temporada.SelectedValue=="1"){
-                en.stringTemporada = "clasico";
-
-            } else
-            {
-                en.stringTemporada = "moderno";
-            }
-
-
+            en.intStock = Convert.ToInt32(TextBox8.Text);
+            en.intCategoria =Convert.ToInt32(Categoria.SelectedValue);
+            en.stringTemporada = Temporada.SelectedValue;
 
             bool creado = en.createArticulo();
             if (creado)
