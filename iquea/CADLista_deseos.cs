@@ -20,7 +20,7 @@ public class CADLista_deseos
         try
         {
             c.Open();
-            SqlCommand com = new SqlCommand("Insert INTO [dbo].[Lista_deseos] (Id_art,Id_user) VALUES( '" + list.intId_articulo + "','" + list.intId_user + "')", c);
+            SqlCommand com = new SqlCommand("Insert INTO [dbo].[Lista_deseos] (Id,Id_art,Id_user) VALUES("+list.intId +","+ list.intId_articulo + ",'" + list.intId_user + "')", c);
 
             com.ExecuteNonQuery();
             create = true;
@@ -134,6 +134,37 @@ public class CADLista_deseos
             Console.WriteLine("User operation has failed.Error: {0}", e.Message);
         }
         return delete;
+    }
+    public int obtenerId()
+    {
+        int idNuevo = 0;
+        SqlConnection conec = new SqlConnection(constring);
+        try
+        {
+            conec.Open();
+            SqlCommand consulta = new SqlCommand("Select max(Id) maxId,Count(Id) numRows from [dbo].[Lista_deseos]", conec);
+
+            SqlDataReader dr = consulta.ExecuteReader();
+            dr.Read();
+
+            if (int.Parse(dr["numRows"].ToString()) != 0)
+            {
+                idNuevo = Convert.ToInt32(dr["maxId"]) + 1;
+            }
+            dr.Close();
+
+
+        }
+        catch (SqlException ex)
+        {
+            Console.WriteLine("The operation has failed.Error: {0}", ex.Message);
+        }
+        finally
+        {
+            conec.Close();
+        }
+
+        return idNuevo;
     }
 
 }

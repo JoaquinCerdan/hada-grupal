@@ -25,6 +25,7 @@
         &nbsp;&nbsp;
         <asp:Button ID="comprar" runat="server" Text="comprar" style="border-style: groove; border-width: 1px" OnClick="comprar_Click" /> &nbsp;&nbsp;
         <asp:Button ID="lista_deseos" runat="server" Text="añadir a lista de deseos" style="border-style: groove; border-width: 1px" OnClick="lista_deseos_Click" />&nbsp;&nbsp;
+        
     </p>
 
     <br />

@@ -87,11 +87,17 @@ namespace iqueaWeb
                 ENLista_deseos lista = new ENLista_deseos();
 
                 lista.intId_articulo = id;
-                lista.intId_user =  Session["email"];
+                lista.intId_user = (string)Session["email"];
 
-                lista.createLista_deseos();
+                bool creado;
+                creado= lista.createLista_deseos();
+                if (creado)
+                {
+                    Response.Redirect("Lista_deseos.aspx?id=" + id.ToString());
+                }
+                
 
-                Response.Redirect("Lista_deseos.aspx?id=" + id.ToString());
+                
             }
         }
 
