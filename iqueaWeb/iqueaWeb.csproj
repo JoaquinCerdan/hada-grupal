@@ -69,9 +69,6 @@
     <Content Include="Administrador.aspx" />
     <Content Include="Anuncio.aspx" />
     <Content Include="App_Data\Database.mdf" />
-    <Content Include="App_Data\Database_log.ldf">
-      <DependentUpon>Database.mdf</DependentUpon>
-    </Content>
     <Content Include="articulo.aspx" />
     <Content Include="BorrarAnuncio.aspx" />
     <Content Include="BorrarArticulo.aspx" />
@@ -82,6 +79,7 @@
     <Content Include="Busqueda.aspx" />
     <Content Include="Carrito.aspx" />
     <Content Include="Clasico.aspx" />
+    <Content Include="Comentar.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -95,6 +93,7 @@
     <Content Include="etc.aspx" />
     <Content Include="Exterior.aspx" />
     <Content Include="Formulario web1.aspx" />
+    <Content Include="Imagenes\oferta.png" />
     <Content Include="Index.aspx" />
     <Content Include="Interior.aspx" />
     <Content Include="Lista_deseos.aspx" />
@@ -106,6 +105,7 @@
     <Content Include="ModificarCategoria.aspx" />
     <Content Include="ModificarOferta.aspx" />
     <Content Include="mystyle.css" />
+    <Content Include="Ofertas.aspx" />
     <Content Include="OrdenaC.aspx" />
     <Content Include="OrdenaE.aspx" />
     <Content Include="OrdenaI.aspx" />
@@ -326,6 +326,13 @@
     <Compile Include="Clasico.aspx.designer.cs">
       <DependentUpon>Clasico.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Comentar.aspx.cs">
+      <DependentUpon>Comentar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comentar.aspx.designer.cs">
+      <DependentUpon>Comentar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CrearAnuncio.aspx.cs">
       <DependentUpon>CrearAnuncio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -444,6 +451,13 @@
     </Compile>
     <Compile Include="ModificarOferta.aspx.designer.cs">
       <DependentUpon>ModificarOferta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ofertas.aspx.cs">
+      <DependentUpon>Ofertas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ofertas.aspx.designer.cs">
+      <DependentUpon>Ofertas.aspx</DependentUpon>
     </Compile>
     <Compile Include="OrdenaC.aspx.cs">
       <DependentUpon>OrdenaC.aspx</DependentUpon>
