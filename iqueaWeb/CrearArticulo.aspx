@@ -74,7 +74,7 @@
     </p>
     <p>
 &nbsp;
-        <asp:Button ID="Button2" Class="btn btn-primary" runat="server" Text="Crear" OnClick="Button2_Click" />
-        <asp:Label ID="etiqueta" runat="server" Text="Aviso"></asp:Label>
+        <asp:Button ID="Button2" Class="btn btn-primary" runat="server" Text="Crear" OnClientClick =  " return confirm('¿Desea crear el artículo?');" OnClick="Button2_Click"/>
+        <asp:Label ID="etiqueta" runat="server" Text="Aviso"></asp:Label> 
     </p>
 </asp:Content>
