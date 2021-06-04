@@ -1,0 +1,2 @@
+﻿INSERT INTO dbo.Usuarios(email, contra, datosBancarios, nombre, direccion, numTelefono) VALUES('javi@gmail.com','bestjob','ES1233213232131232','Javi','Universidad de Alicante','654198712');
+INSERT INTO dbo.Administrador(codigo,correo) VALUES('Admin_cod','javi@gmail.com');
