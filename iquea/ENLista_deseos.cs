@@ -22,15 +22,19 @@
 
     public ENLista_deseos()
     {
-        intId = 0;
+        CADLista_deseos aux = new CADLista_deseos();
+
+        intId = aux.obtenerId();
         intId_articulo = 0;
         intId_user = "";
     }
 
     public ENLista_deseos(int id, int id_articulos)
     {
+
+
         intId = id;
-        intId_articulo = id_articulo;
+        intId_articulo = id_articulos;
         intId_user = id_user;
     }
 
@@ -38,7 +42,7 @@
     {
         CADLista_deseos lista = new CADLista_deseos();
         bool created = false;
-        if (!lista.readLista_deseos(this))
+        //if (!lista.readLista_deseos(this))
             created = lista.createLista_deseos(this);
         return created;
     }

@@ -33,9 +33,8 @@ namespace iqueaWeb
                         if (casob == true)
                         {
                             //si se encuentra un comentario sobre el objeto se ponen sus datos en las etiquetas
-                            TextBox1.Text = comentario.Usuario_correoP;
-                            TextBox2.Text = comentario.comentarioP;
-                            TextBox3.Text = comentario.valoracionP.ToString();
+                            enunciado_comentario.Text = comentario.comentarioP;
+                            enunciado_valoracion.Text = comentario.valoracionP.ToString();
                         }
 
                     }
@@ -88,11 +87,17 @@ namespace iqueaWeb
                 ENLista_deseos lista = new ENLista_deseos();
 
                 lista.intId_articulo = id;
-                lista.intId_user =  Session["email"].ToString();
+                lista.intId_user = (string)Session["email"];
 
-                lista.createLista_deseos();
+                bool creado;
+                creado= lista.createLista_deseos();
+                if (creado)
+                {
+                    Response.Redirect("Lista_deseos.aspx?id=" + id.ToString());
+                }
+                
 
-                Response.Redirect("Lista_deseos.aspx?id=" + id.ToString());
+                
             }
         }
 
@@ -104,8 +109,8 @@ namespace iqueaWeb
             ENcomentario nuevo = new ENcomentario();
 
             //se guardan los datos actuales en el antiguo y se consigue su id
-            antiguo.valoracionP = Convert.ToInt32(TextBox3.Text);
-            antiguo.comentarioP = TextBox2.Text;
+            antiguo.valoracionP = Convert.ToInt32(enunciado_valoracion.Text);
+            antiguo.comentarioP = enunciado_comentario.Text;
             antiguo.readComentario_datos();
 
             bool funciona=nuevo.readPrevComentario(antiguo.idP);
@@ -116,9 +121,8 @@ namespace iqueaWeb
                 nuevo.idP = antiguo.idP;
                 nuevo.readPrevComentario(Convert.ToInt32(Request.QueryString["id"]));
 
-                TextBox3.Text = nuevo.valoracionP.ToString();
-                TextBox2.Text = nuevo.comentarioP;
-                TextBox1.Text = nuevo.Usuario_correoP;
+                enunciado_valoracion.Text = nuevo.valoracionP.ToString();
+                enunciado_comentario.Text = nuevo.comentarioP;
             }
 
         }
@@ -131,8 +135,8 @@ namespace iqueaWeb
             ENcomentario nuevo = new ENcomentario();
 
             //se guardan los datos actuales en el antiguo y se consigue su id
-            antiguo.valoracionP = Convert.ToInt32(TextBox3.Text);
-            antiguo.comentarioP = TextBox2.Text;
+            antiguo.valoracionP = Convert.ToInt32(enunciado_valoracion.Text);
+            antiguo.comentarioP = enunciado_comentario.Text;
             bool funciona=antiguo.readComentario_datos();
 
             if (funciona == true)
@@ -141,26 +145,10 @@ namespace iqueaWeb
                 nuevo.idP = antiguo.idP;
                 nuevo.readNextComentario(Convert.ToInt32(Request.QueryString["id"]));
 
-                TextBox3.Text = nuevo.valoracionP.ToString();
-                TextBox2.Text = nuevo.comentarioP;
-                TextBox1.Text = nuevo.Usuario_correoP;
-            }
-
-        }
-
-        protected void Comentar_Click(object sender, EventArgs e)
-        {
-            if (Session["email"] == null)
-            {
-                //en caso de que no sea un usuario, se le manda a login y no se le permite controlar
-                Response.Redirect("Login.aspx");
-            }
-            else
-            {
-                //en el caso de que si haya un usuario logeado se envia la id del articulo y se redirige a Carrito
-                int id = Convert.ToInt32(Request.QueryString["id"]);
-                Response.Redirect("Comentar.aspx?id=" + id.ToString());
+                enunciado_valoracion.Text = nuevo.valoracionP.ToString();
+                enunciado_comentario.Text = nuevo.comentarioP;
             }
         }
+
     }
 }
