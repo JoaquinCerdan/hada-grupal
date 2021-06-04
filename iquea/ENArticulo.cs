@@ -102,6 +102,15 @@ public class ENArticulo
 		return created;
 	}
 
+	public bool obtenerId()
+	{
+		CADArticulo articulo = new CADArticulo();
+		bool created = false;
+		//if (!articulo.readArticulo(this))
+		created = articulo.obtenerId(this);
+		return created;
+	}
+
 	public bool updateArticulo()
 	{
 		ENArticulo aux = new ENArticulo();

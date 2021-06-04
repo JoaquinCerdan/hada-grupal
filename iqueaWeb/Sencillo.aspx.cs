@@ -21,7 +21,7 @@ namespace iqueaWeb
             try
             {
                 conn.Open();
-                SqlDataAdapter sqa = new SqlDataAdapter("Select * From [dbo].[Articulo]  where Articulo.Temporada='Sencillo'", conn);
+                SqlDataAdapter sqa = new SqlDataAdapter("Select * From [dbo].[Articulo]  where temporada= 'Sencillo' ", conn);
                 DataSet ds = new DataSet();
                 sqa.Fill(ds);
                 GridView.DataSource = ds;
@@ -39,14 +39,29 @@ namespace iqueaWeb
 
         protected void GridView_SelectedIndexChanged(object sender, EventArgs e)
         {
+            ENArticulo articulo = new ENArticulo();
+            articulo.stringNombre = GridView.SelectedRow.Cells[1].Text.ToString();
 
+            bool caso = articulo.obtenerId();
+
+            if (caso == true)
+            {
+                int id = articulo.intId;
+                Response.Redirect("articulo.aspx?id=" + id.ToString());
+            }
+            else
+            {
+                Response.Redirect("index.aspx?id=" + articulo.stringNombre);
+            }
         }
 
-        protected void GridView_RowCommand1(object sender, GridViewCommandEventArgs e)
-        {
+        /*protected void GridView_RowCommand1(object sender, GridViewCommandEventArgs e)
+
+        { 
+            ENArticulo articulo = new ENArticulo();
             int indexrow = int.Parse(e.CommandArgument.ToString());
-            int id = int.Parse(e.CommandArgument.ToString());
+            int id = int.Parse(e.CommandArgument.ToString()) ;
             Response.Redirect("articulo.aspx?id=" + id.ToString());
-        }
+        }*/
     }
 }

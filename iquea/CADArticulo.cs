@@ -67,6 +67,45 @@ public class CADArticulo
 		return create;
 	}
 
+	public bool obtenerId(ENArticulo art)
+	{
+		bool create = false;
+		SqlConnection c = new SqlConnection(constring);
+		try
+		{
+			c.Open();
+
+			SqlCommand com = new SqlCommand("Select * From [dbo].[Articulo] Where Nombre = '" + art.stringNombre+"'", c);
+			SqlDataReader dr = com.ExecuteReader();
+			dr.Read();
+
+			art.intId = Convert.ToInt32(dr["Id"]);
+			art.stringDescripcion = dr["Descripcion"].ToString();
+			art.doublePrecio = Convert.ToDouble(dr["Precio"]);
+			art.stringImagen = dr["Imagen"].ToString();
+			art.intStock = Convert.ToInt32(dr["Stock"]);
+			art.intCategoria = Convert.ToInt32(dr["Categoria_id"]);
+			art.stringTemporada = dr["temporada"].ToString();
+			create = true;
+
+			dr.Close();
+
+
+		}
+		catch (SqlException e)
+		{
+			create = false;
+			Console.WriteLine("User operation has failed.Error: {0}", e.Message);
+
+		}
+
+		finally
+		{
+			c.Close();
+		}
+		return create;
+	}
+
 	public bool updateArticulo(ENArticulo art)
 	{
 		bool update = false;
