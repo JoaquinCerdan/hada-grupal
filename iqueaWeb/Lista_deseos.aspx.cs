@@ -22,7 +22,7 @@ namespace iqueaWeb
                 Load_GridData();
             }
         }
-
+        //Se cargan los datos del gridview con la secuencia SQL de este método
         void Load_GridData()
         {
             try

@@ -6,7 +6,7 @@ namespace iqueaWeb
 {
     public partial class Login : System.Web.UI.Page
     {
-        //cadena de connecion
+        //cadena de conexion
         public static string constring = ConfigurationManager.ConnectionStrings["Database"].ToString();
         public SqlConnection cn = new SqlConnection(constring);
         protected void Page_Load(object sender, EventArgs e)
@@ -45,7 +45,7 @@ namespace iqueaWeb
             }
             cn.Close();
         }
-
+        //Te intenta logear para entrar como administrador 
         protected void admin_Click(object sender, EventArgs e)
         {
             ENAdministrador admin = new ENAdministrador();

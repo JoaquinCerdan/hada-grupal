@@ -13,7 +13,7 @@ namespace iqueaWeb
             }
         }
 
-
+        //Cuando se pulsa el boton se crea el anuncio
         protected void Button1_Click(object sender, EventArgs e)
         {
             ENAnuncio en = new ENAnuncio();
