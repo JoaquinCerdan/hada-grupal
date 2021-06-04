@@ -15,7 +15,7 @@ namespace iqueaWeb
             Load_GridData();
 
         }
-
+        // Se rellena el gridview con los datos de la secuencia que se escribe en este método
         void Load_GridData()
         {
             try
@@ -36,7 +36,7 @@ namespace iqueaWeb
                 conn.Close();
             }
         }
-
+        //Cuando se selecciona el articulo en el gridview te lleva a su pagina
         protected void GridView_SelectedIndexChanged(object sender, EventArgs e)
         {
             ENArticulo articulo = new ENArticulo();

@@ -15,7 +15,7 @@ namespace iqueaWeb
             Load_GridData();
 
         }
-
+        // se cargan los datos
         void Load_GridData()
         {
             try

@@ -15,7 +15,7 @@ namespace iqueaWeb
             Load_GridData();
 
         }
-
+        //Se cargan los datos en el gridview
         void Load_GridData()
         {
             try
@@ -36,7 +36,7 @@ namespace iqueaWeb
                 conn.Close();
             }
         }
-
+        //cuando se selecciona el artículo en el gridview se muestra la página del articulo con sus datos 
         protected void GridView_SelectedIndexChanged(object sender, EventArgs e)
         {
             ENArticulo articulo = new ENArticulo();

@@ -17,7 +17,7 @@ namespace iqueaWeb
                 Response.Redirect("Login.aspx");
             }
         }
-
+        //se modifican los datos del usuario 
         protected void Button_Click(object sender, EventArgs e)
         {
             ENUsuario usuario = new ENUsuario();

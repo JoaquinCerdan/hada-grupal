@@ -12,7 +12,7 @@ namespace iqueaWeb
                 Response.Redirect("Login.aspx");
             }
         }
-
+        //se modifican los datos del anuncio 
         protected void Button1_Click(object sender, EventArgs e)
         {
             ENAnuncio en = new ENAnuncio();

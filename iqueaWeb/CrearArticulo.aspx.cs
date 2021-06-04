@@ -12,7 +12,7 @@ namespace iqueaWeb
                 Response.Redirect("Login.aspx");
             }
         }
-
+        //Cuando se pulsa el boton, se crea el articulo
         protected void Button2_Click(object sender, EventArgs e)
         {
             ENArticulo en = new ENArticulo();
