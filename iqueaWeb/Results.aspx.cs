@@ -35,15 +35,14 @@ namespace iqueaWeb
                 SqlDataAdapter sqa = new SqlDataAdapter("select * from [dbo].[Articulo] where Nombre like '" + searchString + "%' ", conn);
                 DataSet ds = new DataSet();
                 sqa.Fill(ds);
-                if (ds != null)
+                if (ds.Tables[0].Rows.Count > 0)
                 {
-                    
                     GridView.DataSource = ds;
                     GridView.DataBind();
                 }
                 else
                 {
-                    etiqueta.Text = "No se han encontrado productos con ese nombre";
+                    etiqueta.Text = "Error: No se han encontrado productos con ese nombre";
                 }
                 
             }
@@ -64,15 +63,15 @@ namespace iqueaWeb
                 conn.Open();
                 SqlDataAdapter sqa = new SqlDataAdapter("select * from [dbo].[Articulo] where Precio like '" + searchString + "%'", conn);
                 DataSet ds = new DataSet();
-                if (ds != null)
+                sqa.Fill(ds);
+                if (ds.Tables[0].Rows.Count > 0)
                 {
-                    sqa.Fill(ds);
                     GridView.DataSource = ds;
                     GridView.DataBind();
                 }
                 else
                 {
-                    etiqueta.Text = "No se han encontrado productos con ese nombre";
+                    etiqueta.Text = "Error: No se han encontrado productos con ese precio";
                 }
 
             }
