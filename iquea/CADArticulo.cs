@@ -29,19 +29,24 @@ public class CADArticulo
 		try
 		{
 			c.Open();
-			SqlCommand com = new SqlCommand("Insert INTO [dbo].[Articulo] (Id,Nombre,Descripcion,Precio,Imagen,Stock) VALUES('"
+			
+			SqlCommand com = new SqlCommand("Insert INTO [dbo].[Articulo] (Id,Nombre,Descripcion,Precio,Imagen,Stock,temporada,Categoria_id) VALUES("
 				+ art.intId
-				+ "', '"
+				+ ", '"
 				+ art.stringNombre
 				+ "','"
 				+ art.stringDescripcion
-				+ "','"
-				+ art.doublePrecio
-				+ "','"
+				+ "',"
+				+ Convert.ToDecimal(art.doublePrecio)
+				+ ",'"
 				+ art.stringImagen
-				+ "','"
-				+ art.boolStock
-				+ "')", c);
+				+ "',"
+				+ art.intStock
+				+ ",'"
+				+ art.stringTemporada
+				+ "',"
+				+ art.intCategoria
+				+ ")", c);
 
 			com.ExecuteNonQuery();
 			create = true;
@@ -77,7 +82,9 @@ public class CADArticulo
 				+ "' ,Descripcion=" + art.stringDescripcion
 				+ "' ,Precio=" + art.doublePrecio
 				+ "' ,Imagen=" + art.stringImagen
-				+ "' ,Stock=" + art.boolStock
+				+ "' ,Stock=" + art.intStock
+				+ "' ,IdCategoria=" + art.intCategoria
+				+ "' ,Temporada=" + art.stringTemporada
 				+ "WHERE Id = '" + art.intId + "'", c);
 			com.ExecuteNonQuery();
 
@@ -103,22 +110,19 @@ public class CADArticulo
 		try
 		{
 			c.Open();
-			SqlCommand com = new SqlCommand("Select * From [dbo].[Articulo] Where Id = '" + art.intId + "' ", c);
+			SqlCommand com = new SqlCommand("Select * From [dbo].[Articulo] Where Id = " + art.intId , c);
 			SqlDataReader dr = com.ExecuteReader();
 			dr.Read();
 
-			if (dr["Id"].ToString() == art.intId.ToString())
-			{
+			art.stringNombre = dr["Nombre"].ToString();
+			art.stringDescripcion = dr["Descripcion"].ToString();
+			art.doublePrecio = Convert.ToDouble(dr["Precio"]);
+			art.stringImagen = dr["Imagen"].ToString();
+			art.intStock = Convert.ToInt32(dr["Stock"]);
+			art.intCategoria = Convert.ToInt32(dr["Categoria_id"]);
+			art.stringTemporada = dr["temporada"].ToString();
+			read = true;
 
-				art.intId = int.Parse(dr["Id"].ToString());
-				art.stringNombre = dr["Nombre"].ToString();
-				art.stringDescripcion = dr["Descripcion"].ToString();
-				art.doublePrecio = double.Parse(dr["Precio"].ToString());
-				art.stringImagen = dr["Imagen"].ToString();
-				art.boolStock = bool.Parse(dr["Stock"].ToString());
-				read = true;
-			}
-			else read = false;
 			dr.Close();
 
 		}
@@ -168,6 +172,89 @@ public class CADArticulo
 			Console.WriteLine("User operation has failed.Error: {0}", e.Message);
 		}
 		return delete;
+	}
+
+
+	public int obtenerId()
+	{
+		int idNuevo = 0;
+		SqlConnection conec = new SqlConnection(constring);
+		try
+		{
+			conec.Open();
+			SqlCommand consulta = new SqlCommand("Select max(codigo) maxId, Count(codigo) numRows from [dbo].[Articulo]", conec);
+
+			SqlDataReader dr = consulta.ExecuteReader();
+
+			dr.Read();
+
+			if (int.Parse(dr["numRows"].ToString()) != 0)
+			{
+				idNuevo = int.Parse(dr["maxId"].ToString()) + 1;
+				dr.Close();
+			}
+
+		}
+		catch (SqlException ex)
+		{
+			Console.WriteLine("The operation has failed.Error: {0}", ex.Message);
+		}
+		finally
+		{
+			conec.Close();
+		}
+
+		return idNuevo;
+	}
+
+	public bool getArticulos(ENArticulo art, string searchString)
+	{
+		bool read = false;
+		SqlConnection c = new SqlConnection(constring);
+		try
+		{
+			c.Open();
+			SqlCommand com = new SqlCommand("select * from [dbo].[Articulo] where Nombre like '" + searchString + "%'", c);
+			SqlDataReader dr = com.ExecuteReader();
+			dr.Read();
+
+			if (dr["Id"].ToString() == art.intId.ToString())
+			{
+
+				art.intId = int.Parse(dr["Id"].ToString());
+				art.stringNombre = dr["Nombre"].ToString();
+				art.stringDescripcion = dr["Descripcion"].ToString();
+				art.doublePrecio = double.Parse(dr["Precio"].ToString());
+				art.stringImagen = dr["Imagen"].ToString();
+				art.intStock = int.Parse(dr["Stock"].ToString());
+				art.intCategoria = int.Parse(dr["IdCategoria"].ToString());
+				art.stringTemporada = dr["Temporada"].ToString();
+				read = true;
+			}
+			else read = false;
+			dr.Close();
+
+		}
+		catch (SqlException e)
+		{
+			read = false;
+			Console.WriteLine("User operation has failed.Error: {0}", e.Message);
+
+		}
+		catch (Exception e)
+		{
+			read = false;
+			Console.WriteLine("User operation has failed.Error: {0}", e.Message);
+		}
+
+		finally
+		{
+			c.Close();
+		}
+
+
+		return read;
+
 	}
 }
 

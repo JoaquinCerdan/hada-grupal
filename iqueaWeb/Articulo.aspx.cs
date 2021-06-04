@@ -27,7 +27,7 @@ namespace iqueaWeb
                         nombre.Text = articulo.stringNombre;
                         descripcion.Text = articulo.stringDescripcion;
                         precio.Text = Convert.ToString(articulo.doublePrecio);
-                        stock.Checked = Convert.ToBoolean(articulo.boolStock);
+                        stock.Checked = Convert.ToBoolean(articulo.intStock);
                         casob=comentario.readFirstComentario(id);
 
                         if (casob == true)
@@ -40,7 +40,10 @@ namespace iqueaWeb
                     }
                     else
                     {
-                        throw new Exception("Error con el articulo");
+                        nombre.Text = Request.QueryString["id"];
+                        descripcion.Text = articulo.intId.ToString();
+                        //Response.Redirect("Login.aspx");
+                        //throw new Exception("Error con el articulo");
                     }
                 }
                 else

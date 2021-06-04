@@ -32,7 +32,11 @@ public class CADcomentario
         try
         {
             a.Open();
+<<<<<<< HEAD
             String orden = "Insert Into dbo.comentario (id, comentario, valoracion) VALUES ('" + comentario.idP + "' , '" + comentario.comentarioP + "' , '" + comentario.valoracionP + ")";
+=======
+            String orden = "Insert Into dbo.comentario (id, comentario, valoracion,Articulo_id,Usuario_correo) VALUES (" + comentario.idP + " , '" + comentario.comentarioP + "' , " + comentario.valoracionP +" , "+ comentario.Articulo_idP +" ,'"+comentario.Usuario_correoP+ "')";
+>>>>>>> develop
             SqlCommand comando = new SqlCommand(orden, a);
             comando.ExecuteNonQuery();
 
@@ -60,12 +64,18 @@ public class CADcomentario
         try
         {
             a.Open();
+<<<<<<< HEAD
             SqlCommand comando = new SqlCommand("Select * from dbo.comentario where id = '" + comentario.idP + "'", a);
+=======
+            SqlCommand comando = new SqlCommand("Select * from dbo.comentario where id = " + comentario.idP , a);
+>>>>>>> develop
             SqlDataReader dr = comando.ExecuteReader();
 
             dr.Read();
             comentario.comentarioP = dr["comentario"].ToString();
             comentario.valoracionP = Convert.ToInt32(dr["valoracion"]);
+            comentario.Articulo_idP = Convert.ToInt32(dr["Articulo_id"]);
+            comentario.Usuario_correoP = dr["Usuario_correo"].ToString();
 
             dr.Close();
             a.Close();
@@ -93,7 +103,7 @@ public class CADcomentario
         try
         {
             a.Open();
-            SqlCommand comando = new SqlCommand("Select * from iquea.comentario where comentario = '" + comentario.comentarioP + "' and valoracion="+comentario.valoracionP, a);
+            SqlCommand comando = new SqlCommand("Select * from dbo.comentario where comentario = '" + comentario.comentarioP + "' and valoracion="+comentario.valoracionP, a);
             SqlDataReader dr = comando.ExecuteReader();
 
             dr.Read();
@@ -183,7 +193,7 @@ public class CADcomentario
         try
         {
             a.Open();
-            SqlCommand comando = new SqlCommand("Select * from iquea.comentario where comentario.id=articulo.id and articulo.id="+id, a);
+            SqlCommand comando = new SqlCommand("Select * from dbo.comentario where comentario.Articulo_id=" + id, a);
             SqlDataReader dr = comando.ExecuteReader();
 
             dr.Read();
@@ -219,7 +229,7 @@ public class CADcomentario
         try
         {
             a.Open();
-            SqlCommand comando = new SqlCommand("Select * from iquea.comentario where comentario.id=articulo.id and articulo.id=" + id, a);
+            SqlCommand comando = new SqlCommand("Select * from dbo.comentario where comentario.Articulo_id=" + id, a);
             SqlDataReader dr = comando.ExecuteReader();
 
             aux.idP = 0;
@@ -269,7 +279,7 @@ public class CADcomentario
         try
         {
             a.Open();
-            SqlCommand comando = new SqlCommand("Select * from iquea.comentario where comentario.id=articulo.id and articulo.id=" + id, a);
+            SqlCommand comando = new SqlCommand("Select * from dbo.comentario where comentario.Articulo_id=" + id, a);
             SqlDataReader dr = comando.ExecuteReader();
 
             aux.idP = 0;

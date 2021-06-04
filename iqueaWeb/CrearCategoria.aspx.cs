@@ -6,11 +6,38 @@ namespace iqueaWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["codigo"] == null)
+            {
+                //si no hay alguien logeado se le envia directamente a la pagina de login
+                Response.Redirect("Login.aspx");
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            if (Page.IsValid)
+            {
+                ENCategoria en = new ENCategoria();
+                en.stringNombre = TextBox2.Text;
+                en.stringDescripcion = TextBox3.Text;
+
+
+                //Se está creando BIEN el EN, pero al añadir al SQL falla
+                bool creado = en.createCategoria();
+                
+                if (creado)
+                {
+                    etiqueta.Text = "Creado correctamente ";
+                }
+                else
+                {
+                    etiqueta.Text = "error " + en.intId + en.stringNombre + en.stringDescripcion;
+                }
+            }
+
+
+
+            
         }
     }
 }

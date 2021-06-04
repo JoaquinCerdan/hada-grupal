@@ -67,8 +67,13 @@
         
         </p>
 
+<<<<<<< HEAD
         &nbsp;&nbsp;&nbsp;<asp:Button ID="CrearUsuario" runat="server" Text="Registrar" OnClick="CrearUsuario_Click" />
         <asp:Label ID="etiqueta" runat="server" Text="Aviso"></asp:Label>
+>>>>>>> develop
+=======
+        &nbsp;&nbsp;&nbsp;<asp:Button ID="CrearUsuario" runat="server" Text="Registrar" OnClick="CrearUsuario_Click" style="margin-left:50px;" />
+        <asp:Label ID="etiqueta" runat="server" Text=""></asp:Label>
 >>>>>>> develop
 
     </div>

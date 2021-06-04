@@ -98,6 +98,27 @@ namespace iqueaWeb
         protected global::System.Web.UI.WebControls.RequiredFieldValidator PasswordRequired;
 =======
         protected global::System.Web.UI.WebControls.Button Button3;
+<<<<<<< HEAD
+>>>>>>> develop
+=======
+
+        /// <summary>
+        /// Control Administrador.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Administrador;
+
+        /// <summary>
+        /// Control Button1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
 >>>>>>> develop
     }
 }

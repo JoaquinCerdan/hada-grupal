@@ -1,18 +1,25 @@
-﻿namespace iquea
-{
-    class ENAdministrador
+﻿
+    public class ENAdministrador
     {
-        private int id;
+        private string codigo;
+        private string correo;
 
-        public int intId
+        public string stringcodigo
         {
-            get { return this.id; }
-            set { this.id = value; }
+            get { return this.codigo; }
+            set { this.codigo = value; }
+        }
+
+        public string StringCorreo
+        {
+            get { return this.correo; }
+            set { this.correo = value; }
         }
 
         public ENAdministrador()
         {
-
+            codigo = "";
+            correo = "";
         }
 
         public bool createAdministrador()
@@ -48,4 +55,3 @@
         }
 
     }
-}

@@ -2,8 +2,7 @@
 using System.Configuration;
 using System.Data.SqlClient;
 
-namespace iquea
-{
+
     class CADAdministrador
     {
         private string constring;
@@ -28,7 +27,7 @@ namespace iquea
             {
                 conexion = new SqlConnection(constring);
                 conexion.Open();
-                String comando = "Insert INTO iquea.Administrador (id) VALUES (" + administrador.intId + ")";
+                String comando = "Insert INTO dbo.Administrador (codigo,correo) VALUES ('" + administrador.stringcodigo + "','"+administrador.StringCorreo+"')";
                 SqlCommand ejecucion = new SqlCommand(comando, conexion);
                 ejecucion.ExecuteNonQuery();
                 creado = true;
@@ -57,7 +56,7 @@ namespace iquea
             {
                 conexion = new SqlConnection(constring);
                 conexion.Open();
-                String comando = "Select * FROM iquea.Administrador WHERE id = '" + administrador.intId + "'";
+                String comando = "Select * FROM dbo.Administrador WHERE codigo = '" + administrador.stringcodigo+"'" ;
                 SqlCommand ejecucion = new SqlCommand(comando, conexion);
                 SqlDataReader leer = ejecucion.ExecuteReader();
                 leer.Read();
@@ -89,7 +88,7 @@ namespace iquea
             {
                 conexion = new SqlConnection(constring);
                 conexion.Open();
-                String comando = "DELETE FROM iquea.Administrador WHERE id = '" + administrador.intId + "'";
+                String comando = "DELETE FROM dbo.Administrador WHERE codigo = '" + administrador.stringcodigo + "'";
                 SqlCommand ejecucion = new SqlCommand(comando, conexion);
                 ejecucion.ExecuteNonQuery();
                 creado = true;
@@ -118,7 +117,7 @@ namespace iquea
             {
                 conexion = new SqlConnection(constring);
                 conexion.Open();
-                SqlCommand comando = new SqlCommand("UPDATE iquea.Usuario SET id = '" + administrador.intId + "' WHERE id = '" + administrador.intId + "'", conexion);
+                SqlCommand comando = new SqlCommand("UPDATE dbo.Usuario SET correo = '" + administrador.StringCorreo + "' WHERE codigo = '" + administrador.stringcodigo + "'", conexion);
                 //SqlCommand ejecucion = new SqlCommand(comando, conexion);
                 comando.ExecuteNonQuery();
                 creado = true;
@@ -135,4 +134,3 @@ namespace iquea
             return creado;
         }
     }
-}

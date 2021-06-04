@@ -21,7 +21,7 @@ namespace iqueaWeb
             try
             {
                 conn.Open();
-                SqlDataAdapter sqa = new SqlDataAdapter("Select * From [dbo].[Articulo] inner join [dbo].[Categoria] where Articulo.id=Categoria.articulo_id and Categoria.Nombre='exterior'", conn);
+                SqlDataAdapter sqa = new SqlDataAdapter("Select * From [dbo].[Articulo]  where Categoria_id=1", conn);
                 DataSet ds = new DataSet();
                 sqa.Fill(ds);
                 GridView.DataSource = ds;
@@ -29,7 +29,7 @@ namespace iqueaWeb
             }
             catch (Exception e)
             {
-
+                Console.WriteLine("The operation has failed.Error: {0}", e.Message);
             }
             finally
             {
@@ -45,7 +45,7 @@ namespace iqueaWeb
         protected void GridView_RowCommand1(object sender, GridViewCommandEventArgs e)
         {
             int indexrow = int.Parse(e.CommandArgument.ToString());
-            int id = int.Parse(e.CommandArgument.ToString()) + 1;
+            int id = int.Parse(e.CommandArgument.ToString());
             Response.Redirect("articulo.aspx?id=" + id.ToString());
         }
     }

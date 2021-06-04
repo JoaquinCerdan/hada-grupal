@@ -58,6 +58,10 @@
                 <asp:Button ID="Button3" Class="btn btn-lg btn-primary btn-block text-uppercase" runat="server" Text="Iniciar Sesión" OnClick="Button3_Click" />
                 <p style="font-size:1em"> ¿No se ha registrado? <a style="font-size:1em" href="Registrarse.aspx"> Registrarse </a></p> 
               <hr class="my-4">
+
+                <div>Código de administrador:&nbsp;&nbsp;&nbsp; <asp:TextBox ID="Administrador" runat="server" Width="189px" Height="26px" OnTextChanged="Admin_TextChanged"></asp:TextBox></div>
+                <br><br />
+                <asp:Button ID="Button1" Class="btn btn-lg btn-primary btn-block text-uppercase" runat="server" Text="Administrador" OnClick="admin_Click" />
               
             </form>
           </div>

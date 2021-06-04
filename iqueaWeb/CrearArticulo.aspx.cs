@@ -6,11 +6,34 @@ namespace iqueaWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["codigo"] == null)
+            {
+                //si no hay alguien logeado se le envia directamente a la pagina de login
+                Response.Redirect("Login.aspx");
+            }
         }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
+            ENArticulo en = new ENArticulo();
+            en.stringNombre = TextBox1.Text;
+            en.stringDescripcion = TextBox5.Text;
+            en.doublePrecio = double.Parse(TextBox6.Text);
+            en.stringImagen = TextBox7.Text;
+            en.intStock = Convert.ToInt32(TextBox8.Text);
+            en.intCategoria =Convert.ToInt32(Categoria.SelectedValue);
+            en.stringTemporada = Temporada.SelectedValue;
+
+            bool creado = en.createArticulo();
+            if (creado)
+            {
+                etiqueta.Text = "Creado correctamente ";
+            }
+            else
+            {
+                etiqueta.Text = "error "+en.intId+ en.stringNombre+ en.stringDescripcion+ en.doublePrecio+ en.stringImagen+en.intStock+en.intCategoria+en.stringTemporada;
+            }
+            
         }
     }
 }
