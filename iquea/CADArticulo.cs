@@ -177,7 +177,38 @@ public class CADArticulo
 
 	public int obtenerId()
 	{
+<<<<<<< HEAD
 		return ENArticulo.NextID;
+=======
+		int idNuevo = 0;
+		SqlConnection conec = new SqlConnection(constring);
+		try
+		{
+			conec.Open();
+			SqlCommand consulta = new SqlCommand("Select max(Id) maxId,Count(Id) numRows from [dbo].[Articulo]", conec);
+
+			SqlDataReader dr = consulta.ExecuteReader();
+			dr.Read();
+
+			if (int.Parse(dr["numRows"].ToString()) != 0)
+            {
+				idNuevo = Convert.ToInt32(dr["maxId"]) + 1;
+			}
+			dr.Close();
+			
+
+		}
+		catch (SqlException ex)
+		{
+			Console.WriteLine("The operation has failed.Error: {0}", ex.Message);
+		}
+		finally
+		{
+			conec.Close();
+		}
+
+		return idNuevo;
+>>>>>>> f456ca0874be5f4138165dceffe1363da04fa35a
 	}
 
 	public bool getArticulos(ENArticulo art, string searchString)
