@@ -1,16 +1,19 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="iqueaWeb.HomePage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
+</asp:Content>  
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <link rel="stylesheet" type="text/css" href="mystyle.css">
-    <br />
- 
+    <div style="width:100%;text-align:center;">
+    <asp:ImageButton ID="ImageButton1" runat="server" PostBackUrl="~/Anuncio.aspx" ImageUrl="https://www.centraldeltresillo.es/blog/wp-content/uploads/2020/11/Anuncio-pagina-Ads-Instagram-descuento-1024x535.jpg" style="width: 30%;
+    height: auto;"  />
+    </div>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <footer class ="footer"> 
               <p>Bienvenido</p>
       </footer>
     <center>
     <h1>Lo ultimo de la temporada</h1>
+        <br />
         <p>Descubre el conjunto de articulos de los diferentes salones solo haciendo un clik!</p>
         </center>
     <div class ="slider">
@@ -19,7 +22,7 @@
   <div class="row px-5 pt-5">
     <div class="col-md-4 mt-4 mt-sm-0 card-container">
       <div class="card text-center product p-4 pt-5 border-0 h-100 rounded-0">
-        <img class="img-fluid d-block mx-auto" src="https://casaydiseno.com/wp-content/uploads/2016/05/biblioteca-peque%C3%B1a-salon-monimalista.jpg" alt="muebles-sencillos">
+        <img style="border-radius: 3%;" class="img-fluid d-block mx-auto" src="https://casaydiseno.com/wp-content/uploads/2016/05/biblioteca-peque%C3%B1a-salon-monimalista.jpg" alt="muebles-sencillos">
         <div class="card-body p-4 py-0 h-xs-440p">
           <h4 class="card-title font-weight-semi-bold mb-3 w-xl-280p mx-auto">Muebles sencillos</h4>
            
@@ -34,7 +37,7 @@
 
     <div class="col-md-4 mt-4 mt-sm-0 card-container">
       <div class="card text-center product p-4 pt-5 border-0 h-100 rounded-0">
-        <img class="img-fluid d-block mx-auto" src="https://casaydiseno.com/wp-content/uploads/2016/05/bibliotecas-modernas-compartimentos-salon.jpg" alt="muebles-modernos">
+        <img style="border-radius: 3%;" class="img-fluid d-block mx-auto" src="https://casaydiseno.com/wp-content/uploads/2016/05/bibliotecas-modernas-compartimentos-salon.jpg" alt="muebles-modernos">
         <div class="card-body p-4 py-0 h-xs-440p">
           <h4 class="card-title font-weight-semi-bold mb-3 w-xl-280p mx-auto">Muebles modernos</h4>
           
@@ -46,7 +49,7 @@
 
     <div class="col-md-4 mt-4 mt-sm-0 card-container">
       <div class="card text-center product p-4 pt-5 border-0 h-100 rounded-0">
-        <img class="img-fluid d-block mx-auto" src="https://casaydiseno.com/wp-content/uploads/2016/05/bonita.deco_.estilo.retro_.jpg" alt="Muebles clásicos">
+        <img style="border-radius: 3%;" class="img-fluid d-block mx-auto" src="https://casaydiseno.com/wp-content/uploads/2016/05/bonita.deco_.estilo.retro_.jpg" alt="Muebles clásicos">
         <div class="card-body p-4 py-0 h-xs-440p">
           <h4 class="card-title font-weight-semi-bold mb-3 w-xl-280p mx-auto">Muebles clásicos</h4>
           
@@ -56,10 +59,15 @@
       </div>
     </div>
   </div>
+  <br />
+            <h1>Descubre las super ofertas!!!!</h1>
+  <asp:ImageButton ID="ImageButton6" runat="server" Height="126px" ImageUrl="~/Imagenes/oferta.png" Width="184px" PostBackUrl="~/Ofertas.aspx" />
+            <br />
 </body>
     <br />
     
     
     
 
+    </div>
 </asp:Content>

@@ -18,19 +18,21 @@
 <body style =" background-color: lightblue;">
     <form id="form1" runat="server">
         <div>
-            <asp:ImageButton ID="ImageButton1" runat="server" Height="75px" ImageUrl="https://i.ibb.co/2S5ZYqC/logo-iquea.jpg" PostBackUrl="~/Index.aspx" Width="113px" />
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="https://i.ibb.co/2S5ZYqC/logo-iquea.jpg" PostBackUrl="~/Index.aspx" style="width: 4%;
+    height: auto;" />
 
 
 
             <!-- MENU -->
            
              
-             <nav class="navbar navbar-expand-lg navbar-light bg-light">
+             
                   
                   
 
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <asp:Menu ID="Menu1" runat="server"  Orientation="Horizontal" OnMenuItemClick="Menu1_MenuItemClick">
+            <asp:Menu ID="Menu1" style="padding-left:40px;" runat="server"  Orientation="Horizontal" OnMenuItemClick="Menu1_MenuItemClick">
                 <DynamicHoverStyle BackColor="#70B8C0" ForeColor="White" />
                 <DynamicMenuItemStyle HorizontalPadding="100px" VerticalPadding="6px" CssClass="SubMenu2" />
                 <DynamicMenuStyle BackColor="#798182" />
@@ -66,6 +68,10 @@
                       <div id="search">         
                         <asp:TextBox ID="txtSearchMaster" runat="server" OnTextChanged="txtSearchMaster_TextChanged"></asp:TextBox>
                         <asp:Button ID="btnSearch" runat="server" Text="Search" OnClick="btnSearch_Click" />
+                        <select id="OptionBusqueda" runat="server">
+                            <option value="OptionNombre">Nombre</option>
+                            <option value="OptionPrecio">Precio</option>
+                        </select>
                         </div>
                         <asp:ImageButton ID="ImageButton5" runat="server" src="https://cdn.pixabay.com/photo/2017/06/26/20/33/icon-2445095_960_720.png" style="height: 36px; Width: 36px" PostBackUrl="~/Lista_deseos.aspx"/>
                         <asp:ImageButton ID="ImageButton3" runat="server" Height="18px" ImageUrl="https://image.flaticon.com/icons/png/512/107/107831.png" PostBackUrl="~/Carrito.aspx" Width="25px" />
@@ -80,8 +86,9 @@
             <!-- FIN DEL MENU -->
 
             <br />
-
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                </p>
             </asp:ContentPlaceHolder>
 
 
