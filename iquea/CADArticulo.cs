@@ -31,7 +31,7 @@ public class CADArticulo
 			c.Open();
 			
 			SqlCommand com = new SqlCommand("Insert INTO [dbo].[Articulo] (Id,Nombre,Descripcion,Precio,Imagen,Stock,temporada,Categoria_id) VALUES("
-				+ art.intId
+				+ ENArticulo.NextID
 				+ ", '"
 				+ art.stringNombre
 				+ "','"
@@ -64,7 +64,7 @@ public class CADArticulo
 		{
 			c.Close();
 		}
-
+		ENArticulo.NextID++;
 		return create;
 	}
 
@@ -177,34 +177,7 @@ public class CADArticulo
 
 	public int obtenerId()
 	{
-		int idNuevo = 0;
-		SqlConnection conec = new SqlConnection(constring);
-		try
-		{
-			conec.Open();
-			SqlCommand consulta = new SqlCommand("Select max(codigo) maxId, Count(codigo) numRows from [dbo].[Articulo]", conec);
-
-			SqlDataReader dr = consulta.ExecuteReader();
-
-			dr.Read();
-
-			if (int.Parse(dr["numRows"].ToString()) != 0)
-			{
-				idNuevo = int.Parse(dr["maxId"].ToString()) + 1;
-				dr.Close();
-			}
-
-		}
-		catch (SqlException ex)
-		{
-			Console.WriteLine("The operation has failed.Error: {0}", ex.Message);
-		}
-		finally
-		{
-			conec.Close();
-		}
-
-		return idNuevo;
+		return ENArticulo.NextID;
 	}
 
 	public bool getArticulos(ENArticulo art, string searchString)

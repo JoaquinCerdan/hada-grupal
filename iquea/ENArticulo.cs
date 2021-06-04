@@ -7,7 +7,7 @@ public class ENArticulo
 {
 
 	private int id;
-
+	public static int NextID = 0;
 	public int intId
 	{
 		get { return id; }
