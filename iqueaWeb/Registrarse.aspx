@@ -1,4 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Registrarse.aspx.cs" Inherits="iqueaWeb.WebForm1" %>
+
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -11,8 +14,12 @@
             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" ControlToValidate="Correo" ValidationExpression="\S+@gmail+\.com" runat="server" ForeColor="Red"  ErrorMessage="Formato incorrecto del correo  (Ejemplo: prueba@gmail.com)"></asp:RegularExpressionValidator>
         </p>
         <p>
-            Contraseña:&nbsp;<asp:TextBox ID="Contraseña1" runat="server"></asp:TextBox>
+            Contraseña:&nbsp;<asp:TextBox ID="Contraseña1" runat="server">
+                             </asp:TextBox>
+             <asp:RegularExpressionValidator ID="RegularExpressionValidator4" display="Dynamic" errormessage="La contraseña debe contener 8-10 carácteres con al menos un caracter numérico." forecolor="Red" validationexpression="(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,10})$" controltovalidate="Contraseña1" runat="server">
+                </asp:RegularExpressionValidator>
             <asp:RequiredFieldValidator ID="PasswordRequired1" runat="server" ErrorMessage="Tienes que introducir una contraseña." ControlToValidate="Contraseña1" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+            
             
         </p>
         <p>
