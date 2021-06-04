@@ -80,7 +80,7 @@
                         &nbsp;
                         <asp:ImageButton ID="ImageButton4" runat="server" Height="22px" ImageUrl="https://c0.klipartz.com/pngpicture/613/636/gratis-png-iconos-de-la-computadora-perfil-de-usuario-avatar-masculino-avatar.png" PostBackUrl="~/Login.aspx" Width="38px" />
                          <asp:Button Text="Login" type="submit" class="btn btn-primary btn-lg " ID="ButtonLogin" runat="server" Height="50px"   PostBackUrl="~/Login.aspx" Width="80px" OnClick="ButtonLogin_Click" />
-                     <asp:Button Text="Cerrar Sesion" type="submit" class="btn btn-primary btn-lg " ID="Button1" runat="server" Height="50px"   PostBackUrl="~/Login.aspx" Width="134px" OnClick="ButtonCerrar_Click" />
+                     <asp:Button Text="Cerrar Sesion" type="submit" class="btn btn-primary btn-lg " ID="Button1" runat="server" Height="50px"    Width="134px" OnClick="ButtonCerrar_Click" />
                         
 
                     </div>

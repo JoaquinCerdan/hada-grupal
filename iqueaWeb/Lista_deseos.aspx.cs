@@ -18,7 +18,8 @@ namespace iqueaWeb
             }
             else
             {
-
+                c.ConnectionString = ConfigurationManager.ConnectionStrings["Database"].ToString();
+                Load_GridData();
             }
         }
 
@@ -27,7 +28,8 @@ namespace iqueaWeb
             try
             {
                 c.Open();
-                SqlDataAdapter sqa = new SqlDataAdapter("Select * From [dbo].[Articulo] where Articulo.Temporada='Moderno'", c);
+                SqlDataAdapter sqa = new SqlDataAdapter("select a.*from Articulo a, Lista_deseos b where a.Id = b.Id_art AND b.Id_user = '" + Session["email"] + "'", c);
+                
                 DataSet ds = new DataSet();
                 sqa.Fill(ds);
                 GridView.DataSource = ds;
@@ -48,5 +50,7 @@ namespace iqueaWeb
         {
 
         }
+
+        
     }
 }

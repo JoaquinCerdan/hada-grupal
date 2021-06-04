@@ -11,7 +11,7 @@ namespace iqueaWeb
         SqlConnection conn = new SqlConnection();
         protected void Page_Load(object sender, EventArgs e)
         {
-            conn.ConnectionString = ConfigurationManager.ConnectionStrings["Database"].ToString(); ;
+            conn.ConnectionString = ConfigurationManager.ConnectionStrings["Database"].ToString(); 
             Load_GridData();
 
         }
