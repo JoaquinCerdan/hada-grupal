@@ -41,6 +41,7 @@
      <br />
     Productos disponibles:<br />
     <br />
+     <!--
     <center>
             <asp:ImageButton ID="ImageButton11" runat="server" ImageUrl="https://pictureserver.net/images/pic/c9/e0/undef_src_sa_picid_797775_x_1000_type_color_image.jpg?ver=8" Height="164px" Width="279px" ImageAlign="Left" PostBackUrl="Articulo.aspx" />
             <asp:ImageButton ID="ImageButton12" runat="server" ImageUrl="https://www.arteleya.es/media/catalog/product/cache/af0544a5658ce96f8bcab9d1e8dbb4f8/1/1/11834_oceana_daybed_terasse_2k.jpg" Height="164px" Width="279px" ImageAlign="Right" PostBackUrl="Articulo.aspx" />
@@ -50,4 +51,5 @@
     <center>
         <asp:ImageButton ID="ImageButton5" runat="server" ImageUrl="https://eus3.aosomcdn.com/es/catalog/product/6/5/655759d03fb5c36bd6158f767bbde756_1.jpg" Height="160px" style="margin-left: 0px; margin-top: 0px" Width="290px" PostBackUrl="Articulo.aspx" />
     </center>
+         -->
 </asp:Content>

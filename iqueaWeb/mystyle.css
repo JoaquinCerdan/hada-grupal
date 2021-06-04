@@ -1,8 +1,9 @@
-﻿body {
+﻿﻿body {
     background-color: lightblue;
 }
+
 .footer {
-    position:relative;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -53,6 +54,3 @@
 .arreglo {
     float: none;
 }
-
-
-
