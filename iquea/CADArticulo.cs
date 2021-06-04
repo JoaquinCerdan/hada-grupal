@@ -182,7 +182,7 @@ public class CADArticulo
 		try
 		{
 			conec.Open();
-			SqlCommand consulta = new SqlCommand("Select max(codigo) maxId, Count(codigo) numRows from [dbo].[Articulo]", conec);
+			SqlCommand consulta = new SqlCommand("Select max(id) maxId, Count(id) numRows from [dbo].[Articulo]", conec);
 
 			SqlDataReader dr = consulta.ExecuteReader();
 
