@@ -95,6 +95,7 @@
     <Content Include="etc.aspx" />
     <Content Include="Exterior.aspx" />
     <Content Include="Formulario web1.aspx" />
+    <Content Include="Imagenes\oferta.png" />
     <Content Include="Index.aspx" />
     <Content Include="Interior.aspx" />
     <Content Include="Lista_deseos.aspx" />
@@ -106,6 +107,7 @@
     <Content Include="ModificarCategoria.aspx" />
     <Content Include="ModificarOferta.aspx" />
     <Content Include="mystyle.css" />
+    <Content Include="Ofertas.aspx" />
     <Content Include="OrdenaC.aspx" />
     <Content Include="OrdenaE.aspx" />
     <Content Include="OrdenaI.aspx" />
@@ -444,6 +446,13 @@
     </Compile>
     <Compile Include="ModificarOferta.aspx.designer.cs">
       <DependentUpon>ModificarOferta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ofertas.aspx.cs">
+      <DependentUpon>Ofertas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ofertas.aspx.designer.cs">
+      <DependentUpon>Ofertas.aspx</DependentUpon>
     </Compile>
     <Compile Include="OrdenaC.aspx.cs">
       <DependentUpon>OrdenaC.aspx</DependentUpon>
