@@ -56,7 +56,7 @@ public class CADLista_deseos
             {
                 list.intId = int.Parse(dr["Id"].ToString());
                 list.intId_articulo = int.Parse(dr["Id_art"].ToString());
-                list.intId_user = int.Parse(dr["Id_user"].ToString());
+                list.intId_user = dr["Id_user"].ToString();
                 read = true;
             }
             else read = false;

@@ -81,6 +81,16 @@ namespace iqueaWeb
             {
                 //en el caso de que si haya un usuario logeado se envia la id del articulo y se redirige a Carrito
                 int id = Convert.ToInt32(Request.QueryString["id"]);
+
+                //Llamar al CAD de lista de deseos y le metemos la id del articulo , y el email del usuario logueado
+
+                ENLista_deseos lista = new ENLista_deseos();
+
+                lista.intId_articulo = id;
+                lista.intId_user =  Session["email"];
+
+                lista.createLista_deseos();
+
                 Response.Redirect("Lista_deseos.aspx?id=" + id.ToString());
             }
         }
