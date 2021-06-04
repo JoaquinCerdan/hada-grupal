@@ -97,9 +97,7 @@
     <Content Include="CrearArticulo.aspx" />
     <Content Include="CrearCategoria.aspx" />
     <Content Include="CrearOferta.aspx" />
-    <Content Include="etc.aspx" />
     <Content Include="Exterior.aspx" />
-    <Content Include="Formulario web1.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="Interior.aspx" />
     <Content Include="Lista_deseos.aspx" />
@@ -112,11 +110,6 @@
     <Content Include="ModificarOferta.aspx" />
     <Content Include="mystyle.css" />
     <Content Include="Ofertas.aspx" />
-    <Content Include="OrdenaC.aspx" />
-    <Content Include="OrdenaE.aspx" />
-    <Content Include="OrdenaI.aspx" />
-    <Content Include="OrdenaM.aspx" />
-    <Content Include="OrdenaS.aspx" />
     <Content Include="Pedido.aspx" />
     <Content Include="Registrarse.aspx" />
     <Content Include="Results.aspx" />
@@ -369,26 +362,12 @@
     <Compile Include="CrearOferta.aspx.designer.cs">
       <DependentUpon>CrearOferta.aspx</DependentUpon>
     </Compile>
-    <Compile Include="etc.aspx.cs">
-      <DependentUpon>etc.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="etc.aspx.designer.cs">
-      <DependentUpon>etc.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Exterior.aspx.cs">
       <DependentUpon>Exterior.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Exterior.aspx.designer.cs">
       <DependentUpon>Exterior.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Formulario web1.aspx.cs">
-      <DependentUpon>Formulario web1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Formulario web1.aspx.designer.cs">
-      <DependentUpon>Formulario web1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -466,41 +445,6 @@
     </Compile>
     <Compile Include="Ofertas.aspx.designer.cs">
       <DependentUpon>Ofertas.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="OrdenaC.aspx.cs">
-      <DependentUpon>OrdenaC.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="OrdenaC.aspx.designer.cs">
-      <DependentUpon>OrdenaC.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="OrdenaE.aspx.cs">
-      <DependentUpon>OrdenaE.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="OrdenaE.aspx.designer.cs">
-      <DependentUpon>OrdenaE.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="OrdenaI.aspx.cs">
-      <DependentUpon>OrdenaI.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="OrdenaI.aspx.designer.cs">
-      <DependentUpon>OrdenaI.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="OrdenaM.aspx.cs">
-      <DependentUpon>OrdenaM.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="OrdenaM.aspx.designer.cs">
-      <DependentUpon>OrdenaM.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="OrdenaS.aspx.cs">
-      <DependentUpon>OrdenaS.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="OrdenaS.aspx.designer.cs">
-      <DependentUpon>OrdenaS.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pedido.aspx.cs">
       <DependentUpon>Pedido.aspx</DependentUpon>

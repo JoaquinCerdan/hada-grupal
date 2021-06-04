@@ -6,37 +6,7 @@
         <h1>Muebles de salón tipo sencillo</h1>
     </center>
        
-    <div>  
-        <p>Ordenar por:</p>
-
-        <asp:CheckBoxList ID="CheckBoxList1" runat="server" RepeatDirection="Horizontal">
-        <asp:ListItem>Precio</asp:ListItem>
-        <asp:ListItem>Valoracion</asp:ListItem>
-        <asp:ListItem>Nombre</asp:ListItem>
-        <asp:ListItem>Popularidad</asp:ListItem>
-    </asp:CheckBoxList>
-        <p>Tipo de mueble : 
-        <asp:DropDownList ID="DropDownList1" runat="server">
-            <asp:ListItem>Todos</asp:ListItem>
-            <asp:ListItem>Sofa</asp:ListItem>
-            <asp:ListItem>Silla</asp:ListItem>
-            <asp:ListItem>Mesa</asp:ListItem>
-        </asp:DropDownList>
-            </p>
-        <p>Color : <asp:DropDownList ID="DropDownList2" runat="server">
-            <asp:ListItem>Cualquiera</asp:ListItem>
-            <asp:ListItem>Rojo</asp:ListItem>
-            <asp:ListItem>Amarillo</asp:ListItem>
-            <asp:ListItem>Azul</asp:ListItem>
-            <asp:ListItem>Verde</asp:ListItem>
-            <asp:ListItem>Morado</asp:ListItem>
-            <asp:ListItem>Naranja</asp:ListItem>
-        </asp:DropDownList>
-            </p>
-        <asp:Button ID="Ordenar" runat="server" PostBackUrl="~/OrdenaS.aspx" Text="Ordenar" />
-            
-    </div>
-
+    
     <asp:GridView ID="GridView" runat="server" AutoGenerateColumns="False" ShowHeader="False" Width="256px" HorizontalAlign="Center" OnSelectedIndexChanged="GridView_SelectedIndexChanged" AutoGenerateSelectButton="True">
         <Columns>
             <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
