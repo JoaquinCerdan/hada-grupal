@@ -52,21 +52,16 @@
                     </div>
                     <hr>
                     <!-- END PRODUCT -->
-                    <asp:GridView ID="GridView" runat="server" AutoGenerateColumns="False" ShowHeader="False" Width="256px" HorizontalAlign="Center" OnRowCommand="GridView_RowCommand1" OnSelectedIndexChanged="GridView_SelectedIndexChanged">
+                    <asp:GridView ID="GridView" runat="server" AutoGenerateColumns="False" ShowHeader="False" AutoGenerateSelectButton="True" Width="256px" HorizontalAlign="Center" OnRowCommand="GridView_RowCommand1" DataKeyNames="Id" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView_SelectedIndexChanged" >
                         <Columns>
-                            <asp:ButtonField DataTextField="Nombre" Text="Botón_nombre" CommandName="id" >
-                            <FooterStyle HorizontalAlign="Center" />
-                            <HeaderStyle HorizontalAlign="Center" />
-                            <ItemStyle HorizontalAlign="Center" />
-                            </asp:ButtonField>
-                            <asp:ImageField DataImageUrlField="Imagen" HeaderText="Imagen">
-                                <FooterStyle HorizontalAlign="Center" />
-                                <HeaderStyle HorizontalAlign="Center" />
-                                <ItemStyle HorizontalAlign="Center" />
-                            </asp:ImageField>
-                            <asp:BoundField DataField="Precio" HeaderText="Precio" />
+                            <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre" />
+                            <asp:BoundField DataField="Precio" HeaderText="Precio" SortExpression="Precio" />
+                            <asp:BoundField DataField="Imagen" HeaderText="Imagen" SortExpression="Imagen" />
+                            <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id" />
                         </Columns>
                     </asp:GridView>
+                
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Database %>" SelectCommand="SELECT  A.Nombre,  A.Precio, A.Imagen,A.Id FROM [Articulo] AS A INNER JOIN [Lista_deseos] AS L ON A.Id = L.Id_art INNER JOIN Usuarios AS U ON L.Id_user = U.email"></asp:SqlDataSource>
                 
             </div>
 

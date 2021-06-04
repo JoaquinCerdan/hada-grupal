@@ -48,5 +48,16 @@ namespace iqueaWeb
         {
 
         }
+
+        protected void GridView_RowCommand1(object sender, GridViewCommandEventArgs e)
+        {
+            
+            
+        }
+
+        protected void GridView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Response.Redirect("Carrito.aspx" + GridView.SelectedRow.Cells[4].Text);
+        }
     }
 }
