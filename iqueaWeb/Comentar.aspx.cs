@@ -20,6 +20,7 @@ namespace iqueaWeb
 
         protected void Comentar_Click(object sender, EventArgs e)
         {
+            //se guardan los datos del comentario
             ENcomentario comentario = new ENcomentario();
             comentario.Usuario_correoP = Session["email"].ToString();
             comentario.valoracionP = Valoracion.SelectedIndex;
@@ -30,6 +31,7 @@ namespace iqueaWeb
 
             if (caso == true)
             {
+                //a partir de los datos se dirige a la pagina del articulo
                 int id = Convert.ToInt32(Request.QueryString["id"]);
                 Response.Redirect("articulo.aspx?id=" + id.ToString());
             }
