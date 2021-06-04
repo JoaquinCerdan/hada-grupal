@@ -63,11 +63,10 @@
             </asp:Menu>
                  &nbsp;<div class="form-inline my-2 my-lg-0">
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <input class="form-control mr-sm-6" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
+                      <div id="search">         
+                        <asp:TextBox ID="txtSearchMaster" runat="server"></asp:TextBox>
+                        <asp:Button ID="btnSearch" runat="server" Text="Search" OnClick="btnSearch_Click" />
+                        </div>
                         <asp:ImageButton ID="ImageButton5" runat="server" src="https://cdn.pixabay.com/photo/2017/06/26/20/33/icon-2445095_960_720.png" style="height: 36px; Width: 36px" PostBackUrl="~/Lista_deseos.aspx"/>
                         <asp:ImageButton ID="ImageButton3" runat="server" Height="18px" ImageUrl="https://image.flaticon.com/icons/png/512/107/107831.png" PostBackUrl="~/Carrito.aspx" Width="25px" />
                         &nbsp;

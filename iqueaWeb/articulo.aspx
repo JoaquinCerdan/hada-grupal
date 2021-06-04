@@ -33,7 +33,7 @@
     </p>
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_usuario" runat="server" Text="Usuario:"></asp:Label></strong>
-        <asp:TextBox ID="TextBox1" runat="server" Enabled="False" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+        <asp:TextBox ID="TextBox1" runat="server" Enabled="False" ></asp:TextBox>
     </p>
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_comentario" runat="server" Text="Comentario:"></asp:Label></strong>

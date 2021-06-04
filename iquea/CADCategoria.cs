@@ -12,6 +12,7 @@ using System.Data;
 /// <summary>
 /// Summary description for CADCategoria
 /// </summary>
+/// 
 public class CADCategoria
 {
 	public string constring;
@@ -28,6 +29,7 @@ public class CADCategoria
 		try
 		{
 			c.Open();
+			
 			SqlCommand com = new SqlCommand("Insert INTO [dbo].[Categoria] (Id,Nombre,Descripcion) VALUES('"
 				+ cat.intId
 				+ "','"
@@ -146,5 +148,36 @@ public class CADCategoria
 			Console.WriteLine("User operation has failed.Error: {0}", e.Message);
 		}
 		return delete;
+	}
+	public int obtenerId()
+	{
+		int idNuevo = 1;
+		SqlConnection conec = new SqlConnection(constring);
+		try
+		{
+			conec.Open();
+			SqlCommand consulta = new SqlCommand("Select max(Id) maxId, Count(Id) numRows from [dbo].[Categoria]", conec);
+
+			SqlDataReader dr = consulta.ExecuteReader();
+
+			dr.Read();
+
+			if (int.Parse(dr["numRows"].ToString()) != 0)
+			{
+				idNuevo = int.Parse(dr["maxId"].ToString()) + 1;
+				dr.Close();
+			}
+
+		}
+		catch (SqlException ex)
+		{
+			Console.WriteLine("The operation has failed.Error: {0}", ex.Message);
+		}
+		finally
+		{
+			conec.Close();
+		}
+
+		return idNuevo;
 	}
 }

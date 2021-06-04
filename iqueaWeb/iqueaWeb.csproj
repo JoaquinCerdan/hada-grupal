@@ -68,6 +68,10 @@
   <ItemGroup>
     <Content Include="Administrador.aspx" />
     <Content Include="Anuncio.aspx" />
+    <Content Include="App_Data\Database.mdf" />
+    <Content Include="App_Data\Database_log.ldf">
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
     <Content Include="articulo.aspx" />
     <Content Include="BorrarAnuncio.aspx" />
     <Content Include="BorrarArticulo.aspx" />
@@ -87,7 +91,6 @@
     <Content Include="CrearArticulo.aspx" />
     <Content Include="CrearCategoria.aspx" />
     <Content Include="CrearOferta.aspx" />
-    <Content Include="Database.mdf" />
     <Content Include="etc.aspx" />
     <Content Include="Exterior.aspx" />
     <Content Include="Index.aspx" />
@@ -108,6 +111,7 @@
     <Content Include="OrdenaS.aspx" />
     <Content Include="Pedido.aspx" />
     <Content Include="Registrarse.aspx" />
+    <Content Include="Results.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -474,6 +478,13 @@
     </Compile>
     <Compile Include="Registrarse.aspx.designer.cs">
       <DependentUpon>Registrarse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Results.aspx.cs">
+      <DependentUpon>Results.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Results.aspx.designer.cs">
+      <DependentUpon>Results.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sencillo.aspx.cs">
       <DependentUpon>Sencillo.aspx</DependentUpon>

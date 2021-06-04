@@ -20,5 +20,7 @@
     <p>
 &nbsp;
         <asp:Button ID="Button1" Class="btn btn-primary" runat="server" Text="Crear" OnClick="Button1_Click" />
+        <asp:Label ID="etiqueta" runat="server" Text="Aviso"></asp:Label>
+
     </p>
 </asp:Content>

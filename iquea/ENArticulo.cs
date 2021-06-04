@@ -46,40 +46,59 @@ public class ENArticulo
 		set { imagen = value; }
 	}
 
-	private bool stock;
+	private int stock;
 
-	public bool boolStock
+	public int intStock
 	{
 		get { return stock; }
 		set { stock = value; }
 	}
 
+	private int categoria;
+	public int intCategoria
+
+    {
+		get { return categoria; }
+		set { categoria = value; }
+	}
+	private string temporada;
+	public string stringTemporada
+    {
+		get { return temporada; }
+		set { temporada = value; }
+	}
+
 	public ENArticulo()
 	{
-		intId = 0;
+		CADArticulo aux = new CADArticulo();
+		intId = aux.obtenerId();
 		stringNombre = "";
 		stringDescripcion = "";
 		doublePrecio = 0.0;
 		stringImagen = "";
-		boolStock = false;
+		intStock = 0;
+		intCategoria = 0;
+		stringTemporada = "";
 	}
 
-	public ENArticulo(int id, string nombre, string descripcion, double precio, string imagen, bool stock)
+	public ENArticulo(int id, string nombre, string descripcion, double precio, string imagen, int stock, int categoria, string temporada)
 	{
 		intId = id;
 		stringNombre = nombre;
 		stringDescripcion = descripcion;
 		doublePrecio = precio;
 		stringImagen = imagen;
-		boolStock = stock;
+		intStock = stock;
+		intCategoria = categoria;
+		stringTemporada = temporada;
 	}
 
 	public bool createArticulo()
 	{
 		CADArticulo articulo = new CADArticulo();
 		bool created = false;
-		if (!articulo.readArticulo(this))
-			created = articulo.createArticulo(this);
+		//if (!articulo.readArticulo(this))
+		created = articulo.createArticulo(this);
 		return created;
 	}
 
@@ -95,6 +114,8 @@ public class ENArticulo
 		aux.precio = this.precio;
 		aux.imagen = this.imagen;
 		aux.stock = this.stock;
+		aux.temporada = this.temporada;
+		aux.categoria = this.categoria;
 
 		if (articulo.readArticulo(this))
 		{
@@ -104,6 +125,8 @@ public class ENArticulo
 			this.precio = aux.precio;
 			this.imagen = aux.imagen;
 			this.stock = aux.stock;
+			this.categoria = aux.categoria;
+			this.temporada = aux.temporada;
 			updated = articulo.updateArticulo(this);
 		}
 
@@ -125,5 +148,16 @@ public class ENArticulo
 			read = articulo.deleteArticulo(this);
 		return read;
 	}
+
+	public bool getArticulos(string searchString)
+    {
+		CADArticulo articulo = new CADArticulo();
+		bool read = false;
+		if (articulo.getArticulos(this, searchString))
+			read = articulo.deleteArticulo(this);
+		return read;
+	}
+
+	//string query = "select * from [dbo].[Articulo] where Nombre like '" + searchString + "%'";
 
 }

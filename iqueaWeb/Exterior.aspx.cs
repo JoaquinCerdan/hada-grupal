@@ -29,7 +29,7 @@ namespace iqueaWeb
             }
             catch (Exception e)
             {
-
+                Console.WriteLine("The operation has failed.Error: {0}", e.Message);
             }
             finally
             {
