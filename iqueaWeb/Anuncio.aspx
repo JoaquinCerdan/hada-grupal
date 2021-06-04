@@ -7,7 +7,9 @@
 
      <div class="col-lg-6" style="margin:0 auto;">
                     <div class="card mt-2">
-                        <img class="card-img-top " width="400" height="600" src="https://www.muebleselparaiso.es/102171-large_default/sofa-cama-de-3-plazas-tessa.jpg" alt="..." />
+                        <div style="text-align:center;">
+                        <img class="card-img-top " src="https://www.muebleselparaiso.es/102171-large_default/sofa-cama-de-3-plazas-tessa.jpg" alt="..." />
+                            </div>
                         <div class="card-body">
                             <h3 id="producto_name"  class="card-title">Product Name</h3>
                             <h4 ID="producto_precio">$24.99</h4>

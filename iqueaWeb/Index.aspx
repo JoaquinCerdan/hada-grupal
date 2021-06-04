@@ -1,10 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="iqueaWeb.HomePage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
+</asp:Content>  
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <link rel="stylesheet" type="text/css" href="mystyle.css">
-    <br />
- 
+    <div style="width:100%;text-align:center;">
+    <asp:ImageButton ID="ImageButton1" runat="server" PostBackUrl="~/Anuncio.aspx" ImageUrl="https://www.centraldeltresillo.es/blog/wp-content/uploads/2020/11/Anuncio-pagina-Ads-Instagram-descuento-1024x535.jpg" Height="242px" Width="831px"  />
+    </div>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <footer class ="footer"> 
               <p>Bienvenido</p>
