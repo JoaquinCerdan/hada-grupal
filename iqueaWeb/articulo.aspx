@@ -6,15 +6,15 @@
     &nbsp;&nbsp;<asp:Image ID="Image1" runat="server" ImageUrl="https://www.muebleselparaiso.es/102171-large_default/sofa-cama-de-3-plazas-tessa.jpg" />
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_nombre" runat="server" Text="Nombre del artículo:"></asp:Label></strong>
-        <asp:TextBox ID="nombre" runat="server" Enabled="False"></asp:TextBox>
+        <asp:TextBox ID="nombre" runat="server" Enabled="False" Width="372px"></asp:TextBox>
     </p>
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_descripcion" runat="server" Text="Descripción del artículo:"></asp:Label></strong>
-        <asp:TextBox ID="descripcion" runat="server" Enabled="False" ></asp:TextBox>
+        <asp:TextBox ID="descripcion" runat="server" Enabled="False" Height="71px" TextMode="MultiLine" Width="983px" ></asp:TextBox>
     </p>
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_precio" runat="server" Text="Precio del articulo:"></asp:Label></strong>
-        <asp:TextBox ID="precio" runat="server" Enabled="False" ></asp:TextBox>
+        <asp:TextBox ID="precio" runat="server" Enabled="False" Width="132px" ></asp:TextBox>$
     </p>
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_stock" runat="server" Text="Stock del artículo:"></asp:Label></strong>
@@ -34,11 +34,11 @@
     </p>
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_usuario" runat="server" Text="Usuario:"></asp:Label></strong>
-        <asp:TextBox ID="TextBox1" runat="server" Enabled="False" ></asp:TextBox>
+        <asp:TextBox ID="TextBox1" runat="server" Enabled="False" TextMode="SingleLine" Width="402px" ></asp:TextBox>
     </p>
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_comentario" runat="server" Text="Comentario:"></asp:Label></strong>
-        <asp:TextBox ID="TextBox2" runat="server" Enabled="False"></asp:TextBox>
+        <asp:TextBox ID="TextBox2" runat="server" Enabled="False" Height="36px" TextMode="MultiLine" Width="1169px"></asp:TextBox>
     </p>
     <p>
         <strong>&nbsp;&nbsp;<asp:Label ID="enunciado_valoracion" runat="server" Text="Valoración:"></asp:Label></strong>
