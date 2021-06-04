@@ -30,4 +30,7 @@
     </div>
     <br /> <br />
     <center><asp:Button ID="Button" runat="server" Text="Modificar todo" OnClick="Button_Click" /></center>
+    <div>
+    <center><asp:Button ID="Button1" runat="server" Text="Borrar usuario" OnClick="Button_Click1" /></center>
+    </div>
 </asp:Content>
